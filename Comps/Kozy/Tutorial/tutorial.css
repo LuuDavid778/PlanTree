@@ -1,0 +1,46 @@
+@media only screen and (max-device-width: 375px) {
+    .tutorial__topbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 15px;
+    }
+
+    .tutorial__logo {
+        width: 100px;
+        height:40px;
+    }
+
+    .tutorial__skip {
+        color:#7FA53E;
+        font-family: Assistant;
+        font-weight: bold;
+        margin-right: 10px;
+        
+    }
+
+    .tutorial__texts {
+        text-align: center;
+        position: relative;
+        top: 300px;
+    }
+
+    .tutorial__texts__header {
+        font-family: Assistant;
+        color: #7FA53E;
+        font-weight: bold;
+    }
+
+    .tutorial__texts__description {
+        font-family: Assistant;
+        color: #556F44;
+        font-weight: 300;
+    }
+
+    .tutorial__progress__circles {
+        position: relative;
+        top: 400px;
+        left: 130px;
+        
+    }
+}
