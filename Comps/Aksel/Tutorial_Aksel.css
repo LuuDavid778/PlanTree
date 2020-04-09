@@ -31,6 +31,12 @@
     display: flex;
 }
 
+.tutorial_imgContainer_pg2-6{
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+
 .tutorial_pg1_img1{
     position: relative;
     right: 20px;
