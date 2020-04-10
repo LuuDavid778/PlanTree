@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="183" height="203" viewBox="0 0 183 203">
+  <defs>
+    <filter id="card" x="0" y="0" width="183" height="203" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1668" data-name="Group 1668" transform="translate(-3046 -1556)">
+    <g id="Group_1665" data-name="Group 1665">
+      <g transform="matrix(1, 0, 0, 1, 3046, 1556)" filter="url(#card)">
+        <rect id="card-2" data-name="card" width="93" height="113" rx="8" transform="translate(45 40)" fill="#fff"/>
+      </g>
+      <text id="Hot" transform="translate(3137 1699)" fill="#5e5e5e" font-size="14" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="-0.01em"><tspan x="-11.935" y="0">Hot</tspan></text>
+      <path id="Path_1113" data-name="Path 1113" d="M10.585,0A6.472,6.472,0,0,0,4.121,6.464V37.428A10.161,10.161,0,1,0,20.743,45.25a10.065,10.065,0,0,0-3.694-7.823V6.464A6.471,6.471,0,0,0,10.585,0ZM18.9,45.25A8.311,8.311,0,1,1,5.6,38.612a.924.924,0,0,0,.369-.739V35.092H7.815V33.245H5.968V30.475H7.815V28.628H5.968V25.857H7.815V24.01H5.968V21.24H7.815V19.393H5.968V16.623H7.815V14.776H5.968V12.005H7.815V10.158H5.968V6.464a4.617,4.617,0,0,1,9.235,0V37.875a.923.923,0,0,0,.369.738A8.248,8.248,0,0,1,18.9,45.25Zm0,0" transform="translate(3126.581 1624.571)" fill="#ea4c4c"/>
+      <path id="Path_1114" data-name="Path 1114" d="M64.209,119.68V87.266H62.362V119.68a4.617,4.617,0,1,0,1.847,0Zm-.923,7.3a2.77,2.77,0,1,1,2.771-2.77A2.77,2.77,0,0,1,63.285,126.975Zm0,0" transform="translate(3073.881 1545.617)" fill="#5e5e5e"/>
+    </g>
+  </g>
+</svg>
