@@ -1,9 +1,14 @@
 import React from 'react'
-import '../startpage_img.css';
-import '../../../Imgs/'
-const startpage_img = () => <div className = "startpage_img_container">
-<div>
+import '../startpage_img/startpage_img.css' 
+
+
+const startpage_logo = require("../../../Imgs/primary_logo.svg") 
+const StartPage = () => <div>
+<div className = "startpage_img">
+    <img className = "startpage_img_container" src = {startpage_logo}></img>
+    <p className = "startpage_img_p">Your go-to plant guide.</p>
 </div>
 
 </div>
-export default startpage_img;
+
+export default StartPage;
