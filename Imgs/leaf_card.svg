@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="199.806" height="175" viewBox="0 0 199.806 175">
+  <g id="Group_1599" data-name="Group 1599" transform="translate(-93.927 -189)">
+    <g id="Group_1600" data-name="Group 1600">
+      <g id="Group_1597" data-name="Group 1597" transform="translate(31 27.708)">
+        <g id="Group_1596" data-name="Group 1596" transform="translate(62.927 161)">
+          <rect id="Rectangle_1943" data-name="Rectangle 1943" width="115" height="175" rx="22" transform="translate(43.073 0.292)" fill="#7fa53e"/>
+          <rect id="Rectangle_1944" data-name="Rectangle 1944" width="95.687" height="145.541" rx="22" transform="translate(106.99 7.719) rotate(14.008)" fill="#7fa53e" opacity="0.37"/>
+          <rect id="Rectangle_1945" data-name="Rectangle 1945" width="95.687" height="145.541" rx="22" transform="matrix(0.966, -0.259, 0.259, 0.966, 0, 31.994)" fill="#7fa53e" opacity="0.37"/>
+        </g>
+        <g id="leaf" transform="translate(116.637 196.938)">
+          <g id="Group_1598" data-name="Group 1598" transform="translate(15.363)">
+            <path id="Path_1059" data-name="Path 1059" d="M64.565.759a1.024,1.024,0,0,0-.515-.64h0a1.025,1.025,0,0,0-1.385.426h0c0,.028-5.191,10.1-21.125,11.853a20.247,20.247,0,0,0-6.023,1.608,16.733,16.733,0,0,0-8.032,7.359,17.294,17.294,0,0,0-1.976,10.076,16.935,16.935,0,0,0,2.479,7.144c-2.83,2.032-11.808,9.057-12.617,16.6a1.025,1.025,0,0,0,2.038.215c.742-6.73,9.164-13.257,11.791-15.148a18.133,18.133,0,0,0,12.94,6.413,21.878,21.878,0,0,0,9.968-1.7,22.863,22.863,0,0,0,8.785-6.527C66.965,31.082,69.857,18.714,64.565.759ZM29.786,37.575h0a14.727,14.727,0,0,1-1.03-1.925,14.944,14.944,0,0,1-1.189-4.427,15.238,15.238,0,0,1,1.7-8.887,14.717,14.717,0,0,1,7.076-6.47,18.226,18.226,0,0,1,5.423-1.421c10.517-1.132,16.7-5.813,19.9-9.21A43.406,43.406,0,0,1,52.213,21.86l-.623-6.272a1.025,1.025,0,0,0-2.046.115.289.289,0,0,0,.008.083l.8,8.061A65.573,65.573,0,0,1,29.786,37.575Zm29.52-.447v.006A20.815,20.815,0,0,1,51.313,43.1a19.813,19.813,0,0,1-9.057,1.517A16.2,16.2,0,0,1,31.02,39.256a77.152,77.152,0,0,0,9.77-5.191l8.995,1.7a1.025,1.025,0,0,0,.368-2.015l-6.912-1.308a59.747,59.747,0,0,0,8.87-7.455,1.036,1.036,0,0,0,.136-.142A46.221,46.221,0,0,0,63.7,5.519c3.5,14.921.819,25.3-4.394,31.609Z" transform="translate(-15.363)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <line id="Line_222" data-name="Line 222" x2="81" transform="translate(153.5 295.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_223" data-name="Line 223" x2="81" transform="translate(153.5 306.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_224" data-name="Line 224" x2="81" transform="translate(153.5 317.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_225" data-name="Line 225" x2="81" transform="translate(153.5 328.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
