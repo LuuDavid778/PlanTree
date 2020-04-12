@@ -1,0 +1,13 @@
+.presult_texts__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.plant_texts__interesting_facts {
+    width: 300pt;
+}
+
+.plant_texts__discription {
+    width: 300pt;
+
+}

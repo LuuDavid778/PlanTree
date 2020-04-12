@@ -1,0 +1,37 @@
+
+.bottom_nav__cont{
+    width: 281.25pt;
+    height:50pt;
+    background-color: white;
+    box-shadow: 0px -5px 30px rgb(172, 175, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bottom_nav__button {
+    border-radius: 50%;
+    background-color: #92BC4A;
+    width:50pt;
+    height:50pt;
+    box-shadow: 0px 5px 15px #92BC4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: relative;
+    top: -13pt;
+
+}
+
+.buttom_nav__button_redu_icon {
+    width: 20pt;
+    height: 20pt;
+    padding-left:3pt;
+
+}
+
+.buttom_nab__button_cont {
+    align-content: center;
+}

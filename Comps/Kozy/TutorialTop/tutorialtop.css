@@ -1,0 +1,19 @@
+.tutorial__topbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 15px;
+}
+
+.tutorial__logo {
+    width: 105px;
+    height: 45px;
+}
+
+.tutorial__skip {
+    color:#7FA53E;
+    font-family: Assistant;
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
