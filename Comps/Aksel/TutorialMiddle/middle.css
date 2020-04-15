@@ -1,0 +1,17 @@
+.tutorial__texts {
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+.tutorial__texts__header {
+    font-family: Assistant;
+    color: #7FA53E;
+    font-weight: bold;
+}
+
+.tutorial__texts__description {
+    font-family: Assistant;
+    color: #556F44;
+    font-weight: 300;
+}
