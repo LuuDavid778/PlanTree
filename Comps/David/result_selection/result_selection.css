@@ -1,0 +1,14 @@
+.resultselection_cont {
+display: flex;
+flex-direction: column;
+color: white;
+background-color: #92BC4A;
+width: 300px;
+}
+
+.resultselection_cardcont {
+    display: flex;
+    align-items: center;
+}
+
+

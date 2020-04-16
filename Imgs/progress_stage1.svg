@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="26" height="26" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1629" data-name="Group 1629" transform="translate(-29 -273)">
+    <text id="_1" data-name="1" transform="translate(37 293)" fill="#536d43" font-size="20" font-family="Assistant-SemiBold, Assistant" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="0">1</tspan></text>
+    <g id="Pin_Input_Empty" data-name="Pin Input Empty" transform="translate(29 273)" clip-path="url(#clip-path)">
+      <circle id="Ellipse_342" data-name="Ellipse 342" cx="13" cy="13" r="13" fill="#3c3c3c" opacity="0.099"/>
+    </g>
+  </g>
+</svg>

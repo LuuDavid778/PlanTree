@@ -1,0 +1,46 @@
+.plantpageTopBar_card {
+    width: 281.25pt;
+    background-color: #F1EDD9;
+    height: 200pt;
+    border-radius: 0px 0px 65px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plantpageTopBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.plantpageTopBar_progressbar {
+    position: absolute;
+    top: 75pt;
+
+}
+
+.plantpageTopBar_question {
+    color: #7FA53E;
+    font-size: 13pt;
+}
+.plantpageTopBar_hbmenu {
+    position: absolute;
+    top: 30pt;
+    left: 240pt;
+
+}
+.plantpageTopBar_pcircle {
+    padding-right: 5pt;
+}
+.plantpageTopBar_header {
+    display: flex;
+    margin-top: 40pt;
+    
+}
+
+.plantpageTopbar_logo {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 20pt;
+
+}

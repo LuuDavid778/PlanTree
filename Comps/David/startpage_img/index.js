@@ -5,8 +5,9 @@ import '../startpage_img/startpage_img.css'
 const startpage_logo = require("../../../Imgs/primary_logo.svg") 
 const StartPage = () => <div>
 <div className = "startpage_img">
-    <img className = "startpage_img_container" src = {startpage_logo}></img>
-    <p className = "startpage_img_p">Your go-to plant guide.</p>
+<img className = "startpage_img_container" src = {startpage_logo}></img>
+
+  
 </div>
 
 </div>
