@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
+
 .tutorial__texts {
     text-align: center;
     position: relative;
-    top: 300px;
+    top: 280pt;
 }
 
 .tutorial__texts__header {
@@ -14,4 +18,77 @@
     font-family: Assistant;
     color: #556F44;
     font-weight: 300;
+}
+
+.tutorial_title{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    top: 45pt;
+    font-size: 20pt;
+    font-weight: 1000;
+    font-family: 'Assistant', sans-serif;
+    color: #556F44;
+}
+
+.tutorial_pg1_subtitle {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-size: 11pt;
+    font-family: 'Poppins', sans-serif;
+    color: #5E5E5E;
+}
+
+.tutorial_imgContainer {
+
+    height: 170pt;
+    width: 100vw;
+    position: absolute;
+    top: 130px;
+}
+
+.tutorial_pg1_imgContainer{
+    display: inline-flex;
+    width: 100vw;
+}
+
+.tutorial_pg1_imgContainer{
+    display: flex;
+}
+
+.tutorial_pg1_img1{
+    position: relative;
+    right: 15pt;
+    bottom: 15pt;
+}
+
+.tutorial_pg1_img2{
+    position: absolute;
+    bottom: 0pt;
+    left: 90pt;
+}
+
+.tutorial_pg1_img3{
+    position: relative;
+    right: 50pt;
+    bottom: 15pt;
+}
+
+.tutorial_nextButton{
+    display: flex;
+    width: 262pt;
+    height: 37pt;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22pt;
+    background-color: #7FA53E;
+    position: absolute;
+    bottom: 60pt;
+    left: 9pt;
+    color: white;
+    font-size: 19pt;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2pt 2pt 5pt #556F44;
 }
