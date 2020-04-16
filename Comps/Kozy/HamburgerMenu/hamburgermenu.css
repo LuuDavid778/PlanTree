@@ -1,0 +1,46 @@
+.hamburger_menu__cont {
+    width: 262.5pt;
+    height: 812pt;
+    background-color: #92BC4A;
+    color: white;
+    font-size: 15pt;
+}
+
+.hamburger_menu_individuals {
+    display: flex;
+    padding-bottom:20pt;
+}
+
+.hamburger_menu__menu_icon {
+    position: relative;
+    left: 20pt;
+    top: 20pt;
+
+}
+
+.hamburger_menu__main {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    left: 20pt;
+    top: 40pt;
+}
+
+.hamburger_menu__glossary_sub {
+    position: relative;
+    left: 50pt;
+    top: 40pt;
+}
+
+.hamburger_menu__texts {
+   margin-left: 10pt;
+
+}
+
+.hamburger_menu__icon {
+    width: 10%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
