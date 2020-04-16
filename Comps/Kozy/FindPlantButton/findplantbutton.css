@@ -1,5 +1,4 @@
-
-.bottom_nav__cont{
+.find_plant_button__cont{
     width: 281.25pt;
     height:50pt;
     background-color: white;
@@ -10,7 +9,7 @@
 
 }
 
-.bottom_nav__button {
+.find_plant_button__button {
     border-radius: 50%;
     background-color: #92BC4A;
     width:50pt;
@@ -26,13 +25,13 @@
 
 }
 
-.buttom_nav__button_redu_icon {
+.find_plant_button__find_plant_icon {
     width: 20pt;
     height: 20pt;
-    padding-left:3pt;
+    padding-left:1pt;
 
 }
 
-.buttom_nab__button_cont {
+.find_plant_button__button_inside {
     align-content: center;
 }

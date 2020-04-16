@@ -6,9 +6,10 @@ import PlantPageQuizCard from '../Comps/Kozy/PlantPageQuizCard';
 import PlantPageQuizCardTemp from '../Comps/Kozy/PlantPageQuizCardTemp';
 import ResultTexts from '../Comps/Kozy/ResultTexts';
 import BottomNav from '../Comps/Kozy/BottomNav';
+import FindPlantButton from '../Comps/Kozy/FindPlantButton';
 
 export default {
-    title: "Custom Button",
+    title: "Kozy's Components",
     component: CustomButton
 }
 
@@ -19,4 +20,5 @@ export const Plant_Page_Quiz_Card = () => <PlantPageQuizCard></PlantPageQuizCard
 export const Plant_Page_Quiz_Card_Temp = () => <PlantPageQuizCardTemp></PlantPageQuizCardTemp>;
 export const Result_Texts = () => <ResultTexts></ResultTexts>;
 export const Bottom_Nav = () => <BottomNav></BottomNav>;
+export const Find_Plant_Button = () => <FindPlantButton></FindPlantButton>;
 

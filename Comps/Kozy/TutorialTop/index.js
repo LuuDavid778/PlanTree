@@ -1,10 +1,10 @@
 import React from 'react';
 import "./tutorialtop.css";
 
-const PrimaryLogo = require('../../../Imgs/primary_logo.svg');
+const HorizontalLogo = require('../../../Imgs/horizontal_logo.svg');
 
 const ProgressCircles = () => <div className="tutorial__topbar">
-    <img src={PrimaryLogo} className="tutorial__logo"></img>
+    <img src={HorizontalLogo} className="tutorial__logo"></img>
     <div class="tutorial__skip">
         <div>SKIP</div>
     </div>
