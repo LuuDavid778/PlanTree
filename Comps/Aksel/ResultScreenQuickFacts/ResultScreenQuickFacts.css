@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.quickFact_box_container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.quickFact_box{
+    width: 200pt;
+    height: 40pt;
+    border-radius: 10pt;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 10pt;
+}

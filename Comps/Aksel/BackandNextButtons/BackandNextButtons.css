@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.button_center{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.plantPage_button_container{
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.plantPage_back_button{
+    flex: 2;
+    display: flex;
+    background-color: #556F44;
+    height: 30pt;
+    border-radius: 20pt;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.white_arrow_back {
+    width: 15pt;
+    height: 15pt;
+    display: flex;
+    margin-right: 8pt;
+    right: 2pt;
+    position: relative;
+}
+
+.white_arrow_next {
+    width: 15pt;
+    height: 15pt;
+    display: flex;
+    margin-left: 40pt;
+    left: 2pt;
+    position: relative;
+}
+
+
+.plantPage_next_button{
+    flex: 3;
+    display: flex;
+    background-color: #7FA53E;;
+    height: 30pt;
+    border-radius: 20pt;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin-left: 20pt;
+}
