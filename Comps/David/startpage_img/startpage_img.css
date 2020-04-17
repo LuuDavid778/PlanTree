@@ -1,0 +1,14 @@
+.startpage_img_container {
+    width: 150pt;
+}
+
+.startpage_img {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.startpage_img_p {
+    margin-top: -10pt;
+    color: green;
+}
