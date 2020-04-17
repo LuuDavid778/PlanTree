@@ -1,4 +1,5 @@
 import React from 'react';
+
 import StartPage from '../Comps/David/startpage_img'
 import PlantTopbar from '../Comps/David/plantpage_topbar';
 import ResultSelection from '../Comps/David/result_selection'
@@ -18,3 +19,4 @@ export const topbar = () => <PlantTopbar></PlantTopbar>
 export const start_page = () => <StartPage></StartPage>
 export const Result_Selection_Header = () => <ResultSelectionHeader></ResultSelectionHeader>
 export const Glossary_Term = () => <GlossaryTerm></GlossaryTerm>
+
