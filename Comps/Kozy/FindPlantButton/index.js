@@ -3,7 +3,7 @@ import "./findplantbutton.css";
 
 const FindPlantIcon = require('../../../Imgs/find_plant_icon.svg');
 
-const FindPlantButton = ({}) => <div>
+const FindPlantButton = ({}) => <div className="findPlant_container">
 
     <div className="find_plant_button__cont">
     <div className="find_plant_button__button">

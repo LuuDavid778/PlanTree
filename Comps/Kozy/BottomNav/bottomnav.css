@@ -1,3 +1,7 @@
+.bottomNav_container{
+    position: absolute;
+    bottom: 0;
+}
 
 .bottom_nav__cont{
     width: 281.25pt;

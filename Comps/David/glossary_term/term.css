@@ -1,3 +1,10 @@
+.glossaryTerm_container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 140pt;
+}
+
 .term_cont {
     background-color: #F0F4F8;
     width: 260pt;
@@ -5,6 +12,7 @@
     border-radius: 8pt;
     display: flex;
     align-items: center;
+    margin-bottom: 20pt;
 }
 
 .term_leftsect {

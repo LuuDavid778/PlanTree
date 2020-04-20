@@ -1,3 +1,8 @@
+.findPlant_container{
+    position: fixed;
+    bottom: 0;
+}
+
 .find_plant_button__cont{
     width: 281.25pt;
     height:50pt;

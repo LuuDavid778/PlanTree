@@ -3,7 +3,7 @@ import '../glossary_term/term.css'
 
 const rightarrow = require("../../../Imgs/right_arrow.svg")
 const placeholder = require("../../../Imgs/trowel.svg")
-const GlossaryTerm = ({title})=> <div>
+const GlossaryTerm = ({title})=> <div className="glossaryTerm_container">
 
 <div className = "term_cont">
 <div className = "term_leftsect">

@@ -1,2 +1,6 @@
 .tutorial__progress__circles {
+    display: flex;
+    justify-content: center;
+    top: 320pt;
+    position: relative;
 }
