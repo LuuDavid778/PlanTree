@@ -4,7 +4,7 @@ import './GlossaryHeader.css';
 const information = require('../../../Imgs/information.svg');
 const glossary = require('../../../Imgs/glossary.svg');
 
-const GlossaryHeader = () => <div>
+const GlossaryHeader = () => <div className="glossaryHeader_container">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poppins&display=swap" rel="stylesheet"></link>
     <div className="glossaryHeader_bot">
         <div className="glossary_button_container">

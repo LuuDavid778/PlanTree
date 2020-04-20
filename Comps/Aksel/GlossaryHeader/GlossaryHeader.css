@@ -5,7 +5,8 @@ body {
 .glossaryHeader_container{
     display: flex;
     flex-direction: column;
-
+    position: fixed;
+    top: 0pt;
 }
 
 .glossaryHeader_top{

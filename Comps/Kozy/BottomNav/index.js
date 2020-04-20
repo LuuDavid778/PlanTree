@@ -3,7 +3,7 @@ import "./bottomnav.css";
 
 const ReduIcon = require('../../../Imgs/redo.svg');
 
-const BottomNav = ({}) => <div>
+const BottomNav = ({}) => <div className="bottomNav_container">
 
     <div className="bottom_nav__cont">
     <div className="bottom_nav__button">
