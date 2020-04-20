@@ -25,7 +25,7 @@ body {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 45pt;
+    top: 60pt;
     font-size: 20pt;
     font-weight: 1000;
     font-family: 'Assistant', sans-serif;
@@ -46,7 +46,7 @@ body {
     height: 170pt;
     width: 100vw;
     position: absolute;
-    top: 130px;
+    top: 120pt;
 }
 
 .tutorial_pg1_imgContainer{
@@ -54,41 +54,19 @@ body {
     width: 100vw;
 }
 
-.tutorial_pg1_imgContainer{
-    display: flex;
-}
-
 .tutorial_pg1_img1{
     position: relative;
-    right: 15pt;
     bottom: 15pt;
 }
 
 .tutorial_pg1_img2{
     position: absolute;
     bottom: 0pt;
-    left: 90pt;
+    left: 105pt;
 }
 
 .tutorial_pg1_img3{
     position: relative;
-    right: 50pt;
+    right: 52pt;
     bottom: 15pt;
-}
-
-.tutorial_nextButton{
-    display: flex;
-    width: 262pt;
-    height: 37pt;
-    justify-content: center;
-    align-items: center;
-    border-radius: 22pt;
-    background-color: #7FA53E;
-    position: absolute;
-    bottom: 60pt;
-    left: 9pt;
-    color: white;
-    font-size: 19pt;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 2pt 2pt 5pt #556F44;
 }
