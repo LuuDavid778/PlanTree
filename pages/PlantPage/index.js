@@ -8,7 +8,11 @@ import HamburgerMenu from "../../Comps/Kozy/HamburgerMenu";
 const AptCard = require('../../Imgs/apartment.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
-const FirstPlantPage=() =>  <div>
+const PlantPage=() =>  <div>
+    <div>
+
+    </div>
+    <HamburgerMenu></HamburgerMenu>
     <PlantTopbar></PlantTopbar>
     <div className="plant_page_card_container">
         <PlantPageQuizCard className="plant_page_card"></PlantPageQuizCard>
@@ -24,4 +28,4 @@ const FirstPlantPage=() =>  <div>
 </div>
 
 
-export default FirstPlantPage;
+export default PlantPage;
