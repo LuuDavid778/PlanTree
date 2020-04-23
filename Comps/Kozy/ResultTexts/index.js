@@ -14,7 +14,7 @@ const ResultTexts = ({textcolor,backgroundColor}) => <div className="result_text
 
 ResultTexts.defaultProps = {
     textcolor: "white",
-    backgroundColor: "#92BC4A"
+    backgroundColor: ''
 }
 
 export default ResultTexts;

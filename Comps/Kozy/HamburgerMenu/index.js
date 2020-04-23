@@ -10,13 +10,31 @@ const TreeIcon = require('../../../Imgs/tree_icon.svg');
 const FlowerIcon = require('../../../Imgs/flower_icon.svg');
 const TermsIcon = require('../../../Imgs/terms_icon.svg');
 
+var menu_state = false;
 
+function OpenMenu() {
+
+    if (menu_state===false) {
+    //     document.querySelector(".hamburger_menu_big_cont").style.right = "0pt";
+    // document.querySelector(".hamburger_menu__cont").style.right = "0pt";
+    // document.querySelector(".hamburger_menu__menu_icon").style.left = "25pt";
+    menu_state = true;
+
+    }else if (menu_state===true) {
+        // document.querySelector(".hamburger_menu_big_cont").style.right = "-300pt";
+        // document.querySelector(".hamburger_menu__cont").style.right = "-400pt";
+        // document.querySelector(".hamburger_menu__menu_icon").style.left = "-180pt";
+        menu_state = false;
+    }
+}
 
 
 const HamburgerMenu = () => <div>
+    <img src={HamburgerIcon} className="hamburger_menu__menu_icon" onClick={OpenMenu}></img>
     <div className="hamburger_menu__cont">
-    <img src={HamburgerIcon} className="hamburger_menu__menu_icon"></img>
-        <div className="hamburger_menu__main">
+
+    <div className="hamburger_menu_big_cont">
+    <div className="hamburger_menu__main">
             <div className="hamburger_menu_individuals">
                 <div className="hamburger_menu__icon"><img src={HomeIcon}></img></div>
                 <div className="hamburger_menu__texts">Home</div>
@@ -49,7 +67,15 @@ const HamburgerMenu = () => <div>
             </div>
         </div>
     </div>
+
+    </div>
+        
 </div>
+
+
+HamburgerMenu.defaultProps = {
+    onClick: OpenMenu,
+}
 
 export default HamburgerMenu;
 

@@ -1,13 +1,18 @@
-.presult_texts__cont {
+.result_texts__cont {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 550pt;
+    font-family: Poppins;
+    margin-left: 20pt;
+ 
 }
 
 .plant_texts__interesting_facts {
-    width: 300pt;
+    width: 250pt;
 }
 
 .plant_texts__discription {
-    width: 300pt;
+    width: 250pt;
 
 }

@@ -1,3 +1,9 @@
 .rs_plantname {
     font-weight: 900;
+    font-family: Assistant;
+    font-size: 15pt;
+    position: absolute;
+    top: 315pt;
+    color: white;
+    left: 25pt;
 }

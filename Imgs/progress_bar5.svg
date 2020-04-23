@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321.5" height="33" viewBox="0 0 321.5 33">
+  <g id="Group_1702" data-name="Group 1702" transform="translate(-30.5 -76)">
+    <line id="Line_218" data-name="Line 218" x2="305" transform="translate(35.5 92.5)" fill="none" stroke="#92bc4a" stroke-linecap="round" stroke-width="10"/>
+    <g id="checkbox-selected" transform="translate(319 76)">
+      <rect id="rectangle" width="33" height="33" rx="16.5" fill="#92bc4a"/>
+      <path id="path" d="M1439.412,4365.452l6.132,6.186,9.174-9.077" transform="translate(-1430.42 -4350.071)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
