@@ -1,6 +1,10 @@
 .hamburger_menu_big_cont {
     position: relative;
+    z-index: 0;
     right: -300pt;
+    height: 300px;
+    width:370px;
+    transition: .3s right;
 
 }
 
@@ -12,6 +16,7 @@
     font-size: 15pt;
     position: relative;
     right:-400pt;
+    transition: .3s right;
 
 }
 
@@ -22,8 +27,12 @@
 
 .hamburger_menu__menu_icon {
     position: relative;
+    z-index: 1;
     left: -180pt;
     top: 20pt;
+    width: 30px;
+    height:27px;
+    transition: .3s left;
 
 }
 
