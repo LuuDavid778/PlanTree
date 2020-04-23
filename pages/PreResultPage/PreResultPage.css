@@ -10,3 +10,14 @@ html, body {
 .PreResultPage_cont {
     background-color: #92BC4A;
 }
+
+.PreResultPage_button {
+    position: absolute;
+    top: 135pt;
+   left: 75pt;
+
+}
+
+a {
+    text-decoration: none;
+}

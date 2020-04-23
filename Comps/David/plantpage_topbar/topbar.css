@@ -1,7 +1,7 @@
 .plantpageTopBar_card {
     width: 281.25pt;
     background-color: #F1EDD9;
-    height: 170pt;
+    height: 180pt;
     border-radius: 0px 0px 65px 65px;
     display: flex;
     align-items: center;
@@ -24,6 +24,7 @@
     font-size: 13pt;
     font-family: 'Assistant', sans-serif;
     font-weight: 600;
+
 }
 .plantpageTopBar_hbmenu {
     position: absolute;
@@ -35,7 +36,7 @@
 }
 .plantpageTopBar_header {
     display: flex;
-    margin-top: 90pt;
+    margin-top: 70pt;
     
 }
 
