@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head />
         <body>
         <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
           <Main />
           <NextScript />
         </body>

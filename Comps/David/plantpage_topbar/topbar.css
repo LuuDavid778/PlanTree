@@ -1,7 +1,7 @@
 .plantpageTopBar_card {
     width: 281.25pt;
     background-color: #F1EDD9;
-    height: 200pt;
+    height: 150pt;
     border-radius: 0px 0px 65px 65px;
     display: flex;
     align-items: center;
@@ -33,14 +33,14 @@
 }
 .plantpageTopBar_header {
     display: flex;
-    margin-top: 40pt;
+    margin-top: 90pt;
     
 }
 
 .plantpageTopbar_logo {
-    width: 10%;
-    height: 10%;
+    width: 80pt;
+    height: 120pt;
     position: absolute;
-    top: 20pt;
+    top:-25pt;
 
 }
