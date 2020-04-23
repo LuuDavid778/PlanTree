@@ -1,5 +1,6 @@
 .startpage_img_container {
-    width: 150pt;
+    width: 200pt;
+    height:auto;
 }
 
 .startpage_img {
@@ -9,6 +10,6 @@
 }
 
 .startpage_img_p {
-    margin-top: -10pt;
+
     color: green;
 }

@@ -1,8 +1,6 @@
 .CustomButton__container{
     display: flex;
-    justify-content: center;
-    position: relative;
-    top: 350pt;
+
 }
 
 .CustomButton{
@@ -17,4 +15,5 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     box-shadow: 2px 2px 5px #556F44;
+    margin: 10pt;
 }
