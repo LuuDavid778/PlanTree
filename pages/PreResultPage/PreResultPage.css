@@ -1,4 +1,12 @@
 html, body {
-    background-color: #92BC4A;
+
     margin: 0;  
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0pt;
+}
+.PreResultPage_cont {
+    background-color: #92BC4A;
 }

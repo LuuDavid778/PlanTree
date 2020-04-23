@@ -1,7 +1,7 @@
 .plantpageTopBar_card {
     width: 281.25pt;
     background-color: #F1EDD9;
-    height: 150pt;
+    height: 170pt;
     border-radius: 0px 0px 65px 65px;
     display: flex;
     align-items: center;
@@ -21,6 +21,8 @@
 .plantpageTopBar_question {
     color: #7FA53E;
     font-size: 13pt;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
 }
 .plantpageTopBar_hbmenu {
     position: absolute;

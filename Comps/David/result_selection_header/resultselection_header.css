@@ -1,4 +1,9 @@
 .resultselection_header_text {
     color: white;
     text-align: center;
+    font-family: Poppins;
+    font-size: 13pt;
+    font-weight: 500;
+    margin-top: 20pt;
+    margin-bottom: 40pt;
 }

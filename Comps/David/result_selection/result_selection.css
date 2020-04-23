@@ -4,6 +4,10 @@ flex-direction: column;
 color: white;
 background-color: #92BC4A;
 width: 300px;
+font-family: Assistant;
+font-weight: 400;
+justify-content: center;
+margin-left: 25pt
 }
 
 .resultselection_cardcont {
