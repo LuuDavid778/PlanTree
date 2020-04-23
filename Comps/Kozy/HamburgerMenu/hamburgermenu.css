@@ -11,13 +11,13 @@
 .hamburger_menu__cont {
     width: 262.5pt;
     height: 812pt;
-    background-color: #92BC4A;
+    background-color: black;
     color: white;
     font-size: 15pt;
     position: relative;
     right:-400pt;
     transition: .3s right;
-
+    display: none;
 }
 
 .hamburger_menu_individuals {
@@ -26,10 +26,9 @@
 }
 
 .hamburger_menu__menu_icon {
-    position: relative;
-    z-index: 1;
-    left: -180pt;
-    top: 20pt;
+    position: absolute;
+    top: 10pt;
+    left: 100pt;
     width: 30px;
     height:27px;
     transition: .3s left;
@@ -61,4 +60,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
