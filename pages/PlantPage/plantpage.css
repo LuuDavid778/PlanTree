@@ -11,7 +11,7 @@ html body{
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 35pt;
+    margin-top: 60pt;
 
 }
 
@@ -20,12 +20,12 @@ html body{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 30pt;
+    top: 50pt;
 }
 
 .plant_page_card_arrow {
     position: relative;
-    top: -5px;
+    top: 20px;
     left: 240px;
     width: 16px;
     height: 12px;
