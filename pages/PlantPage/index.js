@@ -10,6 +10,10 @@ import Router from 'next/router';
 const AptCard = require('../../Imgs/apartment.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
+
+function ClickPreResult() {
+    Router.push("/PreResultPage")
+}
 const PlantPage=() =>  <div>
     <div>
 
@@ -21,10 +25,10 @@ const PlantPage=() =>  <div>
         <PlantPageQuizCard icon={AptCard}></PlantPageQuizCard>
     </div>
     <div className="plant_page_card_button">
-        <Link href ="./PreResultPage"><a>
+        <span onClick = {ClickPreResult}>
         <CustomButtom width="180px" text="Next"></CustomButtom>
-        </a>
-        </Link>
+        </span>
+    
     </div>
     <div className="plant_page_card_arrow">
     <img src={NextArrow}></img>

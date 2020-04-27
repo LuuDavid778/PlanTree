@@ -5,7 +5,7 @@ const HouseCard = require('../../../Imgs/house.svg');
 
 
 const PlantPageQuizCard = ({icon, text}) => <div>
-    <img src={icon} class="plant_page_quiz_card"></img>
+    <img src={icon} className="plant_page_quiz_card"></img>
     </div>
     
     PlantPageQuizCard.defaultProps = {

@@ -6,12 +6,17 @@ import Link from 'next/link'
 import Router from 'next/router';
 import './tutorialpage.css'
 
+
+function ClickPlantPage(){
+    Router.push("/PlantPage")
+}
+
 const TutorialPage = () => <div>
     <TutorialTop></TutorialTop>
     <TutorialMiddle></TutorialMiddle>
     <ProgressCircles></ProgressCircles>
-    <div className = "button_div">
-    <Link href = "./PlantPage"><a><CustomButton text = "Next"></CustomButton></a></Link>
+    <div onClick = {ClickPlantPage} className = "button_div">
+   <CustomButton text = "Next"></CustomButton>
     </div>
 </div>
 
