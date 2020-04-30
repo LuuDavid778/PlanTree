@@ -2,36 +2,6 @@ body {
     margin: 0;
 }
 
-.tutorial__texts {
-    text-align: center;
-    position: relative;
-    top: 280pt;
-}
-
-.tutorial__texts__header {
-    font-family: Assistant;
-    color: #7FA53E;
-    font-weight: bold;
-}
-
-.tutorial__texts__description {
-    font-family: Assistant;
-    color: #556F44;
-    font-weight: 300;
-}
-
-.tutorial_title{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    position: absolute;
-    top: 60pt;
-    font-size: 20pt;
-    font-weight: 1000;
-    font-family: 'Assistant', sans-serif;
-    color: #556F44;
-}
-
 .tutorial_pg1_subtitle {
     display: flex;
     justify-content: center;

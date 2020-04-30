@@ -1,6 +1,13 @@
+.Tut_circleCont {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 95pt;
+}
+
 .tutorial__progress__circles {
     display: flex;
     justify-content: center;
-    top: 320pt;
+    top: 0;
     position: relative;
 }

@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.Tutorial02_imgCont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 200pt;
+    top: 60pt;
+    position: relative;
+}

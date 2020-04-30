@@ -1,9 +1,9 @@
 import FindPlantButton from '../../Comps/Kozy/FindPlantButton';
-import GlossaryHeader from '../../Comps/Aksel/GlossaryHeader';
+import GlossaryHeaderTerminology from '../../Comps/Aksel/GlossaryHeaderTerminology';
 import GlossaryTerm from '../../Comps/David/glossary_term';
-import './glossarypage.css';
+import './terminologyglossarypage.css';
 
-const GlossaryPage = () => <div>
+const TerminologyGlossaryPage = () => <div>
     <GlossaryTerm></GlossaryTerm>
     <GlossaryTerm></GlossaryTerm>
     <GlossaryTerm></GlossaryTerm>
@@ -14,8 +14,8 @@ const GlossaryPage = () => <div>
     <GlossaryTerm></GlossaryTerm>
     <GlossaryTerm></GlossaryTerm>
     <div className="glossary_spacer"></div>
-    <GlossaryHeader></GlossaryHeader>
+    <GlossaryHeaderTerminology></GlossaryHeaderTerminology>
     <FindPlantButton></FindPlantButton>
 </div>
 
-export default GlossaryPage;
+export default TerminologyGlossaryPage;

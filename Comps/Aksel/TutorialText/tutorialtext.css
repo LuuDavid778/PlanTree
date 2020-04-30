@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.tut_text_cont{
+    width: 100vw;
+    height: 100pt;
+    display: flex;
+    justify-content: center;
+}
+.tutorial__texts {
+    text-align: center;
+    position: absolute;
+    width: 90vw;
+    height: 50pt;
+    bottom: 150pt;
+}
+
+.tutorial__texts__header {
+    font-family: Assistant;
+    color: #7FA53E;
+    font-weight: bold;
+}
+
+.tutorial__texts__description {
+    font-family: Assistant;
+    color: #556F44;
+    font-weight: 300;
+}
