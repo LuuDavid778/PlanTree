@@ -1,15 +1,17 @@
 import React from 'react';
 import './middle.css';
+import TutorialText from '../TutorialText';
+import TutorialTitle from '../TutorialTitle';
 
 const House = require("../../../Imgs/house.svg");
 const Hand = require("../../../Imgs/hand.svg");
 const Apartment = require("../../../Imgs/apartment.svg");
 
-const TutorialMiddle = () =>{ 
+const TutorialMiddle01 = () =>{ 
     return ( <div>
         <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poppins&display=swap" rel="stylesheet"></link>
         {/* Tutorial Title */}
-    <div className="tutorial_title">Tutorial</div>
+    <TutorialTitle></TutorialTitle>
     {/* Tutorial picture goes here */}
     <div className="tutorial_imgContainer">
         <div className="tutorial_pg1_subtitle">What type of house do you live in?</div>
@@ -20,16 +22,16 @@ const TutorialMiddle = () =>{
     </div>
     </div>
             {/* texts for the tutorial */}
-        <div className="tutorial__texts">
-            <div className="tutorial__texts__header">Answer the following questions</div>
-            <div className="tutorial__texts__description">By answering these series of questions, PlanTree will help you find the plant you desire!</div>
-        </div>
+            <TutorialText Headertext="Answer the following questions" 
+                Desctext="By answering these series of questions, PlanTree will help you find
+                 the plant you desire!">
+            </TutorialText>
 </div>
     )
 }
 
-TutorialMiddle.defaultProps = {
+TutorialMiddle01.defaultProps = {
     middle:"Middle"
 }
 
-export default TutorialMiddle;
+export default TutorialMiddle01;

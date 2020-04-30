@@ -12,7 +12,7 @@ const StartPage=() =><div className="start_page_container">
 <StartPageImg></StartPageImg>
 </div>
 <div className ="star_page_button_container">
-    <Link href="./TutorialPage"><a><CustomButtom className ="star_page_button" text={"Tutorial"} bgColor={"#92BC4A"}></CustomButtom></a></Link>
+    <Link href="./TutorialPage01"><a><CustomButtom className ="star_page_button" text={"Tutorial"} bgColor={"#92BC4A"}></CustomButtom></a></Link>
     <CustomButtom className ="star_page_button" text={"Get Started"}></CustomButtom>
 
 </div>
