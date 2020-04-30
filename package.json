@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT" 
+    "start": "next start -p $PORT"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,8 @@
     "react-do": "^1.1.6",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
-    "storybook": "^5.3.18"
+    "storybook": "^5.3.18",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
