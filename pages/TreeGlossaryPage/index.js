@@ -13,7 +13,7 @@ function result01(){
 }
 
 const TreeGlossaryPage = () => <div>
-    <GlossaryTerm title="Aspidistra Elatior" placeholder={tree1} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Areca Palm" placeholder={tree1} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Dwarf Juniper Tree" placeholder={tree2} onClick={result01}></GlossaryTerm>
     <GlossaryTerm></GlossaryTerm>
     <GlossaryTerm></GlossaryTerm>
