@@ -8,12 +8,24 @@ import Link from 'next/link'
 import  React, {useState} from 'react';
 import Router from 'next/router';
 
-function ClickPreResult() {
+
+function Next() {
+    Router.push("/PreResultPage")     
+}
+
+function Back() {
     Router.push("/PlantPage2")   
 }
 
-const AptCard = require('../../Imgs/apartment.svg');
+
+
+const progress_stage3 = require("../../Imgs/progress_stage3.svg")
+const progressbar3 = require("../../Imgs/progress_bar3.svg")
+
+const ShortCard= require('../../Imgs/short_weeks.svg');
+const LongCard = require('../../Imgs/long_weeks.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
+
 
 var A = false 
 var B = false 
@@ -44,28 +56,28 @@ function cardSelectB(){
 
 
 const PlantPage = () =>  <div>
-    <PlantTopbar></PlantTopbar>
+    <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div onClick = {cardSelectA} id = "testA">
-        <PlantPageQuizCard   ></PlantPageQuizCard>
+        <PlantPageQuizCard icon={ShortCard}  ></PlantPageQuizCard>
         </div>
         <div onClick = {cardSelectB}  id = "testB">
-        <PlantPageQuizCard   icon={AptCard}></PlantPageQuizCard>
+        <PlantPageQuizCard   icon={LongCard}></PlantPageQuizCard>
         </div>
     </div>
 
     <div className="plant_page_card_button">
-        <span onClick = {ClickPreResult}>
-        <CustomButtom width="180px" text="Next"></CustomButtom>
-        </span>
-    
+        <div onClick = {Back}  className = "buttonA">
+        <CustomButtom width="131px" text="Back" ></CustomButtom>
+        </div>
+      <div className = "buttonB"  onClick = {Next}>
+        <CustomButtom width="131px" text="Next"></CustomButtom>
+        </div>
     </div>
     <div className="plant_page_card_arrow">
-    <img src={NextArrow}></img>
     </div>
     
 </div>
-
 
 
 export default PlantPage;

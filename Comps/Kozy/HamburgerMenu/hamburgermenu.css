@@ -5,19 +5,19 @@
     height: 300px;
     width:370px;
     transition: .3s right;
-
+background-color: #7FA53E;
+display: flex;
 }
 
 .hamburger_menu__cont {
     width: 262.5pt;
     height: 812pt;
-    background-color: black;
     color: white;
     font-size: 15pt;
     position: relative;
     right:-400pt;
     transition: .3s right;
-    display: none;
+    display: flex;
 }
 
 .hamburger_menu_individuals {

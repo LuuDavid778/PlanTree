@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="222" height="251" viewBox="0 0 222 251">
+  <defs>
+    <filter id="card" x="0" y="0" width="222" height="251" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1709" data-name="Group 1709" transform="translate(4 -263)">
+    <g id="card-broccoli" transform="translate(11 90.508)">
+      <g transform="matrix(1, 0, 0, 1, -15, 172.49)" filter="url(#card)">
+        <g id="card-2" data-name="card" transform="translate(45 40)" fill="#fff">
+          <path d="M 124 159.5 L 8 159.5 C 4.415891170501709 159.5 1.5 156.5841064453125 1.5 153 L 1.5 8 C 1.5 4.415891170501709 4.415891170501709 1.5 8 1.5 L 124 1.5 C 127.5841064453125 1.5 130.5 4.415891170501709 130.5 8 L 130.5 153 C 130.5 156.5841064453125 127.5841064453125 159.5 124 159.5 Z" stroke="none"/>
+          <path d="M 8 3 C 5.242996215820313 3 3 5.242996215820313 3 8 L 3 153 C 3 155.7570037841797 5.242996215820313 158 8 158 L 124 158 C 126.7570037841797 158 129 155.7570037841797 129 153 L 129 8 C 129 5.242996215820313 126.7570037841797 3 124 3 L 8 3 M 8 0 L 124 0 C 128.4182739257813 0 132 3.58172607421875 132 8 L 132 153 C 132 157.4182739257813 128.4182739257813 161 124 161 L 8 161 C 3.58172607421875 161 0 157.4182739257813 0 153 L 0 8 C 0 3.58172607421875 3.58172607421875 0 8 0 Z" stroke="none" fill="#7fa53e"/>
+        </g>
+      </g>
+      <text id="House" transform="translate(96 359.492)" fill="#707070" font-size="14" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="-0.01em"><tspan x="-21.721" y="0">House</tspan></text>
+    </g>
+    <g id="Group_1567" data-name="Group 1567" transform="translate(76 343.493)">
+      <path id="Path_982" data-name="Path 982" d="M70.3,27.847,42.079.6a2.117,2.117,0,0,0-2.955,0L10.906,27.846A2.128,2.128,0,0,0,12.384,31.5h3.75V61.291a2.128,2.128,0,0,0,2.128,2.128H33.155a2.128,2.128,0,0,0,2.128-2.128V44.27H45.921V61.291a2.128,2.128,0,0,0,2.128,2.128H62.942a2.128,2.128,0,0,0,2.128-2.128V31.5h3.75A2.128,2.128,0,0,0,70.3,27.847Zm-5.229,1.53A2.128,2.128,0,0,0,62.942,31.5V61.291H48.048V44.27a2.128,2.128,0,0,0-2.128-2.128H35.282a2.128,2.128,0,0,0-2.128,2.128V61.291H18.261V31.5a2.128,2.128,0,0,0-2.128-2.128h-3.75L40.6,2.132,68.83,29.377H65.069Z" transform="translate(-10.256 -0.001)" fill="#5e5e5e"/>
+    </g>
+  </g>
+</svg>

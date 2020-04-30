@@ -8,14 +8,14 @@ const progressbar1 = require("../../../Imgs/progress_bar1.svg")
 
 
 
-const PlantTopbar = ({question, id, progress, display }) => <div className = "plantpageTopBar">
+const PlantTopbar = ({question, id, progress, display, progress_stage }) => <div className = "plantpageTopBar">
 <div id = {id} className = "plantpageTopBar_card">
 <img id = {id}className = "plantpageTopbar_logo" src = {horizontallogo}></img>
 <div id = {id} className = "plantpageTopBar_hbmenu" ><HamburgerMenu></HamburgerMenu></div>
 
 <img id = {id} className = "plantpageTopBar_progressbar" src = {progress}></img>
 <div id = {id}  className = "plantpageTopBar_header">
-    <img className = "plantpageTopBar_pcircle" style = {{display: display}} src = {progress_stage1}></img>
+    <img className = "plantpageTopBar_pcircle" style = {{display: display}} src = {progress_stage}></img>
     <h2 className= "plantpageTopBar_question">{question}</h2>
 </div>
 </div>
@@ -25,6 +25,7 @@ PlantTopbar.defaultProps = {
 question: "What type of house do you live in?",
 id: "",
 progress: progressbar1,
-display: "block"
+display: "block",
+progress_stage: progress_stage1
 }
 export default PlantTopbar;
