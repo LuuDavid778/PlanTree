@@ -1,11 +1,15 @@
 import React from 'react'
 import './ResultTopbar.css'
-import HamburgerMenu from '../../Kozy/HamburgerMenu'
+import Router from 'next/router';
+import HamburgerMenu from '../../David/hamburger_menu'
 const HorizontalLogo = require('../../../Imgs/horizontal_logo.svg');
+function HomePage(){
+Router.push("/")
+}
 const ResultTopbar = () => <div>
-<div className="tutorial__topbar">
-    <img src={HorizontalLogo} className="tutorial__logo"></img>
-</div>
+      
+    <HamburgerMenu></HamburgerMenu>
+    <img src={HorizontalLogo} onClick = {HomePage} className="tutorial__logo"></img>
 </div>
 
 export default ResultTopbar; 

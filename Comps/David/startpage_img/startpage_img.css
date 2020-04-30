@@ -1,12 +1,14 @@
 .startpage_img_container {
     width: 200pt;
     height:auto;
+padding-right: 10pt;
 }
 
 .startpage_img {
     align-items: center;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    margin-top: 20pt;
 }
 
 .startpage_img_p {

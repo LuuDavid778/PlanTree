@@ -6,7 +6,7 @@ import './startpage.css';
 import './app.css';
 
 function ClickTutorial(){
-    Router.push("/TutorialPage")
+    Router.push("/TutorialPage01")
 }
 
 function ClickStarted() {

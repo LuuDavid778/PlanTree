@@ -1,0 +1,48 @@
+
+.hamburger_menu_cont {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+  
+}
+.hamburger_menu_div {
+    height: 667px;
+    width: 237px;
+    background-color: #92BC4A;
+    padding-left: 25pt;
+    padding-top: 60pt;
+}
+
+.hamburger_menu_main {
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger_menu_icon{
+    position: absolute;
+    top: 20pt;
+}
+.hamburger_menu_main_div {
+    display: flex;
+    font-family: Poppins;
+    color: white;
+    font-size: 10pt;
+    align-items: center;
+
+
+}
+
+.hamburger_menu_main_div img {
+    width: 20pt;
+    height: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10pt;
+}
+
+#hamburger_menu_icon_bar {
+    position: absolute;
+right: 20pt;
+top: 20pt;
+}

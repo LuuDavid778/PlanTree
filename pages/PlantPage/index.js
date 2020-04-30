@@ -3,7 +3,7 @@ import './plantpage.css';
 import PlantTopbar from "../../Comps/David/plantpage_topbar";
 import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
-import HamburgerMenu from "../../Comps/Kozy/HamburgerMenu";
+import HamburgerMenu from "../../Comps/David/hamburger_menu";
 import Link from 'next/link'
 import  React, {useState} from 'react';
 import Router from 'next/router';
@@ -11,6 +11,7 @@ import Router from 'next/router';
 function ClickPreResult() {
     Router.push("/PlantPage2")   
 }
+
 
 const AptCard = require('../../Imgs/apartment.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');

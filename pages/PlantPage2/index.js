@@ -3,7 +3,6 @@ import './plantpage.css';
 import PlantTopbar from "../../Comps/David/plantpage_topbar";
 import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
-import HamburgerMenu from "../../Comps/Kozy/HamburgerMenu";
 import Link from 'next/link'
 import  React, {useState} from 'react';
 import Router from 'next/router';
