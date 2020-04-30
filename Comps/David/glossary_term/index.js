@@ -3,9 +3,9 @@ import '../glossary_term/term.css'
 
 const rightarrow = require("../../../Imgs/right_arrow.svg")
 const imgplaceholder = require("../../../Imgs/trowel.svg")
-const GlossaryTerm = ({title, placeholder})=> <div className="glossaryTerm_container">
+const GlossaryTerm = ({title, placeholder, onClick})=> <div className="glossaryTerm_container">
 
-<div className = "term_cont">
+<div className = "term_cont" onClick={onClick}>
 <div className = "term_leftsect">
     <img class = "term_img" src = {placeholder}></img>
     <h2>{title}</h2>
