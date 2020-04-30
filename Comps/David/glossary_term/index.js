@@ -7,7 +7,7 @@ const GlossaryTerm = ({title, placeholder, onClick})=> <div className="glossaryT
 
 <div className = "term_cont" onClick={onClick}>
 <div className = "term_leftsect">
-    <img class = "term_img" src = {placeholder}></img>
+    <img className = "term_img" src = {placeholder}></img>
     <h2>{title}</h2>
 </div>
 <div className = "term_rightsect">
