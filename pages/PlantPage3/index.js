@@ -55,7 +55,7 @@ function cardSelectB(){
 
 
 const PlantPage = () =>  <div>
-    <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "What kind of plant do you want?"></PlantTopbar>
+    <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div onClick = {cardSelectA} id = "testA">
         <PlantPageQuizCard icon={ShortCard}  ></PlantPageQuizCard>
