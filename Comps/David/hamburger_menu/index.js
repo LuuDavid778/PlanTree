@@ -54,13 +54,15 @@ menu_state = false;
 </div>
 
 <div className = "hamburger_menu_main_div" onClick = {()=>{
-
+Router.push("/PlantPage")
 }}>
     <img src = {FindPlantIcon}></img>
     <h2>Find Your Plant</h2>
 </div>
 
-<div className = "hamburger_menu_main_div">
+<div className = "hamburger_menu_main_div" onClick = {()=>{
+Router.push("/GlossaryPage")
+}}>
     <img src = {GlossaryIcon}></img>
     <h2>Glossary</h2>
 </div>
