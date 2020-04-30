@@ -2,8 +2,8 @@ import React from 'react'
 import '../glossary_term/term.css'
 
 const rightarrow = require("../../../Imgs/right_arrow.svg")
-const placeholder = require("../../../Imgs/trowel.svg")
-const GlossaryTerm = ({title})=> <div className="glossaryTerm_container">
+const imgplaceholder = require("../../../Imgs/trowel.svg")
+const GlossaryTerm = ({title, placeholder})=> <div className="glossaryTerm_container">
 
 <div className = "term_cont">
 <div className = "term_leftsect">
@@ -18,7 +18,8 @@ const GlossaryTerm = ({title})=> <div className="glossaryTerm_container">
 </div>
 
 GlossaryTerm.defaultProps = {
-    title: "Plant/Term Name"
+    title: "Plant/Term Name",
+    placeholder: imgplaceholder
 }
 
 export default GlossaryTerm;

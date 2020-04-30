@@ -19,12 +19,14 @@
     display: flex;
     width: 80%;
     color: #748A9D;
-    
+    align-items: center;
 }
 
 .term_img {
     margin-left: 10pt;
     padding-right: 10pt;
+    max-width: 28pt;
+    max-height: 40pt;
 }
 
 .term_rightsect {

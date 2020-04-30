@@ -28,6 +28,7 @@
     "react": "^16.13.1",
     "react-do": "^1.1.6",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
     "storybook": "^5.3.18"
   },
   "devDependencies": {

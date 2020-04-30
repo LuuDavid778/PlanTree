@@ -20,10 +20,10 @@ const ResultPage = () => <div className = "ResultPage_cont">
 
 <PlantName></PlantName>
 <div className = "ResultScreen_qf_cont">
-    <div class = "ResultScreen_qf_boxes">
+    <div className = "ResultScreen_qf_boxes">
 <ResultScreenQuickFacts></ResultScreenQuickFacts>
 </div>
-<div class = "ResultScreen_qf_boxes">
+<div className = "ResultScreen_qf_boxes">
 <ResultScreenQuickFacts></ResultScreenQuickFacts>
 </div>
 <ResultScreenQuickFacts></ResultScreenQuickFacts>

@@ -13,16 +13,22 @@ const selectioncard3 = require("../../Imgs/short_weeks.svg")
 const selectioncard4 = require("../../Imgs/cold.svg")
 
 const progressbar5 = require("../../Imgs/progress_bar5.svg")
+
+function ClickResult() {
+    Router.push("/ResultPage")
+}
 const PreResultPage = () => <div className = "PreResultPage_cont">  
+
+
+
 
 <PlantTopbar id = "test" question = "Completed!" progress = {progressbar5} display = "none"></PlantTopbar>
 <PlantName></PlantName> 
+<span onClick = {ClickResult}>
 <div className = "PreResultPage_button">
-    <Link href ="./ResultPage"><a>
 <CustomButtom text ="View Results" width = "150px" height = "30px" fontSize = "13pt" ></CustomButtom>
-</a>
-</Link>
     </div>
+    </span>
 <div className = "selections">
 <ResultSelection></ResultSelection>
 <ResultSelection image = {selectioncard2}  ></ResultSelection>

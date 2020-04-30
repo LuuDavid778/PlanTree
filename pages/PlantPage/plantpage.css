@@ -30,3 +30,12 @@ html body{
     width: 16px;
     height: 12px;
 }
+
+#testA {
+    transition: background-Color 0.3s;
+}
+
+
+#testB {
+    transition: background-Color 0.3s;
+}

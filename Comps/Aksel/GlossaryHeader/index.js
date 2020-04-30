@@ -1,8 +1,13 @@
 import React from 'react';
 import './GlossaryHeader.css';
-
+import Router from 'next/router'
 const information = require('../../../Imgs/information.svg');
 const glossary = require('../../../Imgs/glossary.svg');
+
+function ClickHeadTutorial(){
+    Router.push("/TutorialPage")
+}
+
 
 const GlossaryHeader = () => <div className="glossaryHeader_container">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poppins&display=swap" rel="stylesheet"></link>
@@ -18,7 +23,8 @@ const GlossaryHeader = () => <div className="glossaryHeader_container">
             <img className="glossary_icon" src={glossary}></img>
             Glossary
         </div>
-        <div className="information_icon_container">
+       
+        <div onClick = {ClickHeadTutorial} className="information_icon_container">
             <img className="information_icon" src={information}></img>
             Tutorial
         </div>

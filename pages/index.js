@@ -5,15 +5,21 @@ import Router from 'next/router';
 import './startpage.css';
 import './app.css';
 
+function ClickTutorial(){
+    Router.push("/TutorialPage01")
+}
 
+function ClickStarted() {
+    Router.push("/PlantPage")
+}
 
 const StartPage=() =><div className="start_page_container">
 <div className="start_page_logo">
 <StartPageImg></StartPageImg>
 </div>
 <div className ="star_page_button_container">
-    <Link href="./TutorialPage"><a><CustomButtom className ="star_page_button" text={"Tutorial"} bgColor={"#92BC4A"}></CustomButtom></a></Link>
-    <CustomButtom className ="star_page_button" text={"Get Started"}></CustomButtom>
+    <span onClick = {ClickTutorial} ><CustomButtom className ="star_page_button" text={"Tutorial"} bgColor={"#92BC4A"}></CustomButtom></span>
+    <span onClick = {ClickStarted}><CustomButtom className ="star_page_button" text={"Get Started"}></CustomButtom></span>
 
 </div>
 </div>

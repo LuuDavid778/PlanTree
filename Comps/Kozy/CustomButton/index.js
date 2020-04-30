@@ -1,9 +1,9 @@
 import React from 'react';
 import "./custombutton.css";
 
-const CustomButton = ({text, bgColor, width, height, fontSize}) => <div>
+const CustomButton = ({text, bgColor, width, height, fontSize, onClick}) => <div>
     <div className="CustomButton__container">
-        <div className="CustomButton" style={{backgroundColor: bgColor, width: width, height:height, fontSize: fontSize}} >{text}</div>
+        <div className="CustomButton" onClick={onClick} style={{backgroundColor: bgColor, width: width, height:height, fontSize: fontSize}} >{text}</div>
     </div>
 </div>
 
