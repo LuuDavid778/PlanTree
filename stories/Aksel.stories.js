@@ -10,7 +10,7 @@ export default {
     title: 'Aksel',
   };
 
-  export const MyTutorialMiddle = () => <TutorialMiddle />
+  export const MyTutorialMiddle = () => <TutorialMiddle01 />
   export const MyBackandNextButtons = () => <BackandNextButtons />
   export const MyResultScreenTitle = () => <ResultScreenTitle />
   export const MyResultScreenImg = () => <ResultScreenImg />
