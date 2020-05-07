@@ -22,3 +22,14 @@ body {
     font-family: 'Assistant', sans-serif;
     font-size: 10pt;
 }
+
+.quickFact_box_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quickFact_box_icons_mid {
+    margin-left: 5pt;
+    margin-right: 5pt;
+}

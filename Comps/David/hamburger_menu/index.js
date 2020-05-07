@@ -27,6 +27,7 @@ return <div>
    
 
 }} src = {HamburgerIcon}></img>
+<div className = "hamburger_menu_wrapper">
 <div className = "hamburger_menu_cont" style = {{left:menu_position}}> 
 
 <div className = "hamburger_menu_div">
@@ -80,7 +81,7 @@ Router.push("/GlossaryPage")
 </div>
 </div>
 </div>
-
+</div>
 }
 HamburgerMenu.defaultProps = {
     left: "-300pt"

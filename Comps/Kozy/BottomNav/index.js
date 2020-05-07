@@ -11,9 +11,9 @@ const BottomNav = ({}) => <div className="bottomNav_container">
     <div className="bottom_nav__cont">
         <span onClick = {RestartQuiz}>
     <div className="bottom_nav__button">
-    <div className="buttom_nab__button_cont">
+    <div className="buttom_nav__button_cont">
         <img src={ReduIcon} className="buttom_nav__button_redu_icon"></img>
-        <div>Redo</div>
+        <div id = "bottom_nav__button_p">Redo</div>
     </div>
     </div>
     </span>
