@@ -1,9 +1,17 @@
 
 .hamburger_menu_cont {
     position: absolute;
-    overflow: hidden;
     z-index: 1;
+    transition: left 0.3s;
+
   
+}
+
+.hamburger_menu_wrapper {
+    position: relative;
+
+
+ 
 }
 .hamburger_menu_div {
     height: 667px;

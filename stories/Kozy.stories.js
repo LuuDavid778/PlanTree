@@ -8,7 +8,6 @@ import ResultTexts from '../Comps/Kozy/ResultTexts';
 import BottomNav from '../Comps/Kozy/BottomNav';
 import FindPlantButton from '../Comps/Kozy/FindPlantButton';
 
-
 export default {
     title: "Kozy's Components",
     component: CustomButton

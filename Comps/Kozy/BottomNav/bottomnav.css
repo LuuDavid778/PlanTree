@@ -33,10 +33,37 @@
 .buttom_nav__button_redu_icon {
     width: 20pt;
     height: 20pt;
-    padding-left:3pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
+#bottom_nav__button_p {
+    font-family: Poppins;
+}
 .buttom_nab__button_cont {
     align-content: center;
 }
+
+.buttom_nav__button_cont {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.buttom_nav__button_redu_icon {
+    animation: rotation 7s infinite linear;
+    
+ }
+
+ @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
