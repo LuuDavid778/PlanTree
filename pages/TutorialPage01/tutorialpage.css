@@ -2,3 +2,8 @@
     position: absolute;
     bottom: 20pt;
 }
+
+.tutorial_effect_1{
+    opacity: 0;
+    transition: 1s;
+}

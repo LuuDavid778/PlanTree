@@ -6,6 +6,9 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage01/tutorialpage.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import React, {useState, useEffect} from "react";
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
+import "./TutorialPage02.css";
 
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
@@ -14,14 +17,25 @@ function Tutorial_3(){
     Router.push("/TutorialPage03")
 }
 
-const TutorialPage02 = () => <div>
+const TutorialPage02 = () => {
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            document.querySelector(".tutorial_effect_2").style.opacity = 100;
+        },50)
+    }, []);
+
+return<div>
+    <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
-    <TutorialMiddle02_06></TutorialMiddle02_06>
+    <div className="tutorial_effect_2">
+        <TutorialMiddle02_06></TutorialMiddle02_06>
+        <TutorialText Headertext="What type of house do you live in?" Desctext="Some plants need to be kept indoors, while others prefer the outside."></TutorialText>
+    </div>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
     <div className = "button_div">
     <CustomButton text = "Next" onClick={Tutorial_3}></CustomButton>
     </div>
-    <TutorialText Headertext="What type of house do you live in?" Desctext="Some plants need to be kept indoors, while others prefer the outside."></TutorialText>
 </div>
-
+}
 export default TutorialPage02;

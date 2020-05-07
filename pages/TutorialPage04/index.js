@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage01/tutorialpage.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
 const progress_circles4 = require("../../Imgs/progress_circles4.svg");
 const tutimg04 = require("../../Imgs/watering_can.svg");
@@ -15,6 +16,7 @@ function Tutorial_5(){
 }
 
 const TutorialPage04 = () => <div>
+    <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg04}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles4}></ProgressCircles>

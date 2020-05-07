@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage01/tutorialpage.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
 function Quiz1(){
     Router.push("/PlantPage")
@@ -15,6 +16,7 @@ const progress_circles6 = require("../../Imgs/progress_circles6.svg");
 const tutimg06 = require("../../Imgs/leaf_card.svg");
 
 const TutorialPage06 = () => <div>
+    <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg06}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles6}></ProgressCircles>
