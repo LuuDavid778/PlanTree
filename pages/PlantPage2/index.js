@@ -19,8 +19,8 @@ function Back() {
 const progress_stage2 = require("../../Imgs/progress_stage2.svg")
 const progressbar2 = require("../../Imgs/progress_bar2.svg")
 
-const FlowerCard = require('../../Imgs/flowering_plant.svg');
-const TreeCard = require('../../Imgs/tree.svg');
+const FlowerCard = require('../../Imgs/flowering_icon.svg');
+const TreeCard = require('../../Imgs/tree_icon.svg');
 
 
 
@@ -52,14 +52,17 @@ function cardSelectB(){
 }
 
 
-const PlantPage = () =>  <div>
+const PlantPage = () =>  
+
+<div>
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div onClick = {cardSelectA} id = "testA">
-        <PlantPageQuizCard icon={FlowerCard}  ></PlantPageQuizCard>
+        <PlantPageQuizCard icon={FlowerCard}  text={"Flowring Plant"}></PlantPageQuizCard>
         </div>
+        <div className="spacer"></div>
         <div onClick = {cardSelectB}  id = "testB">
-        <PlantPageQuizCard   icon={TreeCard}></PlantPageQuizCard>
+        <PlantPageQuizCard   icon={TreeCard} text={"Tree"}></PlantPageQuizCard>
         </div>
     </div>
 

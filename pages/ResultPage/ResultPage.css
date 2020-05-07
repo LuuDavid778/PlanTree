@@ -7,3 +7,7 @@
     margin-bottom: 15pt;
 }
 
+.ResultPage_cont{
+    opacity: 0%;
+    transition: opacity 0.6s;
+}

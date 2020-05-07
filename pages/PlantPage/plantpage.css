@@ -48,3 +48,9 @@ html, body{
 #testB {
     transition: background-Color 0.3s;
 }
+
+.spacer {
+    width:30pt;
+    height:30pt;
+ 
+}

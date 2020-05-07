@@ -7,11 +7,23 @@ import ResultCard from '../../Comps/David/ResultCard'
 import PlantName from '../../Comps/David/resultpage_plantname'
 import ResultRestart from '../../Comps/David/result_restart'
 import './ResultPage.css'
+import  {useEffect} from 'react';
 
 
 const waterdrop = require("../../Imgs/water_drop.svg")
 const trowel = require("../../Imgs/trowel.svg")
-const ResultPage = () => <div className = "ResultPage_cont">
+
+
+const ResultPage = () => {
+
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".ResultPage_cont").style.opacity = "100%" 
+        },100)
+
+    },[]);
+
+return <div className = "ResultPage_cont">
 <ResultTopBar></ResultTopBar>
 <ResultScreenImg></ResultScreenImg>
 <ResultScreenTitle></ResultScreenTitle>
@@ -36,6 +48,6 @@ const ResultPage = () => <div className = "ResultPage_cont">
 
 <ResultTexts></ResultTexts>
 </div>
-
+}
 
 export default ResultPage; 

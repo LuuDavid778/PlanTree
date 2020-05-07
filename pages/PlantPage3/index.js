@@ -21,8 +21,8 @@ function Back() {
 const progress_stage3 = require("../../Imgs/progress_stage3.svg")
 const progressbar3 = require("../../Imgs/progress_bar3.svg")
 
-const ShortCard= require('../../Imgs/short_weeks.svg');
-const LongCard = require('../../Imgs/long_weeks.svg');
+const ShortCard= require('../../Imgs/short_weeks_icon.svg');
+const LongCard = require('../../Imgs/long_weeks_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
 
@@ -58,10 +58,11 @@ const PlantPage = () =>  <div>
     <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div onClick = {cardSelectA} id = "testA">
-        <PlantPageQuizCard icon={ShortCard}  ></PlantPageQuizCard>
+        <PlantPageQuizCard icon={ShortCard} text={"1-2 Weeks"} ></PlantPageQuizCard>
         </div>
+        <div className="spacer"></div>
         <div onClick = {cardSelectB}  id = "testB">
-        <PlantPageQuizCard   icon={LongCard}></PlantPageQuizCard>
+        <PlantPageQuizCard   icon={LongCard} text={"2-3 Weeks"}></PlantPageQuizCard>
         </div>
     </div>
 
