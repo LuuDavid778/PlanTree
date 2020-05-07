@@ -3,10 +3,10 @@
     position: absolute;
     overflow: hidden;
     z-index: 1;
-  
+    top: 0;
 }
 .hamburger_menu_div {
-    height: 667px;
+    height: 100vh;
     width: 237px;
     background-color: #92BC4A;
     padding-left: 25pt;

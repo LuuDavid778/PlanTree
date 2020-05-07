@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './GlossaryHeaderTerminology.css';
 import Router from 'next/router';
+import HamburgerMenu from '../../David/hamburger_menu'
 
 const information = require('../../../Imgs/information.svg');
 const glossary = require('../../../Imgs/glossary.svg');
@@ -21,7 +22,10 @@ function ClickHeadTutorial(){
     Router.push("/TutorialPage01")
 }
 
-const GlossaryHeaderTree = () => <div className="glossaryHeader_container">
+const GlossaryHeaderTree = () => {
+    const [right, setRight,] = useState("300pt")
+
+return <div className="glossaryHeader_container">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poppins&display=swap" rel="stylesheet"></link>
     <div className="glossaryHeader_bot">
         <div className="glossary_button_container">
@@ -34,12 +38,9 @@ const GlossaryHeaderTree = () => <div className="glossaryHeader_container">
         <div className="glossary_icon_container">
             <img className="glossary_icon" src={glossary}></img>
             Glossary
-        </div>
-        <div onClick = {ClickHeadTutorial} className="information_icon_container">
-            <img className="information_icon" src={information}></img>
-            Tutorial
+            <HamburgerMenu right = {right}></HamburgerMenu>
         </div>
     </div>
 </div>
-
+}
 export default GlossaryHeaderTree;

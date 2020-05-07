@@ -9,6 +9,7 @@ import TutorialText from '../../Comps/Aksel/TutorialText';
 
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
+
 function Tutorial_3(){
     Router.push("/TutorialPage03")
 }
@@ -20,7 +21,7 @@ const TutorialPage02 = () => <div>
     <div className = "button_div">
     <CustomButton text = "Next" onClick={Tutorial_3}></CustomButton>
     </div>
-    <TutorialText Headertext="What type of house do you live in?" Desctext="Depending on what type of house you live in, a plant will have different growing conditions."></TutorialText>
+    <TutorialText Headertext="What type of house do you live in?" Desctext="Some plants need to be kept indoors, while others prefer the outside."></TutorialText>
 </div>
 
 export default TutorialPage02;

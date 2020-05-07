@@ -21,7 +21,7 @@ const TutorialPage04 = () => <div>
     <div className = "button_div">
     <CustomButton text = "Next" onClick={Tutorial_5}></CustomButton>
     </div>
-    <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants may require frequent watering while others will require less. We'll recommend you a plant based on these watering preferences."></TutorialText>
+    <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants require frequent watering while others require less. We will recommend you a plant based on your watering preference."></TutorialText>
 </div>
 
 export default TutorialPage04;
