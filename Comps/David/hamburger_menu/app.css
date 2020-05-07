@@ -1,7 +1,7 @@
 
 .hamburger_menu_cont {
     position: absolute;
-    overflow: hidden;
+    overflow    : hidden;
     z-index: 1;
     transition: left 0.3s;
   
