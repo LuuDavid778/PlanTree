@@ -5,7 +5,7 @@ import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
 import HamburgerMenu from "../../Comps/David/hamburger_menu";
 import Link from 'next/link'
-import  React, {useState} from 'react';
+import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
 
 function ClickPreResult() {
@@ -13,7 +13,7 @@ function ClickPreResult() {
 }
 
 
-const AptCard = require('../../Imgs/apartment.svg');
+const AptCard = require('');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
 var A = false 

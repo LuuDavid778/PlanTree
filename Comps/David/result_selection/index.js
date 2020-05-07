@@ -1,7 +1,7 @@
 import React from 'react'
 import '../result_selection/result_selection.css'
 
-const selectioncard = require("../../../Imgs/apartment.svg")
+const selectioncard = require("../../../Imgs/apt_icon.svg")
 
 const ResultSelection = ({question,image})=> <div className = "resultselection_cont">
 
