@@ -1,5 +1,5 @@
 import React from 'react';
-import TutorialMiddle from '../Comps/Aksel/TutorialMiddle';
+import TutorialMiddle01 from '../Comps/Aksel/TutorialMiddle01';
 import BackandNextButtons from '../Comps/Aksel/BackandNextButtons';
 import ResultScreenTitle from '../Comps/Aksel/ResultScreenTitle';
 import ResultScreenImg from '../Comps/Aksel/ResultScreenImg';

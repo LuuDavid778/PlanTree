@@ -3,6 +3,7 @@
     position: absolute;
     overflow: hidden;
     z-index: 1;
+    transition: left 0.3s;
   
 }
 .hamburger_menu_div {

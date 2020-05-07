@@ -22,12 +22,12 @@ const [menu_position, setMenu] = useState("300pt")
 
 return <div>
 <img id = "hamburger_menu_icon_bar" onClick = {()=> {
-        setMenu("0pt")
+        setMenu("100pt")
         menu_state = true;
    
 
 }} src = {HamburgerIcon}></img>
-<div className = "hamburger_menu_cont" style = {{right:menu_position}}> 
+<div className = "hamburger_menu_cont" style = {{left:menu_position}}> 
 
 <div className = "hamburger_menu_div">
 <img id = "hamburger_menu_icon" onClick = {()=>{
@@ -83,6 +83,6 @@ Router.push("/GlossaryPage")
 
 }
 HamburgerMenu.defaultProps = {
-    right: "300pt"
+    left: "-300pt"
 }
 export default HamburgerMenu;

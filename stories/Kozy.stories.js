@@ -7,7 +7,7 @@ import PlantPageQuizCardTemp from '../Comps/Kozy/PlantPageQuizCardTemp';
 import ResultTexts from '../Comps/Kozy/ResultTexts';
 import BottomNav from '../Comps/Kozy/BottomNav';
 import FindPlantButton from '../Comps/Kozy/FindPlantButton';
-import HamburgerMenu from '../Comps/Kozy/HamburgerMenu';
+import HamburgerMenu from '../Comps/David/hamburger_menu';
 
 export default {
     title: "Kozy's Components",
