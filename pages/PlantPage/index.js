@@ -13,7 +13,7 @@ function ClickPreResult() {
 }
 
 
-const AptCard = require('');
+const AptCard = require('../../Imgs/apt_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
 var A = false 
