@@ -13,12 +13,16 @@ function Tutorial_3(){
     Router.push("/TutorialPage03")
 }
 
+function BackTo01() {
+    Router.push("/TutorialPage01")   
+}
+
 const TutorialPage02 = () => <div>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
     <div className = "button_div_page02">
-    <CustomButton text = "Back" onClick={Tutorial_3} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <CustomButton text = "Back" onClick={BackTo01} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
     <div className="button_spacer02"></div>
     <CustomButton text = "Next" onClick={Tutorial_3} width="120px" fontSize="14pt"></CustomButton>
     </div>

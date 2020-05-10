@@ -12,7 +12,8 @@ CustomButton.defaultProps = {
     bgColor: "#7FA53E",
     width: "300px",
     height: "50px",
-    fontSize: "25px"
+    fontSize: "25px",
+    onClick: "",
     
     
 }
