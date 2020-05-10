@@ -7,6 +7,7 @@ import HamburgerMenu from "../../Comps/David/hamburger_menu";
 import Link from 'next/link'
 import  React, {useState, useEffect} from 'react'; 
 import Router from 'next/router';
+import {data, ChangeData} from "../data"
 
 function ClickPreResult() {
     Router.push("/PlantPage2")   
@@ -18,32 +19,9 @@ function ClickPreResult() {
 const AptCard = require('../../Imgs/apartment.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
-var A = false 
-var B = false 
-function cardSelectA(){
-    if (A === false ){
-    B = false 
-    document.getElementById("testB").style.backgroundColor = "";
-    document.getElementById("testA").style.backgroundColor = "#7FA53E";
 
-    A = true;
-} else {
-    document.getElementById("testA").style.backgroundColor = ""
-    A = false;
-}
-}
 
-function cardSelectB(){
-    if (B === false ){
-        A = false 
-        document.getElementById("testA").style.backgroundColor = "";
-    document.getElementById("testB").style.backgroundColor = "#7FA53E";
-    B = true;
-} else {
-    document.getElementById("testB").style.backgroundColor = ""
-    B = false;
-}
-}
+
 
 
 const PlantPage = () => {   // curly bracket should be inserted beginning and end
