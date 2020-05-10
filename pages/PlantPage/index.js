@@ -10,22 +10,26 @@ import Router from 'next/router';
 import {data, ChangeData} from "../data" 
 
 
-function makeSelection(a){ 
-    if(a = 1 )
+
+var selectedstateA = false
+var selectedstateB = false
+function makeSelection(n){ 
+    console.log(n)
+    if(n === 1 )
     ChangeData({
-        Question_1: "LMFAOXD"
+        Question_1: "House"
     })
-    else if (a = 2) {
+    else if (n === 2) {
         ChangeData({
             Question_1: "Apartment"
         })
     }
 
-    document.querySelector(".selection_A").style.color = "red"
-    console.log(data.Question_1)
+ console.log(data.Question_1)
 }
 function ClickPreResult() {
     Router.push("/PlantPage2")   
+    console.log(data.Question_1 )
 }
 
 // FIRST STEP TO CREATING page-load transition, import useEffect from react (line 8)
@@ -33,12 +37,6 @@ function ClickPreResult() {
 // javascript within the page. 
 const AptCard = require('../../Imgs/apt_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
-    
-
-
-
-
-
 const PlantPage = () => {   // curly bracket should be inserted beginning and end
     // useEffect will basically use any javascript provided in it's parameters when the page is 
     // fully loaded, such as the one provided below.
@@ -53,12 +51,35 @@ const PlantPage = () => {   // curly bracket should be inserted beginning and en
     // we will have to "return <div>" due to react not being able to use html (line 57)
     return <div className = "plant_page"> <div className ="plant_page_transition-wrap"><PlantTopbar></PlantTopbar> 
     <div className="plant_page_card_container">
-        <div className = "selection_A" onClick = {makeSelection}>
+        <div className = "selection1" onClick = {()=>{
+            makeSelection(1)
+            
+            if (selectedstateA === false){
+                document.querySelector(".selection2").style.border = ""
+                document.querySelector(".selection1").style.border = "#7FA53E solid 3px"
+                selectedstateA = true 
+                selectedstateB = false 
+            } else if (selectedstateA === true) {
+                document.querySelector(".selection1").style.border = ""
+                selectedstateA = false
+            }
+        }}>
         <PlantPageQuizCard></PlantPageQuizCard>
         </div>
-        <div className="spacer"></div>
-        <div className = "selection_B" onClick = {makeSelection}>
-        <PlantPageQuizCard   icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
+        <div className = "selection2" onClick = {()=>{
+            makeSelection(2)
+            if (selectedstateB === false){
+                document.querySelector(".selection1").style.border = ""
+                document.querySelector(".selection2").style.border = "#7FA53E solid 3px"
+                selectedstateB = true 
+                selectedstateA = false
+            } else if (selectedstateB === true) {
+                document.querySelector(".selection2").style.border = ""
+                selectedstateB = false
+            }
+
+        }}>
+        <PlantPageQuizCard  icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
         </div>
     </div>
 

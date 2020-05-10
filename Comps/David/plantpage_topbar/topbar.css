@@ -43,9 +43,9 @@
 }
 
 .plantpageTopbar_logo {
-    width: 80pt;
-    height: 120pt;
+width: 115px;
+height: auto;
     position: absolute;
-    top:-28pt;
+top: 10pt;
     font-family: 'Assistant', sans-serif;
 }
