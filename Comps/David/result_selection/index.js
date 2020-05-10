@@ -7,7 +7,7 @@ const ResultSelection = ({question,image})=> <div className = "resultselection_c
 
 <div className = "resultselection_question">{question}</div>
 <div className = "resultselection_cardcont"> 
-    <p>You chose:</p>
+    <p className="resultselection_card_you_chose">You chose:</p>
     <img src={image}></img>
     </div>
 </div>

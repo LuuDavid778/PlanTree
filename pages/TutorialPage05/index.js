@@ -18,8 +18,10 @@ const TutorialPage05 = () => <div>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg05}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles5}></ProgressCircles>
-    <div className = "button_div">
-    <CustomButton text = "Next" onClick={Tutorial_6}></CustomButton>
+    <div className = "button_div_page02">
+    <CustomButton text = "Back" onClick={Tutorial_6} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <div className="button_spacer02"></div>
+    <CustomButton text = "Next" onClick={Tutorial_6} width="120px" fontSize="14pt"></CustomButton>
     </div>
     <TutorialText Headertext="What's the temperature like in your area?" Desctext="Temperature is a key factor in plant growth and development, so it's crucial that plants are grown in the right temperature."></TutorialText>
 </div>

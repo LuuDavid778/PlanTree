@@ -4,15 +4,38 @@
     position: absolute;
     top: 550pt;
     font-family: Poppins;
-    margin-left: 20pt;
+    margin-left: 18pt;
+    font-size: 10pt;
  
 }
 
-.plant_texts__interesting_facts {
-    width: 250pt;
+.plant_texts__discription {
+    width: 230pt;
+    height: auto;
+    padding:8pt;
+    border: solid white 1pt;
+    border-radius: 10pt;
+    margin-bottom: 30pt;
+
 }
 
-.plant_texts__discription {
-    width: 250pt;
+.interesting_facts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 230pt;
+    height: auto;
+    padding:8pt;
+    border: solid white 1pt;
+    border-radius: 10pt;
+    
+}
+
+.plant_texts__interesting_facts {
+    width: 230pt;
+    height: auto;
+    padding:8pt;
+    margin-top: -15pt;
 
 }

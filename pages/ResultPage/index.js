@@ -35,7 +35,9 @@ return <div className = "ResultPage_cont">
 </ResultCard>
 </div>
 
+
 <PlantName PlantName = "Areca Palm"></PlantName>
+
 <div className = "ResultScreen_qf_cont">
     <div className = "ResultScreen_qf_boxes">
 <ResultScreenQuickFacts icona ={waterdrop} iconb ={waterdrop} iconc ={waterdrop} displaya = "block" displayb = "block" displayc = "block" text = "Needs to be watered once/week"></ResultScreenQuickFacts>

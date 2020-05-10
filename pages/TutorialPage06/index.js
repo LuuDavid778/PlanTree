@@ -14,8 +14,10 @@ const TutorialPage06 = () => <div>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg06}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles6}></ProgressCircles>
-    <div className = "button_div">
-    <Link href = "./PlantPage"><a><CustomButton text = "Get started"></CustomButton></a></Link>
+    <div className = "button_div_page02">
+    <CustomButton text = "Back" width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <div className="button_spacer02"></div>
+    <Link href = "./PlantPage"><a><CustomButton text = "Get started" width="120px" fontSize="13pt"></CustomButton></a></Link>
     </div>
     <TutorialText Headertext="View your results and start growing!" Desctext="After you've answered all the questions, we'll provide you the best suited plant or tree. You'll then be able to learn more about the plant and how to grow it."></TutorialText>
 </div>

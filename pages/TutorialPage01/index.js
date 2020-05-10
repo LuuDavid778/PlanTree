@@ -16,7 +16,7 @@ const TutorialPage01 = () => <div>
     <TutorialMiddle01></TutorialMiddle01>
     <ProgressCircles></ProgressCircles>
     <div className = "button_div">
-    <CustomButton text = "Next" onClick={Tutorial_2} ></CustomButton>
+    <CustomButton text = "Next" onClick={Tutorial_2} fontSize="16pt"></CustomButton>
     </div>
 </div>
 
