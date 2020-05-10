@@ -41,12 +41,14 @@ html, body{
 }
 
 #testA {
-    transition: background-Color 0.3s;
+    transition: border 0.3s;
+    border-radius: 10px;
 }
 
 
 #testB {
-    transition: background-Color 0.3s;
+    transition: border 0.3s;
+    border-radius: 10px;
 }
 
 .spacer {

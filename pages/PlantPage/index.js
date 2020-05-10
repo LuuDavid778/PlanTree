@@ -23,12 +23,13 @@ var B = false
 function cardSelectA(){
     if (A === false ){
     B = false 
-    document.getElementById("testB").style.backgroundColor = "";
-    document.getElementById("testA").style.backgroundColor = "#7FA53E";
+    document.getElementById("testB").style.border = "";
+    document.getElementById("testA").style.border = "#7FA53E solid 3px";
+
 
     A = true;
 } else {
-    document.getElementById("testA").style.backgroundColor = ""
+    document.getElementById("testA").style.border = ""
     A = false;
 }
 }
@@ -36,11 +37,11 @@ function cardSelectA(){
 function cardSelectB(){
     if (B === false ){
         A = false 
-        document.getElementById("testA").style.backgroundColor = "";
-    document.getElementById("testB").style.backgroundColor = "#7FA53E";
+        document.getElementById("testA").style.border = "";
+    document.getElementById("testB").style.border = "#7FA53E solid 3px";
     B = true;
 } else {
-    document.getElementById("testB").style.backgroundColor = ""
+    document.getElementById("testB").style.border = ""
     B = false;
 }
 }
