@@ -4,7 +4,7 @@ import PlantTopbar from "../../Comps/David/plantpage_topbar";
 import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
 import Link from 'next/link'
-import  React, {useState} from 'react';
+import  React, {useEffect, useState} from 'react';
 import Router from 'next/router';
 
 function Next() {
@@ -25,9 +25,16 @@ const TreeCard = require('../../Imgs/tree_icon.svg');
 
 
 
-const PlantPage = () =>  
+const PlantPage = () =>  {
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".plant_page02_transition-wrap").style.opacity = "100%" 
+        },100)
 
-<div>
+    },[]);
+
+
+return <div className="plant_page02_transition-wrap">
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>
@@ -53,6 +60,6 @@ const PlantPage = () =>
     
 </div>
 
-
+}
 
 export default PlantPage;

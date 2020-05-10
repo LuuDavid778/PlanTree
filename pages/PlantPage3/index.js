@@ -4,7 +4,7 @@ import PlantTopbar from "../../Comps/David/plantpage_topbar";
 import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
 import Link from 'next/link'
-import  React, {useState} from 'react';
+import  React, {useEffect,useState} from 'react';
 import Router from 'next/router';
 
 
@@ -27,7 +27,16 @@ const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
 
 
-const PlantPage = () =>  <div>
+const PlantPage = () =>  {
+
+        useEffect(()=>{
+            setTimeout(()=> {
+                document.querySelector(".plant_page03_transition-wrap").style.opacity = "100%" 
+            },100)
+    
+        },[]);
+    
+return <div>
     <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>
@@ -52,6 +61,6 @@ const PlantPage = () =>  <div>
     </div>
     
 </div>
-
+ }
 
 export default PlantPage;

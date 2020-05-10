@@ -5,3 +5,9 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.tutorial01_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
+}

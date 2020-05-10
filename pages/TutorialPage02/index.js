@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import './tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import  React, {useEffect} from 'react';
 
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
@@ -17,7 +18,16 @@ function BackTo01() {
     Router.push("/TutorialPage01")   
 }
 
-const TutorialPage02 = () => <div>
+const TutorialPage02 = () => {
+
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".tutorial02_transition_wrap").style.opacity = "100%" 
+        },100)
+
+    },[]);
+
+return <div className="tutorial02_transition_wrap">
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
@@ -28,5 +38,7 @@ const TutorialPage02 = () => <div>
     </div>
     <TutorialText Headertext="What type of house do you live in?" Desctext="Depending on what type of house you live in, a plant will have different growing conditions."></TutorialText>
 </div>
+
+}
 
 export default TutorialPage02;
