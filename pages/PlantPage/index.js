@@ -71,7 +71,7 @@ const PlantPage = () => {   // curly bracket should be inserted beginning and en
 
     <div className="plant_page_card_button">
         <span onClick = {ClickPreResult}>
-        <CustomButtom width="180px" text="Next"></CustomButtom>
+        <CustomButtom width="180px" text="Next" fontSize="16pt"></CustomButtom>
         </span>
     
     </div>
