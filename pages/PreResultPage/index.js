@@ -8,6 +8,7 @@ import CustomButtom from '../../Comps/Kozy/CustomButton'
 import Link from 'next/link'
 import Router from 'next/router';
 import  {useEffect} from 'react';
+import { data } from '../data'
 
 const selectioncard2 = require("../../Imgs/tree.svg")
 const selectioncard3 = require("../../Imgs/short_weeks.svg")
@@ -38,10 +39,10 @@ return <div className = "PreResultPage_cont">
     </div>
     </span>
 <div className = "selections">
-<ResultSelection></ResultSelection>
-<ResultSelection image = {selectioncard2}  ></ResultSelection>
-<ResultSelection image = {selectioncard3} ></ResultSelection>
-<ResultSelection  image = {selectioncard4}></ResultSelection>
+<ResultSelection text = {data.Question_1}></ResultSelection>
+<ResultSelection  ></ResultSelection>
+<ResultSelection ></ResultSelection>
+<ResultSelection ></ResultSelection>
 
 </div>
 <div className = "navbar" >
