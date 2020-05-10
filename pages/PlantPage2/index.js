@@ -41,10 +41,11 @@ const PlantPage = () =>
 
     <div className="plant_page_card_button">
         <div onClick = {Back}  className = "buttonA">
-        <CustomButtom width="131px" text="Back" ></CustomButtom>
+        <CustomButtom width="120px" text="Back" ></CustomButtom>
         </div>
+        <div className="spacer"></div>
       <div className = "buttonB"  onClick = {Next}>
-        <CustomButtom width="131px" text="Next"></CustomButtom>
+        <CustomButtom width="120px" text="Next"></CustomButtom>
         </div>
     </div>
     <div className="plant_page_card_arrow">

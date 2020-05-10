@@ -3,9 +3,9 @@ import './middle.css';
 import TutorialText from '../TutorialText';
 import TutorialTitle from '../TutorialTitle';
 
-const House = require("../../../Imgs/house_icon.svg");
+const House = require("../../../Imgs/house_card.svg");
 const Hand = require("../../../Imgs/hand.svg");
-const Apartment = require("../../../Imgs/apt_icon.svg");
+const Apartment = require("../../../Imgs/apt_card.svg");
 
 const TutorialMiddle01 = () =>{ 
     return ( <div>

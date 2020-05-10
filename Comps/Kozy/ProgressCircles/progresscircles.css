@@ -2,12 +2,12 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 95pt;
+    height: 110pt;
 }
 
 .tutorial__progress__circles {
     display: flex;
     justify-content: center;
-    top: 0;
+    top: 20;
     position: relative;
 }

@@ -1,7 +1,12 @@
-.button_div {
+.button_div_page02 {
     position: relative;
-    bottom: -280pt;
+    bottom: -180pt;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button_spacer02 {
+    width: 30pt;
+    height: 30pt;
 }

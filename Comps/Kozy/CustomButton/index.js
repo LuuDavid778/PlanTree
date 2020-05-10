@@ -10,7 +10,7 @@ const CustomButton = ({text, bgColor, width, height, fontSize, onClick}) => <div
 CustomButton.defaultProps = {
     text: "Default text",
     bgColor: "#7FA53E",
-    width: "350px",
+    width: "300px",
     height: "50px",
     fontSize: "25px"
     

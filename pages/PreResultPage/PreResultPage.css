@@ -15,11 +15,19 @@ html, body {
 
 .PreResultPage_button {
     position: absolute;
-    top: 135pt;
-   left: 75pt;
+    top: 130pt;
+   left: 45pt;
 
 }
 
 a {
     text-decoration: none;
+}
+
+.view_results_arrow {
+    position: relative;
+    top: -40px;
+    left: 205px;
+    width: 17px;
+    height: 13px;
 }
