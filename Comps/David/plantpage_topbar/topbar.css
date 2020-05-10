@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Assistant', sans-serif;
 }
 .plantpageTopBar {
     display: flex;
@@ -46,5 +47,5 @@
     height: 120pt;
     position: absolute;
     top:-28pt;
-
+    font-family: 'Assistant', sans-serif;
 }

@@ -26,42 +26,15 @@ const LongCard = require('../../Imgs/long_weeks_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
 
-var A = false 
-var B = false 
-function cardSelectA(){
-    if (A === false ){
-    B = false 
-    document.getElementById("testB").style.backgroundColor = "";
-    document.getElementById("testA").style.backgroundColor = "#7FA53E";
-
-    A = true;
-} else {
-    document.getElementById("testA").style.backgroundColor = ""
-    A = false;
-}
-}
-
-function cardSelectB(){
-    if (B === false ){
-        A = false 
-        document.getElementById("testA").style.backgroundColor = "";
-    document.getElementById("testB").style.backgroundColor = "#7FA53E";
-    B = true;
-} else {
-    document.getElementById("testB").style.backgroundColor = ""
-    B = false;
-}
-}
-
 
 const PlantPage = () =>  <div>
     <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
-        <div onClick = {cardSelectA} id = "testA">
+        <div>
         <PlantPageQuizCard icon={ShortCard} text={"1-2 Weeks"} ></PlantPageQuizCard>
         </div>
         <div className="spacer"></div>
-        <div onClick = {cardSelectB}  id = "testB">
+        <div>
         <PlantPageQuizCard   icon={LongCard} text={"2-3 Weeks"}></PlantPageQuizCard>
         </div>
     </div>

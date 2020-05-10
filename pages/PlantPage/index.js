@@ -7,7 +7,23 @@ import HamburgerMenu from "../../Comps/David/hamburger_menu";
 import Link from 'next/link'
 import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
+import {data, ChangeData} from "../data" 
 
+
+function makeSelection(a){ 
+    if(a = 1 )
+    ChangeData({
+        Question_1: "LMFAOXD"
+    })
+    else if (a = 2) {
+        ChangeData({
+            Question_1: "Apartment"
+        })
+    }
+
+    document.querySelector(".selection_A").style.color = "red"
+    console.log(data.Question_1)
+}
 function ClickPreResult() {
     Router.push("/PlantPage2")   
 }
@@ -17,34 +33,10 @@ function ClickPreResult() {
 // javascript within the page. 
 const AptCard = require('../../Imgs/apt_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
-
-var A = false 
-var B = false 
-function cardSelectA(){
-    if (A === false ){
-    B = false 
-    document.getElementById("testB").style.border = "";
-    document.getElementById("testA").style.border = "#7FA53E solid 3px";
+    
 
 
-    A = true;
-} else {
-    document.getElementById("testA").style.border = ""
-    A = false;
-}
-}
 
-function cardSelectB(){
-    if (B === false ){
-        A = false 
-        document.getElementById("testA").style.border = "";
-    document.getElementById("testB").style.border = "#7FA53E solid 3px";
-    B = true;
-} else {
-    document.getElementById("testB").style.border = ""
-    B = false;
-}
-}
 
 
 const PlantPage = () => {   // curly bracket should be inserted beginning and end
@@ -59,13 +51,13 @@ const PlantPage = () => {   // curly bracket should be inserted beginning and en
 
     },[]);
     // we will have to "return <div>" due to react not being able to use html (line 57)
-    return <div> <div className ="plant_page_transition-wrap"><PlantTopbar></PlantTopbar> 
+    return <div className = "plant_page"> <div className ="plant_page_transition-wrap"><PlantTopbar></PlantTopbar> 
     <div className="plant_page_card_container">
-        <div onClick = {cardSelectA} id = "testA">
-        <PlantPageQuizCard   ></PlantPageQuizCard>
+        <div className = "selection_A" onClick = {makeSelection}>
+        <PlantPageQuizCard></PlantPageQuizCard>
         </div>
         <div className="spacer"></div>
-        <div onClick = {cardSelectB}  id = "testB">
+        <div className = "selection_B" onClick = {makeSelection}>
         <PlantPageQuizCard   icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
         </div>
     </div>

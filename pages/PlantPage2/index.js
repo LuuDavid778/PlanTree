@@ -24,44 +24,17 @@ const TreeCard = require('../../Imgs/tree_icon.svg');
 
 
 
-var A = false 
-var B = false 
-function cardSelectA(){
-    if (A === false ){
-    B = false 
-    document.getElementById("testB").style.backgroundColor = "";
-    document.getElementById("testA").style.backgroundColor = "#7FA53E";
-
-    A = true;
-} else {
-    document.getElementById("testA").style.backgroundColor = ""
-    A = false;
-}
-}
-
-function cardSelectB(){
-    if (B === false ){
-        A = false 
-        document.getElementById("testA").style.backgroundColor = "";
-    document.getElementById("testB").style.backgroundColor = "#7FA53E";
-    B = true;
-} else {
-    document.getElementById("testB").style.backgroundColor = ""
-    B = false;
-}
-}
-
 
 const PlantPage = () =>  
 
 <div>
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
-        <div onClick = {cardSelectA} id = "testA">
-        <PlantPageQuizCard icon={FlowerCard}  text={"Flowring Plant"}></PlantPageQuizCard>
+        <div>
+        <PlantPageQuizCard icon={FlowerCard}  text={"Flowering Plant"}></PlantPageQuizCard>
         </div>
         <div className="spacer"></div>
-        <div onClick = {cardSelectB}  id = "testB">
+        <div>
         <PlantPageQuizCard   icon={TreeCard} text={"Tree"}></PlantPageQuizCard>
         </div>
     </div>
