@@ -7,13 +7,8 @@ const ResultSelection = ({question,image, text})=> <div className = "resultselec
 
 <div className = "resultselection_question">{question}</div>
 <div className = "resultselection_cardcont"> 
-<<<<<<< HEAD
     <p>You chose:</p>
     <PlantPageQuizCard text = {text} ></PlantPageQuizCard>
-=======
-    <p className="resultselection_card_you_chose">You chose:</p>
-    <img src={image}></img>
->>>>>>> ac345a6d8b7022210e47b7caa60e86458df59e24
     </div>
 </div>
 

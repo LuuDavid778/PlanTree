@@ -43,17 +43,10 @@ return <div className = "PreResultPage_cont">
     </div>
     </span>
 <div className = "selections">
-<<<<<<< HEAD
 <ResultSelection text = {data.Question_1}></ResultSelection>
 <ResultSelection  ></ResultSelection>
 <ResultSelection ></ResultSelection>
 <ResultSelection ></ResultSelection>
-=======
-<ResultSelection image = {selectioncard2} ></ResultSelection>
-<ResultSelection image = {selectioncard2}  ></ResultSelection>
-<ResultSelection image = {selectioncard3} ></ResultSelection>
-<ResultSelection  image = {selectioncard4}></ResultSelection>
->>>>>>> ac345a6d8b7022210e47b7caa60e86458df59e24
 
 </div>
 <div className = "navbar" >
