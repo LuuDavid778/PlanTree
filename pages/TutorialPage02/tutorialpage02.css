@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    transition: opacity 0.6s;
 }
 
 .button_spacer02 {

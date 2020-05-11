@@ -25,7 +25,11 @@ const TutorialPage03 = () => {
     useEffect(()=>{
         setTimeout(()=> {
             document.querySelector(".tutorial03_transition_wrap").style.opacity = "100%" 
-        },100)
+        },100);
+
+        setTimeout(()=> {
+            document.querySelector(".button_div_page02").style.opacity = "100%" 
+        },800)
 
     },[]);
 
