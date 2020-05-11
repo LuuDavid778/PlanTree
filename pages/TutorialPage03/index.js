@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage02/tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import  React, {useEffect} from 'react';
+
 
 const progress_circles3 = require("../../Imgs/progress_circles3.svg");
 const tutimg03 = require("../../Imgs/two_plants.svg");
@@ -18,7 +20,16 @@ function BackTo02() {
     Router.push("/TutorialPage02")   
 }
 
-const TutorialPage03 = () => <div>
+const TutorialPage03 = () => {
+
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".tutorial03_transition_wrap").style.opacity = "100%" 
+        },100)
+
+    },[]);
+
+return <div className="tutorial03_transition_wrap">
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg03}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles3}></ProgressCircles>
@@ -29,5 +40,7 @@ const TutorialPage03 = () => <div>
     </div>
     <TutorialText Headertext="What kind of plant are you looking for?" Desctext="Deside if you're looking for a planting flower or a tree."></TutorialText>
 </div>
+
+}
 
 export default TutorialPage03;

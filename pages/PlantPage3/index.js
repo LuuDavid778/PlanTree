@@ -36,7 +36,7 @@ const PlantPage = () =>  {
     
         },[]);
     
-return <div>
+return <div className="plant_page03_transition-wrap">
     <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>

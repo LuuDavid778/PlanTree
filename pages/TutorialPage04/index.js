@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage02/tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
+import  React, {useEffect} from 'react';
 
 const progress_circles4 = require("../../Imgs/progress_circles4.svg");
 const tutimg04 = require("../../Imgs/watering_can.svg");
@@ -18,7 +19,16 @@ function BackTo03() {
     Router.push("/TutorialPage03")   
 }
 
-const TutorialPage04 = () => <div>
+const TutorialPage04 = () => {
+
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".tutorial04_transition_wrap").style.opacity = "100%" 
+        },100)
+
+    },[]);
+
+return <div className="tutorial04_transition_wrap">
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg04}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles4}></ProgressCircles>
@@ -29,5 +39,5 @@ const TutorialPage04 = () => <div>
     </div>
     <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants may require frequent watering while others will require less. We'll recommend you a plant based on these watering preferences."></TutorialText>
 </div>
-
+}
 export default TutorialPage04;
