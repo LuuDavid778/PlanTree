@@ -17,6 +17,7 @@ const tree08 = require("../../Imgs/stromanthe_triostar.png");
 const tree09 = require("../../Imgs/rubber_fig_plant.png");
 const tree10 = require("../../Imgs/zamioculcas_zamiifolia.png");
 const tree11 = require("../../Imgs/parlour_palm.png");
+const tree12 = require("../../Imgs/pothos_plant.png");
 
 
 function result01(){
@@ -44,6 +45,7 @@ return<div>
     <GlossaryTerm title="Rubber Fig Plant" placeholder={tree09} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Zamioculcas Zamiifolia" placeholder={tree10} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Parlour Palm" placeholder={tree11} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Pothos Plant" placeholder={tree12} onClick={result01}></GlossaryTerm>
     </div>
     <div className="glossary_spacer"></div>
     <GlossaryHeaderTree></GlossaryHeaderTree>
