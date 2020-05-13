@@ -4,12 +4,12 @@ import GlossaryTerm from '../../Comps/David/glossary_term';
 import './glossarypage.css';
 import React, {useState, useEffect} from "react";
 
-const plant01 = require("../../Imgs/air_plant.png");
+const plant01 = require("../../Imgs/amaryllis.png");
 const plant02 = require("../../Imgs/lucky_bamboo.png");
-const plant03 = require("../../Imgs/mint.png");
+const plant03 = require("../../Imgs/calathea.png");
 const plant04 = require("../../Imgs/aloe_vera.png");
 const plant05 = require("../../Imgs/string_of_pearls.png");
-const plant06 = require("../../Imgs/peace_lily.png");
+const plant06 = require("../../Imgs/desert_gems_cacti.png");
 const plant07 = require("../../Imgs/geranium.png");
 const plant08 = require("../../Imgs/moth_orchid.png");
 const plant09 = require("../../Imgs/lily_of_the_valley.png");
@@ -31,12 +31,12 @@ const GlossaryPage = () => {
 
 return<div>
     <div className="plant_glossary_effect">
-    <GlossaryTerm title="Air Plant" placeholder={plant01} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Amaryllis" placeholder={plant01} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Lucky Bamboo" placeholder={plant02} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Mint" placeholder={plant03} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Calathea" placeholder={plant03} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Aloe Vera" placeholder={plant04} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="String of Pearls" placeholder={plant05} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Peace Lily" placeholder={plant06} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Desert Gems Cacti" placeholder={plant06} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Geranium" placeholder={plant07} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Moth Orchid" placeholder={plant08} onClick={result01}></GlossaryTerm>
     <GlossaryTerm title="Lily of the Valley" placeholder={plant09} onClick={result01}></GlossaryTerm>
