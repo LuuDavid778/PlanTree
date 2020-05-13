@@ -30,9 +30,12 @@ var selectedstateB = false
 
 
 function nextPage() {
+    
     if (data.Question_1 === "") {
     } else {
     Router.push("/PlantPage2")   
+    selectedstateA = false;
+    selectedstateB = false;
     }
 }
 
@@ -48,6 +51,8 @@ const PlantPage = () => {  // curly bracket should be inserted beginning and end
     // and this javascript function sets it to 100%
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
+    const [borderA, borderAToggle] = useState("")
+    const [borderB, borderBToggle] = useState("")
     useEffect(()=>{
         setTimeout(()=> {
             document.querySelector(".plant_page_transition-wrap").style.opacity = "100%" 
@@ -60,17 +65,25 @@ const PlantPage = () => {  // curly bracket should be inserted beginning and end
 
         
         <div className = "selection1">
-        <PlantPageQuizCard id = {idA} onclick = {()=>{
+        <PlantPageQuizCard border = {borderA} id = {idA} onclick = {()=>{
             if (selectedstateA === false){
+            idBToggle("")
             idAToggle("animate")
+            borderBToggle("3px solid transparent")
+            borderAToggle("#7FA53E solid 3px")
               data.Question_1 = "House";
               ChangeData(data);
             console.log(data)
+            selectedstateB = false;
             selectedstateA = true; 
             } else if (selectedstateA === true) {
+                borderBToggle("3px solid transparent")
+                borderAToggle("3px solid transparent")
                 idAToggle("")
                 selectedstateA = false;
-                
+                data.Question_1 = "";
+                ChangeData(data);
+                console.log(data)
             }
             
         }}></PlantPageQuizCard>        
@@ -78,11 +91,26 @@ const PlantPage = () => {  // curly bracket should be inserted beginning and end
 
         <div className="spacer"></div>
         <div className = "selection2">
-        <PlantPageQuizCard id = {idB} onclick = {()=>{
+        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {()=>{
+               if (selectedstateB === false){
+                   borderBToggle("#7FA53E solid 3px")
+                   borderAToggle("3px solid transparent")
+                idAToggle("")
               idBToggle("animate")
              data.Question_1 = "Apartment";
              ChangeData(data);
-            console.log(data)
+             console.log(data)
+             selectedstateA = false;
+            selectedstateB = true; 
+            } else if (selectedstateB === true) {
+                borderBToggle("3px solid transparent")
+                borderAToggle("3px solid transparent")
+                idBToggle("")
+                selectedstateB = false;
+                data.Question_1 = "";
+                ChangeData(data);
+                console.log(data)   
+            }
         }}icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
         </div>
     </div>
