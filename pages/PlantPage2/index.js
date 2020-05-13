@@ -50,9 +50,16 @@ const TreeCard = require('../../Imgs/tree_icon.svg');
 
 
 
-const PlantPage = () =>  
+const PlantPage = () =>  {
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".plant_page02_transition-wrap").style.opacity = "100%" 
+        },100)
 
-<div>
+    },[]);
+
+
+return <div className="plant_page02_transition-wrap">
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>
@@ -80,11 +87,11 @@ const PlantPage = () =>
 
     <div className="plant_page_card_button">
         <div onClick = {Back}  className = "buttonA">
-        <CustomButtom width="120px" text="Back" ></CustomButtom>
+        <CustomButtom width="120px" text="Back" fontSize="16pt"></CustomButtom>
         </div>
         <div className="spacer"></div>
       <div className = "buttonB"  onClick = {Next}>
-        <CustomButtom width="120px" text="Next"></CustomButtom>
+        <CustomButtom width="120px" text="Next" fontSize="16pt"></CustomButtom>
         </div>
     </div>
     <div className="plant_page_card_arrow">
@@ -92,6 +99,6 @@ const PlantPage = () =>
     
 </div>
 
-
+}
 
 export default PlantPage;

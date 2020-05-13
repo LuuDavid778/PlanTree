@@ -4,9 +4,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    transition: opacity 0.6s;
 }
 
 .button_spacer02 {
     width: 30pt;
     height: 30pt;
+}
+
+
+.tutorial02_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+.tutorial03_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+.tutorial04_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+.tutorial05_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+.tutorial06_transition_wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
 }
