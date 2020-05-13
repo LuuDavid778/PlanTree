@@ -9,7 +9,7 @@ import Router from 'next/router';
 
 
 function Next() {
-    Router.push("/PreResultPage")     
+    Router.push("/PlantPage4")     
 }
 
 function Back() {
