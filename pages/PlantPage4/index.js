@@ -9,8 +9,9 @@ import Router from 'next/router';
 
 import {data, ChangeData} from "../data" 
 function Next() {
-    Router.push("/PlantPage4")     
+    Router.push("/PreResultPage")     
     console.log(data)
+
 }
 
 function Back() {
@@ -18,32 +19,29 @@ function Back() {
 }
 
 
-const progress_stage3 = require("../../Imgs/progress_stage3.svg")
-const progressbar3 = require("../../Imgs/progress_bar3.svg")
+const progress_stage4 = require("../../Imgs/progress_stage4.svg")
+const progressbar4 = require("../../Imgs/progress_bar4.svg")
 
 const ShortCard= require('../../Imgs/short_weeks_icon.svg');
 const LongCard = require('../../Imgs/long_weeks_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
-
+function OutputAnswer(){
+    if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Question_3 === "ShortWeeks"){
+        data.result = "Areca Palm"
+        console.log(data)
+    }
+    }
 
 const PlantPage = () =>  <div>
-    <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>
+    <PlantTopbar progress = {progressbar4} progress_stage = {progress_stage4} question = "How often do you want to water your plant?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>
-        <PlantPageQuizCard onclick = {()=>{
-             data.Question_3 = "ShortWeeks";
-             ChangeData(data);
-            console.log(data)
-        }} icon={ShortCard} text={"1-2 Weeks"} ></PlantPageQuizCard>
+        <PlantPageQuizCard></PlantPageQuizCard>
         </div>
         <div className="spacer"></div>
         <div>
-        <PlantPageQuizCard onclick = {()=>{
-            data.Question_3 = "LongWeeks";
-            ChangeData(data);
-           console.log(data)
-        }}  icon={LongCard} text={"2-3 Weeks"}></PlantPageQuizCard>
+        <PlantPageQuizCard></PlantPageQuizCard>
         </div>
     </div>
 
@@ -53,7 +51,7 @@ const PlantPage = () =>  <div>
         </div>
         <div className="spacer"></div>
       <div className = "buttonB"  onClick = {Next}>
-        <CustomButtom width="120px" text="Next"></CustomButtom>
+        <CustomButtom onClick = {OutputAnswer} width="120px" text="Next"></CustomButtom>
         </div>
     </div>
     <div className="plant_page_card_arrow">

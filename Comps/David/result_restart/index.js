@@ -2,8 +2,10 @@ import React from 'react';
 import "./app.css";
 import Router from 'next/router'
 const ReduIcon = require('../../../Imgs/redo.svg');
+import '../../../pages/data'
 
 function RestartQuiz() {
+    {restartResults()}
 Router.push("/PlantPage")
 }
 

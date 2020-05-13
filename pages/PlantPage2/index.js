@@ -4,11 +4,36 @@ import PlantTopbar from "../../Comps/David/plantpage_topbar";
 import PlantPageQuizCard from "../../Comps/Kozy/PlantPageQuizCard";
 import CustomButtom from "../../Comps/Kozy/CustomButton";
 import Link from 'next/link'
-import  React, {useState} from 'react';
+import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
 
+import {data, ChangeData} from "../data" 
+
+
+
+
+var selectedstateA = false
+var selectedstateB = false
+// function makeSelection(n){ 
+//     console.log(n)
+//     if(n === 1 )
+//     ChangeData({
+//         Question_2: "Flowering Plant"
+//     })
+//     else if (n === 2) {
+//         ChangeData({
+//             Question_2: "Tree"
+//         })
+//     }
+
+//     console.log(data.Question_2)
+// }
+
+
+
 function Next() {
-    Router.push("/PlantPage3")   
+    Router.push("/PlantPage3")  
+    console.log("all data consoled", data) 
 }
 
 function Back() {
@@ -31,11 +56,25 @@ const PlantPage = () =>
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
     <div className="plant_page_card_container">
         <div>
-        <PlantPageQuizCard icon={FlowerCard}  text={"Flowering Plant"}></PlantPageQuizCard>
+
+
+
+
+
+        <PlantPageQuizCard onclick = {()=>{
+             data.Question_2 = "FloweringPlant";
+             ChangeData(data);
+            console.log(data)
+            
+        }} icon={FlowerCard}  text={"Flowering Plant"}></PlantPageQuizCard>
         </div>
         <div className="spacer"></div>
         <div>
-        <PlantPageQuizCard   icon={TreeCard} text={"Tree"}></PlantPageQuizCard>
+        <PlantPageQuizCard onclick = {()=>{
+               data.Question_2 = "Tree";
+               ChangeData(data);
+              console.log(data)
+        }}text={"Tree"}></PlantPageQuizCard>
         </div>
     </div>
 

@@ -4,9 +4,9 @@ const HouseIcon = require('../../../Imgs/house_icon.svg');
 
 
 
-const PlantPageQuizCard = ({icon, text, displayCheck, border}) => <div>
+const PlantPageQuizCard = ({icon, text, border, onclick, width, height, id}) => <div>
     
-    <div className="plant_page_quiz_card" style={{border:(border)}}>
+    <div className="plant_page_quiz_card" id ={id} onClick = {onclick} style={{border:border, width:width, height: height}}>
         <div className="plant_page_quiz_card_small_cont">
         <img src={icon} className="plant_page_quiz_card_icon"></img>
         <div className="quiz_card_text">{text}</div>
@@ -19,7 +19,10 @@ const PlantPageQuizCard = ({icon, text, displayCheck, border}) => <div>
         icon: HouseIcon,
         text: "House",
         displayCheck: "none",
-        border: ""
+        border: "",
+        width: "132px",
+        height :"161px",
+        id: ""
     }
     
 

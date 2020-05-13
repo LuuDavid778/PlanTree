@@ -25,7 +25,9 @@
     font-size: 13pt;
     font-family: 'Assistant', sans-serif;
     font-weight: 600;
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .plantpageTopBar_hbmenu {
     position: absolute;
