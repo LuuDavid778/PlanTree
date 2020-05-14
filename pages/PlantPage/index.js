@@ -39,16 +39,10 @@ function nextPage() {
     }
 }
 
-// FIRST STEP TO CREATING page-load transition, import useEffect from react (line 8)
-// Make sure you use curly brackets for the page const because you will be using
-// javascript within the page. 
+
 const AptCard = require('../../Imgs/apt_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
-const PlantPage = () => {  // curly bracket should be inserted beginning and end
-    // useEffect will basically use any javascript provided in it's parameters when the page is 
-    // fully loaded, such as the one provided below.
-    // in the CSS, opacity of the "plant_page_transition-wrap" is set to 0%
-    // and this javascript function sets it to 100%
+const PlantPage = () => {  
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
     const [borderA, borderAToggle] = useState("")

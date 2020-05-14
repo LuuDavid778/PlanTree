@@ -41,8 +41,16 @@ html body{
     transition: background-Color 0.3s;
 }
 
-.spacer {
-    width:11pt;
-    height:11pt;
+.spacer4 {
+    width: 10px;
+    height: 3pt;
+    background-color: black;
+ 
+}
+
+.spacerB{
+    width:20pt;
+    height:8pt;
+
  
 }
