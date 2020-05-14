@@ -253,7 +253,12 @@ if (process.browser){
     var sessiondata = sessionStorage.getItem("glossary_data");
     ChangeData(JSON.parse(sessiondata));
 }
-export function ChangeData(d){
-    glossary_data = d;
+export function ChangeData(d, n){
+    glossary_data.n = d;
     sessionStorage.setItem("glossary_data",JSON.stringify(glossary_data));
+
+}
+
+export function ChangeCounter(c,k){
+    glossary_counter = c;
 }

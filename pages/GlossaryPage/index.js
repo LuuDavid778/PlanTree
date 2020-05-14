@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react";
 import Router from 'next/router';
 import "../glossary_data.js";
 import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
-import {glossary_data, ChangeData} from '../glossary_data';
+import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../glossary_data';
 
 const plant01 = require("../../Imgs/amaryllis.png");
 const plant02 = require("../../Imgs/lucky_bamboo.png");
@@ -23,12 +23,17 @@ const plant12 = require("../../Imgs/clivia.png");
 
 function result(){
     Router.push("/GlossaryPlantsTrees")
-    glossary_counter === 0
+    ChangeCounter(0)
 //     document.querySelector("link[rel=import][href='../../Comps/Aksel/PlantsTreesResultTexts/index.js']")
 // .import.querySelector(".plant_texts_description")
     // document.querySelector(".plant_texts_description")
     // document.querySelector(".plant_texts_description")
     // document.querySelector(".plant_texts_description")
+}
+
+function result1(){
+    ChangeCounter(1) // command will change glossary_counter 
+    Router.push("/GlossaryPlantsTrees") // then push
 }
 
 const GlossaryPage = () => {
@@ -42,7 +47,7 @@ const GlossaryPage = () => {
 return<div>
     <div className="plant_glossary_effect">
     <GlossaryTerm title="Amaryllis" placeholder={plant01} onClick={result}></GlossaryTerm>
-    <GlossaryTerm title="Lucky Bamboo" placeholder={plant02} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Lucky Bamboo" placeholder={plant02} onClick={result1}></GlossaryTerm>
     <GlossaryTerm title="Calathea" placeholder={plant03} onClick={result}></GlossaryTerm>
     <GlossaryTerm title="Aloe Vera" placeholder={plant04} onClick={result}></GlossaryTerm>
     <GlossaryTerm title="String of Pearls" placeholder={plant05} onClick={result}></GlossaryTerm>
