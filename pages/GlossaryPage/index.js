@@ -3,6 +3,10 @@ import GlossaryHeader from '../../Comps/Aksel/GlossaryHeader';
 import GlossaryTerm from '../../Comps/David/glossary_term';
 import './glossarypage.css';
 import React, {useState, useEffect} from "react";
+import Router from 'next/router';
+import "../glossary_data.js";
+import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
+import {glossary_data, ChangeData} from '../glossary_data';
 
 const plant01 = require("../../Imgs/amaryllis.png");
 const plant02 = require("../../Imgs/lucky_bamboo.png");
@@ -17,8 +21,14 @@ const plant10 = require("../../Imgs/kalanchoe.png");
 const plant11 = require("../../Imgs/snake_plant.png");
 const plant12 = require("../../Imgs/clivia.png");
 
-function result01(){
-    Router.push("/ResultPage")
+function result(){
+    Router.push("/GlossaryPlantsTrees")
+    glossary_counter === 0
+//     document.querySelector("link[rel=import][href='../../Comps/Aksel/PlantsTreesResultTexts/index.js']")
+// .import.querySelector(".plant_texts_description")
+    // document.querySelector(".plant_texts_description")
+    // document.querySelector(".plant_texts_description")
+    // document.querySelector(".plant_texts_description")
 }
 
 const GlossaryPage = () => {
@@ -31,18 +41,18 @@ const GlossaryPage = () => {
 
 return<div>
     <div className="plant_glossary_effect">
-    <GlossaryTerm title="Amaryllis" placeholder={plant01} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Lucky Bamboo" placeholder={plant02} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Calathea" placeholder={plant03} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Aloe Vera" placeholder={plant04} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="String of Pearls" placeholder={plant05} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Desert Gems Cacti" placeholder={plant06} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Geranium" placeholder={plant07} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Moth Orchid" placeholder={plant08} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Lily of the Valley" placeholder={plant09} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Kalanchoe" placeholder={plant10} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Snake Plant" placeholder={plant11} onClick={result01}></GlossaryTerm>
-    <GlossaryTerm title="Clivia" placeholder={plant12} onClick={result01}></GlossaryTerm>
+    <GlossaryTerm title="Amaryllis" placeholder={plant01} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Lucky Bamboo" placeholder={plant02} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Calathea" placeholder={plant03} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Aloe Vera" placeholder={plant04} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="String of Pearls" placeholder={plant05} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Desert Gems Cacti" placeholder={plant06} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Geranium" placeholder={plant07} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Moth Orchid" placeholder={plant08} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Lily of the Valley" placeholder={plant09} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Kalanchoe" placeholder={plant10} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Snake Plant" placeholder={plant11} onClick={result}></GlossaryTerm>
+    <GlossaryTerm title="Clivia" placeholder={plant12} onClick={result}></GlossaryTerm>
     </div>
     <div className="glossary_spacer"></div>
     <GlossaryHeader></GlossaryHeader>

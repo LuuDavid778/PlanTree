@@ -1,0 +1,10 @@
+.PlantsTreesImg{
+        width: 50vw;
+        top: 80pt;
+        position: absolute;
+}
+
+.PlantsTreesImg_container{
+        display: flex;
+        justify-content: center;
+}
