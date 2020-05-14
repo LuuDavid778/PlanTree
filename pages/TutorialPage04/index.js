@@ -37,9 +37,9 @@ return <div className="tutorial04_transition_wrap">
     <TutorialMiddle02_06 tutimg={tutimg04}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles4}></ProgressCircles>
     <div className = "button_div_page02">
-    <CustomButton text = "Back" onClick={BackTo03} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <CustomButton text = "Back" onclick={BackTo03} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
     <div className="button_spacer02"></div>
-    <CustomButton text = "Next" onClick={Tutorial_5} width="120px" fontSize="14pt"></CustomButton>
+    <CustomButton text = "Next" onclick={Tutorial_5} width="120px" fontSize="14pt"></CustomButton>
     </div>
     <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants may require frequent watering while others will require less. We'll recommend you a plant based on these watering preferences."></TutorialText>
 </div>

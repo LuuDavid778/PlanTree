@@ -32,7 +32,7 @@ return <div className="tutorial06_transition_wrap">
     <TutorialMiddle02_06 tutimg={tutimg06}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles6}></ProgressCircles>
     <div className = "button_div_page02">
-    <CustomButton text = "Back" width="120px" bgColor="#6A8838" fontSize="14pt" onClick={BackTo05}></CustomButton>
+    <CustomButton text = "Back" width="120px" bgColor="#6A8838" fontSize="14pt" onclick={BackTo05}></CustomButton>
     <div className="button_spacer02"></div>
     <Link href = "./PlantPage"><CustomButton text = "Get started" width="120px" fontSize="13pt"></CustomButton></Link>
     </div>

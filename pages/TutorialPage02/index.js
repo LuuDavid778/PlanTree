@@ -36,9 +36,9 @@ return <div className="tutorial02_transition_wrap">
     <TutorialMiddle02_06></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
     <div className = "button_div_page02">
-    <CustomButton text = "Back" onClick={BackTo01} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <CustomButton text = "Back" onclick={BackTo01} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
     <div className="button_spacer02"></div>
-    <CustomButton text = "Next" onClick={Tutorial_3} width="120px" fontSize="14pt"></CustomButton>
+    <CustomButton text = "Next" onclick={Tutorial_3} width="120px" fontSize="14pt"></CustomButton>
     </div>
     <TutorialText Headertext="What type of house do you live in?" Desctext="Depending on what type of house you live in, a plant will have different growing conditions."></TutorialText>
 </div>

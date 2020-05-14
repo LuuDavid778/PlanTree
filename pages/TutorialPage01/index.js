@@ -29,7 +29,7 @@ return <div className="tutorial01_transition_wrap">
     <TutorialMiddle01></TutorialMiddle01>
     <ProgressCircles></ProgressCircles>
     <div className = "button_div">
-    <CustomButton text = "Next" onClick={Tutorial_2} fontSize="16pt"></CustomButton>
+    <CustomButton text = "Next" onclick={Tutorial_2} fontSize="16pt"></CustomButton>
     </div>
 </div>
 
