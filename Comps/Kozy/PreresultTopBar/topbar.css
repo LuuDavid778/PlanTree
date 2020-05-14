@@ -59,7 +59,7 @@ left: 250pt;
     position: relative;
     top: 55pt;
    left: -197pt;
-
+z-index: 0;
 }
 
 .view_results_arrow {

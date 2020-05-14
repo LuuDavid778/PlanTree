@@ -186,31 +186,7 @@ return <div className="plant_page02_transition-wrap">
         </div>
         <div className="spacer2"></div>
         <div>
-<<<<<<< HEAD
         <PlantPageQuizCard border = {borderB} id = {idB} onclick = {toggleCardB}text={"Tree"}></PlantPageQuizCard>
-=======
-        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {()=>{
-               if (selectedstateB === false){
-                borderBToggle("#7FA53E solid 3px")
-                borderAToggle("3px solid transparent")
-             idAToggle("")
-           idBToggle("animate")
-          data.Question_2 = "Tree";
-          ChangeData(data);
-          console.log(data)
-          selectedstateA = false;
-         selectedstateB = true; 
-         } else if (selectedstateB === true) {
-             borderBToggle("3px solid transparent")
-             borderAToggle("3px solid transparent")
-             idBToggle("")
-             selectedstateB = false;
-             data.Question_2 = "";
-             ChangeData(data);
-             console.log(data)   
-         }
-        }} icon={TreeCard} text={"Tree"}></PlantPageQuizCard>
->>>>>>> 1c9cc8377359eff011e3fdc1d4138ccb1b40636e
         </div>
     </div>
 
