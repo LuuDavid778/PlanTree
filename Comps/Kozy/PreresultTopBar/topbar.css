@@ -1,0 +1,71 @@
+.Preresult_TopBar_card {
+    width:100%;
+    background-color: #F1EDD9;
+    height: 180pt;
+    border-radius: 0px 0px 65px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Assistant', sans-serif;
+}
+.Preresult_TopBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.Preresult_TopBar_progressbar {
+    position: relative;
+    top: -2.5pt;
+    left: 88pt;
+
+}
+
+.Preresult_TopBar_question {
+    color: #7FA53E;
+    font-size: 13pt;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    margin-top: 18pt;
+    position: relative;
+    left: -65pt;
+
+}
+.Preresult_TopBar_hbmenu {
+    position: absolute;
+    top: 15pt;
+    right: 15pt;
+
+}
+.Preresult_TopBar_pcircle {
+    padding-right: 5pt;
+}
+.Preresult_TopBar_header {
+    display: flex;
+    margin-top: 50pt;
+    
+    
+}
+
+.Preresult_Topbar_logo {
+width: 115px;
+height: auto;
+    position: relative;
+top: -62pt;
+left: 250pt;
+    font-family: 'Assistant', sans-serif;
+}
+
+.PreResultPage_button {
+    position: relative;
+    top: 35pt;
+   left: -197pt;
+
+}
+
+.view_results_arrow {
+    position: relative;
+    top: -40px;
+    left: 205px;
+    width: 17px;
+    height: 13px;
+}

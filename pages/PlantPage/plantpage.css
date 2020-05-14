@@ -33,13 +33,7 @@ html, body{
     transition: opacity 0.5s; */
 }
 
-.plant_page_card_arrow {
-    position: relative;
-    top: 20px;
-    left: 240px;
-    width: 16px;
-    height: 12px;
-}
+
 .selection1 {
     margin-right: 10pt;
 }

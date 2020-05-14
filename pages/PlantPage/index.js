@@ -41,7 +41,6 @@ function nextPage() {
 
 
 const AptCard = require('../../Imgs/apt_icon.svg');
-const NextArrow = require('../../Imgs/next_arrow_white.svg');
 const PlantPage = () => {  
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
@@ -114,9 +113,6 @@ const PlantPage = () => {
         <CustomButtom width="180px" text="Next"></CustomButtom>
         </span>
     
-    </div>
-    <div className="plant_page_card_arrow">
-    <img src={NextArrow}></img>
     </div>
     
 </div>
