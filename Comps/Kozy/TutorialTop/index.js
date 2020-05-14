@@ -1,7 +1,7 @@
 import React from 'react';
 import "./tutorialtop.css";
 import Router from 'next/router'
-const HorizontalLogo = require('../../../Imgs/horizontal_logo.svg');
+const HorizontalLogo = require('../../../Imgs/horizontal_logo.png');
 
 
 function ClickSkip() {

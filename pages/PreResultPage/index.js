@@ -26,6 +26,10 @@ const PreResultPage = () => {
             document.querySelector(".PreResultPage_cont").style.opacity = "100%" 
         },100)
 
+        setTimeout(()=> {
+            document.querySelector(".selections").style.opacity = "100%" 
+        },900)
+
     },[]);
 
 return <div className = "PreResultPage_cont">  
