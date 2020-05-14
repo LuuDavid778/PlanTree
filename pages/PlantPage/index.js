@@ -51,6 +51,15 @@ const PlantPage = () => {
             document.querySelector(".plant_page_transition-wrap").style.opacity = "100%" 
         },100)
 
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_container").style.opacity = "100%" 
+        },500)
+
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_button").style.opacity = "100%" 
+        },1100)
+
+
     },[]);
     // we will have to "return <div>" due to react not being able to use html (line 57)
     return <div className = "plant_page"> <div className ="plant_page_transition-wrap"><PlantTopbar></PlantTopbar> 

@@ -65,6 +65,14 @@ const PlantPage = () =>  {
             document.querySelector(".plant_page02_transition-wrap").style.opacity = "100%" 
         },100)
 
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_container").style.opacity = "100%" 
+        },500)
+
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_button").style.opacity = "100%" 
+        },1100)
+
     },[]);
 
 
