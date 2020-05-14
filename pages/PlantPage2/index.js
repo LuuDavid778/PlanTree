@@ -10,7 +10,6 @@ import {toggleStates, ChangeState} from '../togglestates'
 import {data, ChangeData} from "../data" 
 
 
-
 // function makeSelection(n){ 
 //     console.log(n)
 //     if(n === 1 )
@@ -29,14 +28,14 @@ import {data, ChangeData} from "../data"
 
 
 function Next() {
-    Router.push("/PlantPage3")  
-    console.log("all data consoled", data) 
+    if (data.Question_2 === "") {
+    } else {
+        
+    Router.push("/PlantPage3")   
+    }
 }
 
 function Back() {
-    toggleStates.selectedstateA1 = true;
-    toggleStates.selectedstateA2 = true;
-  
     Router.push("/PlantPage")   
 }
 
@@ -51,13 +50,13 @@ const TreeCard = require('../../Imgs/tree_icon.svg');
 
 
 const PlantPage = () =>  {
-
+    var buttonstate = 0; 
 
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
     const [borderA, borderAToggle] = useState("")
     const [borderB, borderBToggle] = useState("")
-
+    const [buttonColor, buttonChange] = useState("#B8B8B8")
     useEffect(()=>{
         setTimeout(()=> {
             document.querySelector(".plant_page02_transition-wrap").style.opacity = "100%" 
@@ -65,6 +64,106 @@ const PlantPage = () =>  {
 
     },[]);
 
+    function toggleCardA() {
+        if (toggleStates.selectedstateA2 === false){
+            buttonstate = 0
+            toggleButton()
+        idBToggle("")
+        idAToggle("animate")
+        borderBToggle("3px solid transparent")
+        borderAToggle("#7FA53E solid 3px")
+          data.Question_2 = "FloweringPlant";
+          ChangeData(data);
+        console.log(data)
+        toggleStates.selectedstateB2 = false;
+        toggleStates.selectedstateA2 = true; 
+        ChangeState(toggleStates);
+        } else if (toggleStates.selectedstateA2 === true) {
+            buttonstate = 1
+            toggleButton()
+            borderBToggle("3px solid transparent")
+            borderAToggle("3px solid transparent")
+            idAToggle("")
+            toggleStates.selectedstateA2 = false; 
+            ChangeState(toggleStates);
+            data.Question_2 = "";
+            ChangeData(data);
+            console.log(data)
+        }
+    }
+    function toggleCardB() {
+        if (toggleStates.selectedstateB2 === false){
+            buttonstate = 0
+            toggleButton()
+               borderBToggle("#7FA53E solid 3px")
+               borderAToggle("3px solid transparent")
+            idAToggle("")
+          idBToggle("animate")
+         data.Question_2 = "Tree";
+         ChangeData(data);
+         console.log(data)
+         toggleStates.selectedstateA2 = false;
+        toggleStates.selectedstateB2 = true; 
+        ChangeState(toggleStates);
+        console.log(toggleStates)
+        } else if (toggleStates.selectedstateB2 === true) {
+            buttonstate = 1
+            toggleButton()
+            borderBToggle("3px solid transparent")
+            borderAToggle("3px solid transparent")
+            idBToggle("")
+            toggleStates.selectedstateB2 = false;
+            ChangeState(toggleStates);
+            data.Question_2 = "";
+            ChangeData(data);
+            console.log(data)   
+        }
+    }
+
+    function checkSelection() {
+        if (toggleStates.selectedstateA2 === true){
+            buttonstate = 0
+            toggleButton()
+        idBToggle("")
+        idAToggle("animate")
+        borderBToggle("3px solid transparent")
+        borderAToggle("#7FA53E solid 3px")
+          data.Question_2 = "FloweringPlant";
+          ChangeData(data);
+        console.log(data)
+        ChangeState(toggleStates);
+        }
+    
+        if (toggleStates.selectedstateB2 === true){
+            buttonstate = 0
+            toggleButton()
+               borderBToggle("#7FA53E solid 3px")
+               borderAToggle("3px solid transparent")
+            idAToggle("")
+          idBToggle("animate")
+         data.Question_2 = "Tree";
+         ChangeData(data);
+         console.log(data)
+        ChangeState(toggleStates);
+        console.log(toggleStates)
+        } 
+    }
+function toggleButton() {
+        if (buttonstate === 0) {
+            buttonChange("#7FA53E")
+            buttonstate = 1;
+        } else if (buttonstate === 1)
+    buttonChange("#B8B8B8")
+    buttonstate = 0;
+    }
+    
+
+        useEffect(()=>{
+            setTimeout(()=> {
+                checkSelection()
+            },0)
+    
+        },[]);
 
 return <div className="plant_page02_transition-wrap">
     <PlantTopbar progress = {progressbar2} progress_stage = {progress_stage2} question = "What kind of plant do you want?"></PlantTopbar>
@@ -75,51 +174,11 @@ return <div className="plant_page02_transition-wrap">
 
 
 
-        <PlantPageQuizCard border = {borderA} id = {idA} onclick = {()=>{
-              if (selectedstateA === false){
-                idBToggle("")
-                idAToggle("animate")
-                borderBToggle("3px solid transparent")
-                borderAToggle("#7FA53E solid 3px")
-                  data.Question_2 = "FloweringPlant";
-                  ChangeData(data);
-                console.log(data)
-                selectedstateB = false;
-                selectedstateA = true; 
-                } else if (selectedstateA === true) {
-                    borderBToggle("3px solid transparent")
-                    borderAToggle("3px solid transparent")
-                    idAToggle("")
-                    selectedstateA = false;
-                    data.Question_2 = "";
-                    ChangeData(data);
-                    console.log(data)
-                }
-        }} icon={FlowerCard}  text={"Flowering Plant"}></PlantPageQuizCard>
+        <PlantPageQuizCard border = {borderA} id = {idA} onclick = {toggleCardA} icon={FlowerCard}  text={"Flowering Plant"}></PlantPageQuizCard>
         </div>
         <div className="spacer2"></div>
         <div>
-        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {()=>{
-               if (selectedstateB === false){
-                borderBToggle("#7FA53E solid 3px")
-                borderAToggle("3px solid transparent")
-             idAToggle("")
-           idBToggle("animate")
-          data.Question_2 = "Tree";
-          ChangeData(data);
-          console.log(data)
-          selectedstateA = false;
-         selectedstateB = true; 
-         } else if (selectedstateB === true) {
-             borderBToggle("3px solid transparent")
-             borderAToggle("3px solid transparent")
-             idBToggle("")
-             selectedstateB = false;
-             data.Question_2 = "";
-             ChangeData(data);
-             console.log(data)   
-         }
-        }}text={"Tree"}></PlantPageQuizCard>
+        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {toggleCardB}text={"Tree"}></PlantPageQuizCard>
         </div>
     </div>
 
@@ -129,7 +188,7 @@ return <div className="plant_page02_transition-wrap">
         </div>
         <div className="spacerB"></div>
       <div className = "buttonB"  onClick = {Next}>
-        <CustomButtom width="120px" text="Next" fontSize="16pt"></CustomButtom>
+        <CustomButtom bgColor = {buttonColor} width="120px" text="Next" fontSize="16pt"></CustomButtom>
         </div>
     </div>
     <div className="plant_page_card_arrow">

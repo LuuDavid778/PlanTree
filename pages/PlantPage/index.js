@@ -35,8 +35,6 @@ function nextPage() {
     } else {
         
     Router.push("/PlantPage2")   
-   toggleStates.selectedstateA1 = false;
-    toggleStates.selectedstateB1 = false;
     }
 }
 
@@ -44,12 +42,14 @@ function nextPage() {
 const AptCard = require('../../Imgs/apt_icon.svg');
 const NextArrow = require('../../Imgs/next_arrow_white.svg');
 const PlantPage = () => {  
+
+    var buttonstate = 0; 
+    
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
     const [borderA, borderAToggle] = useState("")
     const [borderB, borderBToggle] = useState("")
     const [buttonColor, buttonChange] = useState("#B8B8B8")
-
 
 function toggleCardA() {
     if (toggleStates.selectedstateA1 === false){
@@ -78,8 +78,7 @@ function toggleCardA() {
         console.log(data)
     }
 }
-
-function toggleCardB() {
+ function toggleCardB() {
     if (toggleStates.selectedstateB1 === false){
         buttonstate = 0
         toggleButton()
@@ -108,7 +107,40 @@ function toggleCardB() {
     }
 }
 
+function checkSelection() {
+    if (toggleStates.selectedstateA1 === true){
+        buttonstate = 0
+        toggleButton()
+    idBToggle("")
+    idAToggle("animate")
+    borderBToggle("3px solid transparent")
+    borderAToggle("#7FA53E solid 3px")
+      data.Question_1 = "House";
+      ChangeData(data);
+    console.log(data)
+    ChangeState(toggleStates);
+    }
 
+    if (toggleStates.selectedstateB1 === true){
+        buttonstate = 0
+        toggleButton()
+           borderBToggle("#7FA53E solid 3px")
+           borderAToggle("3px solid transparent")
+        idAToggle("")
+      idBToggle("animate")
+     data.Question_1 = "Apartment";
+     ChangeData(data);
+     console.log(data)
+    ChangeState(toggleStates);
+    console.log(toggleStates)
+    } 
+}
+    useEffect(()=>{
+        setTimeout(()=> {
+            checkSelection()
+        },0)
+
+    },[]);
 
     useEffect(()=>{
         setTimeout(()=> {
@@ -116,7 +148,7 @@ function toggleCardB() {
         },100)
 
     },[]);
-    var buttonstate = 0; 
+ 
     function toggleButton() {
         if (buttonstate === 0) {
             buttonChange("#7FA53E")
