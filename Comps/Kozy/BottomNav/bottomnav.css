@@ -1,13 +1,13 @@
 .bottomNav_container{
     position: absolute;
-    bottom: 0;
+    bottom: 0pt;
 }
 
 .bottom_nav__cont{
-    width: 281.25pt;
+    width: 100vw;
     height:50pt;
     background-color: white;
-    box-shadow: 0px -5px 30px rgb(172, 175, 177);
+    filter: drop-shadow(0px -5px 30px rgba(80, 92, 98, 0.16));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,10 +33,39 @@
 .buttom_nav__button_redu_icon {
     width: 20pt;
     height: 20pt;
-    padding-left:3pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
+#bottom_nav__button_p {
+    font-family: Poppins;
+}
 .buttom_nab__button_cont {
     align-content: center;
 }
+
+.buttom_nav__button_cont {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.buttom_nav__button_redu_icon {
+  
+    animation: rotation 7s infinite linear;
+    
+    
+ }
+
+ @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

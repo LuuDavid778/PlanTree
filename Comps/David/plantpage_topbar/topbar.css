@@ -1,11 +1,12 @@
 .plantpageTopBar_card {
-    width: 281.25pt;
+    width:100%;
     background-color: #F1EDD9;
     height: 180pt;
     border-radius: 0px 0px 65px 65px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Assistant', sans-serif;
 }
 .plantpageTopBar {
     display: flex;
@@ -24,7 +25,9 @@
     font-size: 13pt;
     font-family: 'Assistant', sans-serif;
     font-weight: 600;
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .plantpageTopBar_hbmenu {
     position: absolute;
@@ -42,9 +45,10 @@
 }
 
 .plantpageTopbar_logo {
-    width: 80pt;
-    height: 120pt;
+width: 115px;
+height: auto;
     position: absolute;
-    top:-28pt;
-
+top: 10pt;
+    font-family: 'Assistant', sans-serif;
+    cursor: pointer;
 }

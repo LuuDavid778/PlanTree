@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './app.css'
 import Router from 'next/router';
+import "../../../pages/data"
+import { restartResults } from '../../../pages/data';
 
 const HamburgerIcon = require('../../../Imgs/hamburger_menu.svg');
 const HomeIcon = require('../../../Imgs/home_icon.svg');
@@ -14,7 +16,7 @@ const TermsIcon = require('../../../Imgs/terms_icon.svg');
 
 var menu_state = false;
 const HamburgerMenu = ({}) => {
-const [menu_position, setMenu] = useState("300pt")
+const [menu_position, setMenu] = useState("-100%")
 
 
 
@@ -27,11 +29,12 @@ return <div>
    
 
 }} src = {HamburgerIcon}></img>
+<div className = "hamburger_menu_wrapper">
 <div className = "hamburger_menu_cont" style = {{right:menu_position}}> 
 
 <div className = "hamburger_menu_div">
 <img id = "hamburger_menu_icon" onClick = {()=>{
-setMenu("300pt")
+setMenu("-100%")
 menu_state = false; 
 
 
@@ -54,7 +57,9 @@ menu_state = false;
 </div>
 
 <div className = "hamburger_menu_main_div" onClick = {()=>{
+   
 Router.push("/PlantPage")
+
 }}>
     <img src = {FindPlantIcon}></img>
     <h2>Find Your Plant</h2>
@@ -80,9 +85,9 @@ Router.push("/GlossaryPage")
 </div>
 </div>
 </div>
-
+</div>
 }
 HamburgerMenu.defaultProps = {
-    right: "300pt"
+    right: "-100%",
 }
 export default HamburgerMenu;
