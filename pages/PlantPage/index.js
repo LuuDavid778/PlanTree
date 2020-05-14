@@ -40,7 +40,6 @@ function nextPage() {
 
 
 const AptCard = require('../../Imgs/apt_icon.svg');
-const NextArrow = require('../../Imgs/next_arrow_white.svg');
 const PlantPage = () => {  
 
     var buttonstate = 0; 
@@ -147,6 +146,15 @@ function checkSelection() {
             document.querySelector(".plant_page_transition-wrap").style.opacity = "100%" 
         },100)
 
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_container").style.opacity = "100%" 
+        },500)
+
+        setTimeout(()=> {
+            document.querySelector(".plant_page_card_button").style.opacity = "100%" 
+        },1100)
+
+
     },[]);
  
     function toggleButton() {
@@ -178,9 +186,6 @@ function checkSelection() {
         <CustomButtom bgColor = {buttonColor} width="180px" text="Next"></CustomButtom>
         </span>
     
-    </div>
-    <div className="plant_page_card_arrow">
-    <img src={NextArrow}></img>
     </div>
     
 </div>

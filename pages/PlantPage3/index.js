@@ -141,14 +141,24 @@ function toggleButton() {
     buttonChange("#B8B8B8")
     buttonstate = 0;
     }
-    
+    useEffect(()=>{
+        setTimeout(()=> {
+            checkSelection()
+        },0)
+        },[]);
 
         useEffect(()=>{
             setTimeout(()=> {
-                checkSelection()
-            },0)
-    
-        },[]);
+         document.querySelector(".plant_page03_transition-wrap").style.opacity = "100%" 
+                    },100)
+                    setTimeout(()=> {
+                        document.querySelector(".plant_page_card_container").style.opacity = "100%" 
+                    },500)
+                    setTimeout(()=> {
+                        document.querySelector(".plant_page_card_button").style.opacity = "100%" 
+                    },1100)
+                },[]);
+                
 
         return <div className="plant_page03_transition-wrap">
         <PlantTopbar progress = {progressbar3} progress_stage = {progress_stage3} question = "How often do you want to water your plant?"></PlantTopbar>

@@ -1,6 +1,6 @@
 
 import './PreResultPage.css'
-import PlantTopbar from '../../Comps/David/plantpage_topbar/'
+import PreresultTopbar from '../../Comps/Kozy/PreresultTopbar/'
 import PlantName from '../../Comps/David/result_selection_header'
 import ResultSelection from '../../Comps/David/result_selection'
 import BottomNav from '../../Comps/Kozy/BottomNav'
@@ -15,11 +15,8 @@ const selectioncard3 = require("../../Imgs/short_weeks.svg")
 const selectioncard4 = require("../../Imgs/cold.svg")
 
 const progressbar5 = require("../../Imgs/progress_bar5.svg")
-const NextArrow = require('../../Imgs/next_arrow_white.svg');
 
-function ClickResult() {
-    Router.push("/ResultPage")
-}
+
 
 
 const PreResultPage = () => {
@@ -32,16 +29,9 @@ const PreResultPage = () => {
     },[]);
 
 return <div className = "PreResultPage_cont">  
-<PlantTopbar id = "test" question = "Completed!" progress = {progressbar5} display = "none"></PlantTopbar>
+<PreresultTopbar id = "test" question = "Completed!" progress = {progressbar5} display = "none"></PreresultTopbar>
 <PlantName></PlantName> 
-<span onClick = {ClickResult}>
-<div className = "PreResultPage_button">
-<CustomButtom text ="View Results" width = "230px" height = "40px" fontSize = "16pt"></CustomButtom>
-<div className="view_results_arrow">
-    <img src={NextArrow}></img>
-    </div>
-    </div>
-    </span>
+
 <div className = "selections">
 <ResultSelection text = {data.Question_1}></ResultSelection>
 <ResultSelection  ></ResultSelection>
