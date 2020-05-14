@@ -31,3 +31,8 @@ a {
     width: 17px;
     height: 13px;
 }
+
+.selections {
+    opacity: 0%;
+    transition: opacity 0.9s;
+}

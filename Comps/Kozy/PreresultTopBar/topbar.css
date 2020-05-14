@@ -59,6 +59,8 @@ left: 250pt;
     position: relative;
     top: 55pt;
    left: -197pt;
+   opacity: 0%;
+   transition: opacity .8s;
 
 }
 
@@ -68,4 +70,6 @@ left: 250pt;
     left: 205px;
     width: 17px;
     height: 13px;
+    opacity: 0%;
+    transition: opacity .8s;
 }

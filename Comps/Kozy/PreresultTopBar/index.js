@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../PreresultTopbar/topbar.css'
 import HamburgerMenu from '../../David/hamburger_menu'
 import  Router  from 'next/router'
@@ -15,6 +15,19 @@ function ClickResult() {
 
 const PreresultTopbar = ({question, id, progress, display, progress_stage }) => {
     const [right, setRight] = useState("300pt")
+
+    useEffect(()=>{
+
+        setTimeout(()=> {
+            document.querySelector(".PreResultPage_button").style.opacity = "100%" 
+        },500)
+
+        setTimeout(()=> {
+            document.querySelector(".view_results_arrow").style.opacity = "100%" 
+        },500)
+
+
+    },[]);
 
     
 
