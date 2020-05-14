@@ -15,6 +15,9 @@ function BackTo05() {
     Router.push("/TutorialPage05")   
 }
 
+function startQuiz (){
+    Router.push("/PlantPage")
+}
 const TutorialPage06 = () => {
     useEffect(()=>{
         setTimeout(()=> {
@@ -34,7 +37,7 @@ return <div className="tutorial06_transition_wrap">
     <div className = "button_div_page02">
     <CustomButton text = "Back" width="120px" bgColor="#6A8838" fontSize="14pt" onclick={BackTo05}></CustomButton>
     <div className="button_spacer02"></div>
-    <Link href = "./PlantPage"><CustomButton text = "Get started" width="120px" fontSize="13pt"></CustomButton></Link>
+  <span onClick = {startQuiz}><CustomButton text = "Get started" width="120px" fontSize="13pt"></CustomButton></span>
     </div>
     <TutorialText Headertext="View your results and start growing!" Desctext="After you've answered all the questions, we'll provide you the best suited plant or tree. You'll then be able to learn more about the plant and how to grow it."></TutorialText>
 </div>

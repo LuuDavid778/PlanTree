@@ -36,7 +36,9 @@ return <div className = "PreResultPage_cont">
 <ResultSelection text = {data.Question_1}></ResultSelection>
 <ResultSelection  ></ResultSelection>
 <ResultSelection ></ResultSelection>
+<div className = "last">
 <ResultSelection ></ResultSelection>
+</div>
 
 </div>
 <div className = "navbar" >

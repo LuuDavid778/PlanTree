@@ -2,7 +2,10 @@ html, body {
 
     margin: 0;  
 }
-
+.last {
+    background-color: gray;
+    margin-bottom: 45pt;
+}
 .navbar {
     position: fixed;
     bottom: 0pt;
