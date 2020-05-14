@@ -59,13 +59,9 @@ left: 250pt;
     position: relative;
     top: 55pt;
    left: -197pt;
-<<<<<<< HEAD
-z-index: 0;
-=======
    opacity: 0%;
    transition: opacity .8s;
 
->>>>>>> 07439f61ab23bc54b532acfd0a7d0625ea8e2fef
 }
 
 .view_results_arrow {
