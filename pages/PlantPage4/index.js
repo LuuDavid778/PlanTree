@@ -44,13 +44,14 @@ const ColdTemp = require('../../Imgs/cold.svg');
 
 
 const PlantPage = () =>  {
-
+    var buttonstate = 0; 
     const [idA, idAToggle] = useState("")
     const [idB, idBToggle] = useState("")
     const [idC, idCToggle] = useState("")
     const [borderA, borderAToggle] = useState("")
     const [borderB, borderBToggle] = useState("")
     const [borderC, borderCToggle] = useState("")
+    const [buttonColor, buttonChange] = useState("#B8B8B8")
         useEffect(()=>{
             setTimeout(()=> {
                 document.querySelector(".plant_page04_transition-wrap").style.opacity = "100%" 
@@ -65,6 +66,17 @@ const PlantPage = () =>  {
             },1100)
     
         },[]);
+
+        function toggleButton() {
+            if (buttonstate === 0) {
+                buttonChange("#7FA53E")
+                buttonstate = 1;
+            } else if (buttonstate === 1)
+        buttonChange("#B8B8B8")
+        buttonstate = 0;
+        }
+    
+    
     
 return <div className="plant_page04_transition-wrap">
     <PlantTopbar progress = {progressbar4} progress_stage = {progress_stage4} question = "What’s the temperature like in your area?"></PlantTopbar>
@@ -73,6 +85,8 @@ return <div className="plant_page04_transition-wrap">
         <PlantPageQuizCardTemp id = {idA} border = {borderA} onclick = {()=>{
 
 if (selectedstateA === false){
+    buttonstate = 0
+    toggleButton()
     idCToggle("")
     idBToggle("")
     idAToggle("animate")
@@ -86,6 +100,8 @@ if (selectedstateA === false){
   ChangeData(data);
 console.log(data)
 } else if (selectedstateA === true) {
+    buttonstate = 1
+    toggleButton()
     borderBToggle("3px solid transparent")
     borderCToggle("3px solid transparent")
     borderAToggle("3px solid transparent")
@@ -104,6 +120,8 @@ console.log(data)
         <div>
         <PlantPageQuizCardTemp  id ={idB} border = {borderB} onclick = {()=>{
  if (selectedstateB === false){
+    buttonstate = 0
+    toggleButton()
     idCToggle("")
     idAToggle("")
     idBToggle("animate")
@@ -117,6 +135,8 @@ console.log(data)
   ChangeData(data);
 console.log(data)
 } else if (selectedstateB === true) {
+    buttonstate = 1
+    toggleButton()
     borderBToggle("3px solid transparent")
     borderCToggle("3px solid transparent")
     borderAToggle("3px solid transparent")
@@ -134,6 +154,8 @@ console.log(data)
         <div>
         <PlantPageQuizCardTemp  id ={idC} border = {borderC} onclick ={()=>{
              if (selectedstateC === false){
+                buttonstate = 0 
+                toggleButton()
                 idBToggle("")
                 idAToggle("")
                 idCToggle("animate")
@@ -147,6 +169,8 @@ console.log(data)
               ChangeData(data);
             console.log(data)
             } else if (selectedstateC === true) {
+                buttonstate = 1
+                toggleButton()
                 borderBToggle("3px solid transparent")
                 borderCToggle("3px solid transparent")
                 borderAToggle("3px solid transparent")
@@ -167,8 +191,8 @@ console.log(data)
         <CustomButtom width="120px" text="Back" fontSize="16pt"></CustomButtom>
         </div>
         <div className="spacerB"></div>
-      <div className = "buttonB"  onClick = {Next}>
-        <CustomButtom width="120px" text="Finish" fontSize="16pt"></CustomButtom>
+      <div className = "buttonB"   onClick = {Next}>
+        <CustomButtom bgColor = {buttonColor} width="120px" text="Finish" fontSize="16pt"></CustomButtom>
         </div>
     </div>
     <div className="plant_page_card_arrow">
