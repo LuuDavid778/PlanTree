@@ -4,9 +4,10 @@
     position: absolute;
     top: 550pt;
     font-family: Poppins;
-    margin-left: 18pt;
     font-size: 10pt;
- 
+    justify-content: center;
+    align-items: center;
+ width: 100%;
 }
 
 .plant_texts__discription {
@@ -16,6 +17,9 @@
     border: solid white 1pt;
     border-radius: 10pt;
     margin-bottom: 30pt;
+    display: flex;
+    
+
 
 }
 

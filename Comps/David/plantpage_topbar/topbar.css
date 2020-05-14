@@ -50,4 +50,5 @@ height: auto;
     position: absolute;
 top: 10pt;
     font-family: 'Assistant', sans-serif;
+    cursor: pointer;
 }

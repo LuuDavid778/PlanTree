@@ -8,11 +8,10 @@ import Link from 'next/link'
 import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
 import {data, ChangeData} from "../data" 
+import {toggleStates, ChangeState} from '../togglestates'
 
 
 
-var selectedstateA = false
-var selectedstateB = false
 // function makeSelection(n){ 
 //     console.log(n)
 //     if(n === 1 )
@@ -29,13 +28,15 @@ var selectedstateB = false
 // }
 
 
+
 function nextPage() {
     
     if (data.Question_1 === "") {
     } else {
+        
     Router.push("/PlantPage2")   
-    selectedstateA = false;
-    selectedstateB = false;
+   toggleStates.selectedstateA1 = false;
+    toggleStates.selectedstateB1 = false;
     }
 }
 
@@ -47,71 +48,102 @@ const PlantPage = () => {
     const [idB, idBToggle] = useState("")
     const [borderA, borderAToggle] = useState("")
     const [borderB, borderBToggle] = useState("")
+    const [buttonColor, buttonChange] = useState("#B8B8B8")
+
+
+function toggleCardA() {
+    if (toggleStates.selectedstateA1 === false){
+        buttonstate = 0
+        toggleButton()
+    idBToggle("")
+    idAToggle("animate")
+    borderBToggle("3px solid transparent")
+    borderAToggle("#7FA53E solid 3px")
+      data.Question_1 = "House";
+      ChangeData(data);
+    console.log(data)
+    toggleStates.selectedstateB1 = false;
+    toggleStates.selectedstateA1 = true; 
+    ChangeState(toggleStates);
+    } else if (toggleStates.selectedstateA1 === true) {
+        buttonstate = 1
+        toggleButton()
+        borderBToggle("3px solid transparent")
+        borderAToggle("3px solid transparent")
+        idAToggle("")
+        toggleStates.selectedstateA1 = false; 
+        ChangeState(toggleStates);
+        data.Question_1 = "";
+        ChangeData(data);
+        console.log(data)
+    }
+}
+
+function toggleCardB() {
+    if (toggleStates.selectedstateB1 === false){
+        buttonstate = 0
+        toggleButton()
+           borderBToggle("#7FA53E solid 3px")
+           borderAToggle("3px solid transparent")
+        idAToggle("")
+      idBToggle("animate")
+     data.Question_1 = "Apartment";
+     ChangeData(data);
+     console.log(data)
+     toggleStates.selectedstateA1 = false;
+    toggleStates.selectedstateB1 = true; 
+    ChangeState(toggleStates);
+    console.log(toggleStates)
+    } else if (toggleStates.selectedstateB1 === true) {
+        buttonstate = 1
+        toggleButton()
+        borderBToggle("3px solid transparent")
+        borderAToggle("3px solid transparent")
+        idBToggle("")
+        toggleStates.selectedstateB1 = false;
+        ChangeState(toggleStates);
+        data.Question_1 = "";
+        ChangeData(data);
+        console.log(data)   
+    }
+}
+
+
+
     useEffect(()=>{
         setTimeout(()=> {
             document.querySelector(".plant_page_transition-wrap").style.opacity = "100%" 
         },100)
 
     },[]);
+    var buttonstate = 0; 
+    function toggleButton() {
+        if (buttonstate === 0) {
+            buttonChange("#7FA53E")
+            buttonstate = 1;
+        } else if (buttonstate === 1)
+    buttonChange("#B8B8B8")
+    buttonstate = 0;
+    }
+    
     // we will have to "return <div>" due to react not being able to use html (line 57)
     return <div className = "plant_page"> <div className ="plant_page_transition-wrap"><PlantTopbar></PlantTopbar> 
     <div className="plant_page_card_container">
 
         
         <div className = "selection1">
-        <PlantPageQuizCard border = {borderA} id = {idA} onclick = {()=>{
-            if (selectedstateA === false){
-            idBToggle("")
-            idAToggle("animate")
-            borderBToggle("3px solid transparent")
-            borderAToggle("#7FA53E solid 3px")
-              data.Question_1 = "House";
-              ChangeData(data);
-            console.log(data)
-            selectedstateB = false;
-            selectedstateA = true; 
-            } else if (selectedstateA === true) {
-                borderBToggle("3px solid transparent")
-                borderAToggle("3px solid transparent")
-                idAToggle("")
-                selectedstateA = false;
-                data.Question_1 = "";
-                ChangeData(data);
-                console.log(data)
-            }
-            
-        }}></PlantPageQuizCard>        
+        <PlantPageQuizCard border = {borderA} id = {idA} onclick = {toggleCardA}></PlantPageQuizCard>        
         </div>
 
         <div className="spacer"></div>
         <div className = "selection2">
-        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {()=>{
-               if (selectedstateB === false){
-                   borderBToggle("#7FA53E solid 3px")
-                   borderAToggle("3px solid transparent")
-                idAToggle("")
-              idBToggle("animate")
-             data.Question_1 = "Apartment";
-             ChangeData(data);
-             console.log(data)
-             selectedstateA = false;
-            selectedstateB = true; 
-            } else if (selectedstateB === true) {
-                borderBToggle("3px solid transparent")
-                borderAToggle("3px solid transparent")
-                idBToggle("")
-                selectedstateB = false;
-                data.Question_1 = "";
-                ChangeData(data);
-                console.log(data)   
-            }
-        }}icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
+        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {toggleCardB} icon={AptCard} text={"Apartment"}></PlantPageQuizCard>
         </div>
     </div>
 
     <div className="plant_page_card_button">
         <span onClick = {nextPage}>
-        <CustomButtom width="180px" text="Next"></CustomButtom>
+        <CustomButtom bgColor = {buttonColor} width="180px" text="Next"></CustomButtom>
         </span>
     
     </div>

@@ -33,6 +33,7 @@ html, body {
 #hamburger_menu_icon{
     position: absolute;
     top: 20pt;
+    cursor: pointer;
 }
 .hamburger_menu_main_div {
     display: flex;
@@ -57,4 +58,5 @@ html, body {
     position: absolute;
 right: 20pt;
 top: 20pt;
+cursor: pointer;
 }

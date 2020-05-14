@@ -6,14 +6,11 @@ import CustomButtom from "../../Comps/Kozy/CustomButton";
 import Link from 'next/link'
 import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
-
+import {toggleStates, ChangeState} from '../togglestates'
 import {data, ChangeData} from "../data" 
 
 
 
-
-var selectedstateA = false
-var selectedstateB = false
 // function makeSelection(n){ 
 //     console.log(n)
 //     if(n === 1 )
@@ -37,8 +34,9 @@ function Next() {
 }
 
 function Back() {
-    selectedstateB = false;
-    selectedstateA = false;
+    toggleStates.selectedstateA1 = true;
+    toggleStates.selectedstateA2 = true;
+  
     Router.push("/PlantPage")   
 }
 

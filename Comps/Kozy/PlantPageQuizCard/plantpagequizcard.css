@@ -9,6 +9,7 @@ font-family: Poppins;
 font-weight: 500;
 border: 3px solid transparent;
 transition: border 0.3s;
+cursor: pointer;
 
 }
 
