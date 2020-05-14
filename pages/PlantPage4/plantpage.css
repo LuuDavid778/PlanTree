@@ -20,7 +20,7 @@ html body{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 81.5pt;
+    top: 50.5pt;
 }
 
 .plant_page_card_arrow {
@@ -42,15 +42,13 @@ html body{
 }
 
 .spacer4 {
-    width: 10px;
+    width: 20px;
     height: 3pt;
-    background-color: black;
- 
 }
 
 .spacerB{
-    width:20pt;
+    width:15pt;
     height:8pt;
 
- 
+
 }

@@ -4,7 +4,7 @@
 }
 
 .bottom_nav__cont{
-    width: 281.25pt;
+    width: 100vw;
     height:50pt;
     background-color: white;
     filter: drop-shadow(0px -5px 30px rgba(80, 92, 98, 0.16));
