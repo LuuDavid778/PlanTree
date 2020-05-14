@@ -121,7 +121,7 @@ return <div className="plant_page02_transition-wrap">
              ChangeData(data);
              console.log(data)   
          }
-        }}text={"Tree"}></PlantPageQuizCard>
+        }} icon={TreeCard} text={"Tree"}></PlantPageQuizCard>
         </div>
     </div>
 
