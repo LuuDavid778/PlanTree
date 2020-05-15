@@ -10,11 +10,13 @@ font-weight: 400;
 justify-content: center;
 margin-top: -20pt;
 align-items: center;
+z-index: 0;
 }
 
 .resultselection_cardcont {
     display: flex;
     align-items: center;
+    
 
 
    

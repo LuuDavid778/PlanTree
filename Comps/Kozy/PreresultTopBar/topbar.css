@@ -7,7 +7,9 @@
     align-items: center;
     justify-content: center;
     font-family: 'Assistant', sans-serif;
-z-index: 0;
+z-index: 1;
+position: fixed;
+top: 0pt;
 }
 .Preresult_TopBar {
     display: flex;
@@ -35,6 +37,7 @@ z-index: 0;
     position: absolute;
     top: 15pt;
     right: 15pt;
+    z-index: 2;
 
 }
 .Preresult_TopBar_pcircle {
