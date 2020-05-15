@@ -22,9 +22,8 @@ const TutorialMiddle01 = () =>{
     </div>
     </div>
             {/* texts for the tutorial */}
-            <TutorialText Headertext="Answer the following questions" 
-                Desctext="By answering these series of questions, PlanTree will help you find
-                 the plant you desire!">
+            <TutorialText Headertext="First you'll select your answers" 
+                Desctext="PlanTree will pick the perfect plant for you based on your selected answers!">
             </TutorialText>
 </div>
     )
