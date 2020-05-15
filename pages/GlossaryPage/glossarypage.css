@@ -2,3 +2,8 @@
     width: 100vw;
     height: 200pt;
 }
+
+.plant_glossary_effect{
+    opacity: 0;
+    transition: 1s;
+}

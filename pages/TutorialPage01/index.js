@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import './tutorialpage.css'
 import { route } from 'next/dist/next-server/server/router';
-import  React, {useEffect} from 'react';
+import React, {useState, useEffect} from "react";
 
 function Tutorial_2(){
     Router.push("/TutorialPage02")

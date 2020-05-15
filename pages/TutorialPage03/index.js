@@ -7,7 +7,7 @@ import Router from 'next/router';
 import '../TutorialPage02/tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
 import  React, {useEffect} from 'react';
-
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
 const progress_circles3 = require("../../Imgs/progress_circles3.svg");
 const tutimg03 = require("../../Imgs/two_plants.svg");

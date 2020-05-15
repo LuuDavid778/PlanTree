@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    right: 10pt;
+    right: 20pt;
     color: #5E5E5E;
     font-family: 'Assistant', sans-serif;
 }

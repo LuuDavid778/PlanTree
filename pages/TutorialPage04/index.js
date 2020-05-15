@@ -7,6 +7,7 @@ import Router from 'next/router';
 import '../TutorialPage02/tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
 import  React, {useEffect} from 'react';
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
 const progress_circles4 = require("../../Imgs/progress_circles4.svg");
 const tutimg04 = require("../../Imgs/watering_can.svg");
@@ -41,7 +42,7 @@ return <div className="tutorial04_transition_wrap">
     <div className="button_spacer02"></div>
     <CustomButton text = "Next" onclick={Tutorial_5} width="120px" fontSize="14pt"></CustomButton>
     </div>
-    <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants may require frequent watering while others will require less. We'll recommend you a plant based on these watering preferences."></TutorialText>
+    <TutorialText Headertext="How often do you want to water your plant?" Desctext="Some plants require frequent watering while others require less. We will recommend you a plant based on your watering preference."></TutorialText>
 </div>
 }
 export default TutorialPage04;
