@@ -1,6 +1,6 @@
 
 import './PreResultPage.css'
-import PreresultTopbar from '../../Comps/Kozy/PreresultTopbar/'
+import PreresultTopbar from '../../Comps/Kozy/PreresultTopBar'
 import PlantName from '../../Comps/David/result_selection_header'
 import ResultSelection from '../../Comps/David/result_selection'
 import BottomNav from '../../Comps/Kozy/BottomNav'

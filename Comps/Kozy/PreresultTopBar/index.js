@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import '../PreresultTopbar/topbar.css'
+import './topbar.css'
 import HamburgerMenu from '../../David/hamburger_menu'
 import  Router  from 'next/router'
 import CustomButtom from '../../Kozy/CustomButton'
@@ -29,10 +29,6 @@ const PreresultTopbar = ({question, id, progress, display, progress_stage }) => 
 
     },[]);
 
-    
-
-
-
     return <div className = "Preresult_TopBar">
     <HamburgerMenu right = {right}></HamburgerMenu>
     <div id = {id} className = "Preresult_TopBar_card">
@@ -58,11 +54,6 @@ const PreresultTopbar = ({question, id, progress, display, progress_stage }) => 
     </div>
      
 }
-
-
-
-
-
 
 PreresultTopbar.defaultProps = {
 question: "What type of house do you live in?",
