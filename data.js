@@ -1,12 +1,12 @@
 // Context, Reducer, redux
 import React from 'react'
 
-export const groweasy = require('./Imgs/groweasy.svg');
-export const growmedium = require('./Imgs/growmedium.svg');
-export const growhard = require('./Imgs/growhard.svg');
-export const watereasy = require('./Imgs/watereasy.svg');
-export const watermedium = require('./Imgs/watermedium.svg');
-export const waterhard = require('./Imgs/waterhard.svg');
+// export const groweasy = require('./Imgs/groweasy.svg');
+// export const growmedium = require('./Imgs/growmedium.svg');
+// export const growhard = require('./Imgs/growhard.svg');
+// export const watereasy = require('./Imgs/watereasy.svg');
+// export const watermedium = require('./Imgs/watermedium.svg');
+// export const waterhard = require('./Imgs/waterhard.svg');
 
 
 export var data = {
@@ -18,8 +18,8 @@ export var data = {
     resultplantimg:"https://placekeanu.com/200/200",
     resultdesc:"Insert Plant Description here.",
     resultintfacts:`Insert Interesting Facts here.`,
-    card1:watereasy,
-    card2:groweasy,
+    card1:null,
+    card2:null,
     card3:""
     }
     
