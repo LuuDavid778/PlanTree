@@ -8,7 +8,7 @@ import PlantName from '../../Comps/David/resultpage_plantname'
 import ResultRestart from '../../Comps/David/result_restart'
 import './ResultPage.css'
 import  {useEffect} from 'react';
-import '../../pages/data'
+import '../../data'
 import { checkResults } from '../../data'
 
 
