@@ -7,7 +7,9 @@ export const growhard = require('./Imgs/growhard.svg');
 export const watereasy = require('./Imgs/watereasy.svg');
 export const watermedium = require('./Imgs/watermedium.svg');
 export const waterhard = require('./Imgs/waterhard.svg');
-
+export const sunavoid = require('./Imgs/sunavoid.svg')
+export const sundirect = require('./Imgs/sundirect.svg')
+export const sunlight = require('./Imgs/sunlight.svg')
 
 export var data = {
     Question_1: "",
@@ -20,7 +22,7 @@ export var data = {
     resultintfacts:`Insert Interesting Facts here.`,
     card1:watereasy,
     card2:groweasy,
-    card3:""
+    card3:sunlight
     }
     
 // export var data = {
@@ -86,17 +88,17 @@ export function checkResults(){
         data.resultplantimg = "https://placekeanu.com/200/200/y"
         data.resultdesc = `Flowers are one of the best antidotes to the icy winds of winter and growing a houseplant that buds and blooms inside while all is dormant outside are particularly satisfying. Clivia is an easy to grow houseplant with strappy leaves and tall stocks of flowers that burst into citrus-hued orange or yellow bloom in late winter. Evergreen, it grows from roots rather than a bulb like it’s cousin, the amaryllis. It takes a bit of work to force your clivia into bloom, but once you get into the rhythm, it’s really simple. It’ll bloom in March or April and then follow the advice below to ensure blooms next year.`
         data.resultintfacts = `Clivia is a versatile houseplant that can be grown indoors and outdoors. Clivias are able to retain their foliage all year round, even in the midst of the winter season. Part of the reason why this houseplant is so versatile is its ability to adapt to different growing environments. `
-        data.card1 = " "
-        data.card2 = " "
-        data.card3 = " "
+        data.card1 = watermedium
+        data.card2 = groweasy
+        data.card3 = sunlight
     } else if (data.Question_1 === "Apartment" && data.Question_2 === "Tree" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Hot"){
         data.resultplant = "Hoya Plant"
         data.resultplantimg = "https://placekeanu.com/200/200/y"
         data.resultdesc = `If you're looking for an exotic indoor plant that's very easy to grow, take a look at hoya (also sometimes called wax plant). This unique houseplant is a vine (but don't worry; it's not a fast-growing one!) that has thick, waxy leaves and clusters of star-shaped waxy flowers. It's among the most tolerant of all houseplants. Hoya is often sold in hanging baskets, but its lanky stems will trail from tall containers such as urns, too. Or, if you want to grow it upright, supply a trellis or totem and let hoya supply vertical interest to your home or office.`
         data.resultintfacts = `Hoya carnosa, known as the porcelain flower or wax plant, was also tested and demonstrated a good ability to remove all five common VOCs from the air. Grow several plants to maximize the removal of those air pollution from your home.`
-        data.card1 = " "
-        data.card2 = " "
-        data.card3 = " "
+        data.card1 = watereasy
+        data.card2 = groweasy
+        data.card3 = sunlight
     }   else if (data.Question_1 === "Apartment" && data.Question_2 === "Tree" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Warm"){
     data.resultplant = " Stromanthe Triostar"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
