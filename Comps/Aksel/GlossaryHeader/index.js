@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './GlossaryHeader.css';
 import Router from 'next/router'
-import HamburgerMenu from '../../David/hamburger_menu'
+import HamburgerMenu from '../../David/glossary_hamburger'
 const glossary = require('../../../Imgs/glossary.svg');
 
 function ClickHeadTutorial(){

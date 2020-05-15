@@ -14,7 +14,7 @@ const TermsIcon = require('../../../Imgs/terms_icon.svg');
 
 var menu_state = false;
 const HamburgerMenu = ({}) => {
-const [menu_position, setMenu] = useState("-100%")
+const [menu_position, setMenu] = useState("-200vw")
 
 
 
@@ -22,7 +22,7 @@ const [menu_position, setMenu] = useState("-100%")
 
 return <div>
 <img id = "hamburger_menu_icon_bar" onClick = {()=> {
-        setMenu("0pt")
+        setMenu("-100vw")
         menu_state = true;
    
 
@@ -32,7 +32,7 @@ return <div>
 
 <div className = "hamburger_menu_div">
 <img id = "hamburger_menu_icon" onClick = {()=>{
-setMenu("-100%")
+setMenu("-200vw")
 menu_state = false; 
 
 
