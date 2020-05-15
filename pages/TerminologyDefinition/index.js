@@ -1,5 +1,5 @@
 import PlantsTreesResultCard from '../../Comps/Aksel/PlantsTreesResultCard'
-import GlossaryPlantsTreesTopBar from "../../Comps/Aksel/GlossaryPlantsTreesTopBar";
+import TerminologyTopBar from "../../Comps/Aksel/TerminologyTopBar";
 import TerminologyTitle from "../../Comps/Aksel/TerminologyTitle"
 import TerminologyTexts from "../../Comps/Aksel/TerminologyTexts"
 import { terminology_data, Terminology_counter } from '../glossary_data';
@@ -21,7 +21,7 @@ const TerminologyDefinition = () => {
 
     return<div>
         <PlantsTreesResultCard></PlantsTreesResultCard>
-        <GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
+        <TerminologyTopBar></TerminologyTopBar>
         <TerminologyTitle Title={TerminologyName}></TerminologyTitle>
         <TerminologyTexts innerText={TerminologyWords}></TerminologyTexts>
 

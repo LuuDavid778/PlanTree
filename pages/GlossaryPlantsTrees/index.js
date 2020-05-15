@@ -15,13 +15,17 @@ import WaterDrop from "../../Comps/Aksel/WaterDropImg";
 const GlossaryPlantsTreesImg = require("../../Imgs/desert_gems_cacti.png")
 
 const GlossaryPlantsTrees = () => {
-    const [description, changeDesc,] = useState("")
-    const [NameofPlant, changeName,] = useState("")
-    const [PlantFact1, changeFact,] = useState("")
+    const [description, ChangeDesc,] = useState("")
+    const [NameofPlant, ChangeName,] = useState("")
+    const [Water, ChangeWater,] = useState("")
+    const [PlantImg, ChangeImg,] = useState("")
+    const [PlantFacts, ChangeFact,] = useState("")
     function changePage(){
-        changeDesc(glossary_data[glossary_counter].desc) 
-        changeName(glossary_data[glossary_counter].name)
-        changeFact(glossary_data[glossary_counter].water)
+        ChangeDesc(glossary_data[glossary_counter].desc) 
+        ChangeName(glossary_data[glossary_counter].name)
+        ChangeImg(glossary_data[glossary_counter].image)
+        ChangeWater(glossary_data[glossary_counter].water)
+        ChangeFact(glossary_data[glossary_counter].facts)
     }
     useEffect(()=>{
         setTimeout(()=>{
@@ -33,20 +37,20 @@ const GlossaryPlantsTrees = () => {
   
 return <div>
 <GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
-<PlantsTreesImg src={GlossaryPlantsTreesImg}></PlantsTreesImg>
+<PlantsTreesImg src={PlantImg}></PlantsTreesImg>
 
 <PlantsTreesResultCard></PlantsTreesResultCard>
 
 <PlantsTreesPlantName PlantName={NameofPlant}></PlantsTreesPlantName>
 <div className="Quick_Facts_Container">
-<ResultScreenQuickFacts quickFact={PlantFact1}></ResultScreenQuickFacts>
+<ResultScreenQuickFacts quickFact={Water}></ResultScreenQuickFacts>
 <br></br>
 <ResultScreenQuickFacts></ResultScreenQuickFacts>
 <br></br>
 <ResultScreenQuickFacts></ResultScreenQuickFacts>
 </div>
 
-<PlantsTreesResultTexts innerText={description}></PlantsTreesResultTexts>
+<PlantsTreesResultTexts innerText={description} Facts={PlantFacts}></PlantsTreesResultTexts>
 </div>
 }
 export default GlossaryPlantsTrees;
