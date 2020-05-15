@@ -8,7 +8,7 @@ import PlantName from '../../Comps/David/resultpage_plantname'
 import ResultRestart from '../../Comps/David/result_restart'
 import './ResultPage.css'
 import  {useEffect} from 'react';
-import data, { checkResults } from '../../data'
+import { checkResults } from  "../../data"
 
 
 const waterdrop = require("../../Imgs/water_drop.svg")
