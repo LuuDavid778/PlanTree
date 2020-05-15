@@ -152,25 +152,25 @@ else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && 
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `No matter where you live, you can grow amaryllis. It's most commonly grown as a houseplant; the bulbs bloom around the holidays, making them perfect partners for poinsettias, Norfolk Island pines, and other holiday favorites. You'll typically see amaryllis in shades of red, but look around and you may be able to find stunners in shades of pink, apricot, orange, white, and even green. Amaryllis grows from a bulb; the flowers pop up on a tall stem over the strappy leaves. Because the stem is so tall, it's helpful to have a heavy container that won't tip over. Look for beautiful containers in shades that will complement your amaryllis.`
     data.resultintfacts = `The amaryllis commonly means determination, beauty, and love. The Victorians associated amaryllis with strength and determination because of their height and sturdiness. Amaryllis can also mean success, and are commonly given as gifts of hard-won achievement. Purifies and cleans the air really well.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = waterhard
+    data.card2 = groweasy
+    data.card3 = sundirect
 } else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Warm"){
     data.resultplant = "Lucky Bamboo"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Lucky bamboo is a wonderful gift plant that adds a bold note to indoor decor with its often intricately arranged stems. It's a slow-growing foliage houseplant that's easy to care for in a low- or medium-light spot. You can find lucky bamboo available in an almost endless variety of arrangements, including heart shapes, twists, curls, and more. There's even lore about how many stems are in the arrangements!`
     data.resultintfacts = `The Lucky Bamboo has been used for 5,000 years in the practice of Feng Shui and originated in Southeast Asia. The plant is said to bring health, love, and luck to whoever possesses it.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = waterhard
+    data.card2 = groweasy
+    data.card3 = sunlight
 }  else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Cold"){
     data.resultplant = "Calathea"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `A bold and beautiful houseplant, the calathea looks beautiful. There are lots of varieties of calathea, but one of the most common has luscious, dark green leaves that have scalloped edges and silver brush marks on the top of the leaves. Underneath, the leaves are a lovely shade of burgundy purple. Each one is a living work of art!`
     data.resultintfacts = `The Calathea is a genus that includes about twenty five species, this plant is said to be native to the tropical Americas and is known to be called the "prayer plant" or "zebra plant".`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = waterhard
+    data.card2 = growmedium
+    data.card3 = sunlight
 } 
 // HOUSE FLOWERING PLANT SHORT WEEKS ENDS HERE 
 // HOUSE FLOWERING PLANTS LONG WEEKS STARTS HERE 
@@ -179,25 +179,25 @@ else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && 
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Aloes are good indoor plants if you're busy and have a bright spot in your home. These houseplants have a bold texture that works particularly well with modern and contemporary decorating schemes, but they also fit in well if your tastes run more Mediterranean, eclectic, or exotic.`
     data.resultintfacts = `While aloes are traditionally thought of for their foliage when grown as indoor plants, they can bloom with tall stems of brightly colored flowers if they get enough light.  Aloe vera is the most common type of aloe, but there are plenty of other varieties available. Many have variegated foliage, which adds to their visual appeal.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = watereasy
+    data.card2 = groweasy
+    data.card3 = sundirect
 } else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && data.Question_3 === "LongWeeks" && data.Question_4 === "Warm"){
     data.resultplant = "String of Pearls"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `String of pearls is an interesting group of easy-to-care for succulent house plants often grown in hanging baskets. These indoor plants have earned a reputation for being a cinch to care for because if they get enough light, they're practically no-fail plants that need only occasional watering.`
     data.resultintfacts = `In winter months, the plant has tiny white flowers with bright colored stamens. People often say the flowers smell like cinnamon. Overall this plant purifies well but is poisonous for animals to consume.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = watereasy
+    data.card2 = groweasy
+    data.card3 = sunlight
 } else if (data.Question_1 === "House" && data.Question_2 === "FloweringPlant" && data.Question_3 === "LongWeeks" && data.Question_4 === "Cold"){
     data.resultplant = "Desert Gems Cacti"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Desert gems cacti -- some of the most colorful cactus around -- are easy-to-grow houseplants that add a bold dash of color to your home decor. Desert Gems cacti are small indoor plants perfect for decorating desks and tabletops. While they're stunning on their own, we love mixing these colorful cacti house plants together in fun arrangements.`
     data.resultintfacts = `Desert Gems cacti have relatively soft spines, making them a lot less prickly than other cactus varieties. They're fun houseplants for older children to care for and nurture.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = watereasy
+    data.card2 = groweasy
+    data.card3 = sunlight
 }
 // HOUSE FLOWERING PLANT LONG WEEK ENDS HERE
 // HOUSE FLOWERING PLANT ENDS HER
@@ -208,26 +208,27 @@ else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Quest
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Create a bold, dramatic look in your home with fiddle leaf ficus (also called fiddle leaf fig, or Ficus lyrata, if you prefer botanical names).  One of the trendiest houseplants available, it’s loved for its bold, dramatic texture. It sports big leaves in a rich shade of dark green that add a lush, tropical look to any room you grow it in.`
     data.resultintfacts = `Along with purifying and cleansing the air, this trendy houseplant has a milky-white sap that drips from the cuts after pruning. Use a rag or soft cloth to absorb the sap to prevent it from dripping on the floor.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "}
+    data.card1 = waterhard
+    data.card2 = growmedium
+    data.card3 = sundirect
+}
 else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Warm"){
-    data.resultplant = "Areca Plant"
+    data.resultplant = "Areca Palm"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Areca palm (Chrysalidocarpus lutescens) is one of the most widely used palms for bright interiors. It features feathery, arching fronds, each with up to 100 leaflets. These big, bold plants command attention.`
     data.resultintfacts =`Areca palm is one of the few palms that can tolerate trimming without serious harm, making it possible to keep mature plants indoors for their full lifespan of up to 10 years, making it the perfect plant to grow in consideration of absorbing the C02 in your environment.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = waterhard
+    data.card2 = growmedium
+    data.card3 = sunlight
 } 
 else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Question_3 === "ShortWeeks" && data.Question_4 === "Cold"){
     data.resultplant = "Aspidistra Elatior"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `Aspidistra is an attractive and opulent leaf ornamental plant, aspidistra elatior is the only subspecies which is used as an indoor plant. There is no connection to actual palms, however. Its beauty lies in its dark green stalked and shining leaves which it displays openly. It is well-known for its low standards and easily forgives small mistakes in tending.`
     data.resultintfacts = `This plant was originated from China and Japan and is often known as the Cast iron plant because the plant is fairly undemanding and will survive through neglect that would easily kill a lesser plant.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = waterhard
+    data.card2 = groweasy
+    data.card3 = sunlight
 }
 // HOUSE TREE SHORT WEEK ENDS HERE 
 // HOUSE TREE LONG WEEK STARTS HERE
@@ -237,9 +238,9 @@ else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Quest
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `An old-fashioned house plant that's just as common now as it was a generation ago, yucca cane is wonderfully easy to grow and an excellent choice if you're just starting out with houseplants. It shows off clusters of rich green sword-like leaves on thick, woody trunks. The upright habit and spiky texture make it a fantastic complement to other traditional house plants such as dieffenbachia and palms.`
     data.resultintfacts = `Over time, yucca cane develops into a bold tree that can reach several feet tall, making it a dramatic houseplant to add life and color to a blank wall, empty corners of a room, or act as a bold architectural accent. The plant can grow up to 10 feet tall and does best when fertilized once or twice a year.`
-    data.card1 = " "
-        data.card2 = " "
-        data.card3 = " "
+    data.card1 = watereasy
+        data.card2 = groweasy
+        data.card3 = sundirect
 }
 
 
@@ -248,18 +249,18 @@ else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Quest
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = `An easy-care houseplant, Norfolk pine is a festive holiday plant you can enjoy all year long! During the holidays, its needled branches look right at home decorated as a Christmas tree. After the holidays pass, remove the decorations and enjoy its classic look (and air-purifying powers) anywhere in your home.`
     data.resultintfacts = `Not many people know that the Norfolk pine actually does a great job purifying the air. It's usually most often used during the winter holidays and usually disregarded out of season.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = watereasy
+    data.card2 = groweasy
+    data.card3 = sunlight
 }
 else if (data.Question_1 === "House" && data.Question_2 === "Tree" && data.Question_3 === "LongWeeks" && data.Question_4 === "Cold"){
     data.resultplant = "Madagascar Dragon Tree"
     data.resultplantimg = "https://placekeanu.com/200/200/y"
     data.resultdesc = ` Madagascar dragon tree, also called red-edge dracaena, is one of the most popular houseplants around. It bears narrow green leaves banded in red or pink on top of slender stems. Its upright habit makes the Madagascar dragon tree a useful houseplant to grow against a blank wall, to provide privacy in front of a window, or at the end of a sofa or chair as it ages and becomes tree-like.`
     data.resultintfacts = `When it's young, the Madagascar dragon tree adds beautiful texture to tabletops, desks, and other surfaces. It's often included in dish gardens because of its grassy look.`
-    data.card1 = " "
-    data.card2 = " "
-    data.card3 = " "
+    data.card1 = watereasy
+    data.card2 = groweasy
+    data.card3 = sunlight
 }
 
 }
