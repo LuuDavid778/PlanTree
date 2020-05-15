@@ -38,10 +38,10 @@ return <div className = "PreResultPage_cont">
 
 <div className = "selections">
 <ResultSelection text = {data.Question_1}></ResultSelection>
-<ResultSelection  ></ResultSelection>
-<ResultSelection ></ResultSelection>
+<ResultSelection  question="What kind of plant do you want?"></ResultSelection>
+<ResultSelection question="How often do you want to water your plant?"></ResultSelection>
 <div className = "last">
-<ResultSelection ></ResultSelection>
+<ResultSelection question="What's the temperature like in your area?"></ResultSelection>
 </div>
 
 </div>
