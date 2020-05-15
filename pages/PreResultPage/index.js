@@ -8,7 +8,7 @@ import CustomButtom from '../../Comps/Kozy/CustomButton'
 import Link from 'next/link'
 import Router from 'next/router';
 import  {useEffect} from 'react';
-import { data } from '../data'
+import { data } from '../../data'
 
 const selectioncard2 = require("../../Imgs/house_card.svg")
 const selectioncard3 = require("../../Imgs/short_weeks.svg")

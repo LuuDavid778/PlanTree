@@ -5,8 +5,8 @@ import CustomButtom from "../../Comps/Kozy/CustomButton";
 import Link from 'next/link'
 import  React, {useEffect, useState} from 'react';
 import Router from 'next/router';
-import { checkResults } from '../data';
-import {data, ChangeData} from "../data" 
+import { checkResults } from '../../data';
+import {data, ChangeData} from "../../data" 
 
 
 var selectedstateA = false

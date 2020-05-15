@@ -7,8 +7,8 @@ import HamburgerMenu from "../../Comps/David/hamburger_menu";
 import Link from 'next/link'
 import  React, {useState, useEffect} from 'react';
 import Router from 'next/router';
-import {data, ChangeData} from "../data" 
-import {toggleStates, ChangeState} from '../togglestates'
+import {data, ChangeData} from "../../data" 
+import {toggleStates, ChangeState} from '../../togglestates'
 
 
 
