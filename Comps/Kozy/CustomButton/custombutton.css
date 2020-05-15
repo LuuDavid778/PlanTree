@@ -1,5 +1,9 @@
 .CustomButton__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20pt;
 
 }
 
@@ -13,6 +17,14 @@
     background-color: #7FA53E;
     color: white;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 2px 2px 5px #556F44;
+    box-shadow: 2px 2px 5px #737373;
     margin: 10pt;
+    transition: all ease 0.3s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.CustomButton:active {
+    background-color: #556F44;
+   
 }

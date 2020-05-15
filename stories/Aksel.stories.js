@@ -1,5 +1,5 @@
 import React from 'react';
-import TutorialMiddle from '../Comps/Aksel/TutorialMiddle';
+import TutorialMiddle01 from '../Comps/Aksel/TutorialMiddle01';
 import BackandNextButtons from '../Comps/Aksel/BackandNextButtons';
 import ResultScreenTitle from '../Comps/Aksel/ResultScreenTitle';
 import ResultScreenImg from '../Comps/Aksel/ResultScreenImg';
@@ -10,7 +10,7 @@ export default {
     title: 'Aksel',
   };
 
-  export const MyTutorialMiddle = () => <TutorialMiddle />
+  export const MyTutorialMiddle = () => <TutorialMiddle01 />
   export const MyBackandNextButtons = () => <BackandNextButtons />
   export const MyResultScreenTitle = () => <ResultScreenTitle />
   export const MyResultScreenImg = () => <ResultScreenImg />

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import '../plantpage_topbar/topbar.css'
 import HamburgerMenu from '../../David/hamburger_menu'
 import  Router  from 'next/router'
-const horizontallogo = require("../../../Imgs/horizontal_logo.svg")
+const horizontallogo = require("../../../Imgs/horizontal_logo.png")
 const hamburgerMenu = require("../../../Imgs/hamburger_menu.svg")
 const progress_stage1 = require("../../../Imgs/progress_stage1.svg")
 const progressbar1 = require("../../../Imgs/progress_bar1.svg")
@@ -17,7 +17,7 @@ const PlantTopbar = ({question, id, progress, display, progress_stage }) => {
     <div id = {id} className = "plantpageTopBar_card">
     <img onClick = {()=>{
          Router.push("/")
-    }}id = {id}className = "plantpageTopbar_logo" src = {horizontallogo}></img>
+    }} id = {id} className = "plantpageTopbar_logo" src = {horizontallogo}></img>
     <img id = {id} className = "plantpageTopBar_progressbar" src = {progress}></img>
     <div id = {id}  className = "plantpageTopBar_header">
         <img className = "plantpageTopBar_pcircle" style = {{display: display}} src = {progress_stage}></img>

@@ -9,4 +9,5 @@ body {
     height: 200pt;
     top: 60pt;
     position: relative;
+    align-content: center;
 }

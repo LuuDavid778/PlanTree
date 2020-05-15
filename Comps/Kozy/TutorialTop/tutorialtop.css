@@ -8,6 +8,8 @@
 .tutorial__logo {
     width: 105px;
     height: 45px;
+    margin-left: 13pt;
+    margin-top: -1pt;
 }
 
 .tutorial__skip {

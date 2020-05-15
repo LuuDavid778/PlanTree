@@ -8,4 +8,14 @@ const ResultScreenQuickFacts = ({quickFact}) => <div className="quickFact_box_co
 </div>
 </div>
 
+
+ResultScreenQuickFacts.defaultProps = {
+    text: "Keep out of direct sunlight",
+    icona: sunlight,
+    iconb: sunlight,
+    iconc: sunlight,
+    displaya: "none",
+    displayb: "block",
+    displayc: "none"
+}
 export default ResultScreenQuickFacts;

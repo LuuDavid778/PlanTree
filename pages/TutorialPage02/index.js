@@ -4,7 +4,7 @@ import ProgressCircles from '../../Comps/Kozy/ProgressCircles';
 import CustomButton from '../../Comps/Kozy/CustomButton';
 import Link from 'next/link'
 import Router from 'next/router';
-import '../TutorialPage01/tutorialpage.css';
+import './tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
 import React, {useState, useEffect} from "react";
 import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
@@ -33,8 +33,10 @@ return<div>
         <TutorialText Headertext="What type of house do you live in?" Desctext="Some plants need to be kept indoors, while others prefer the outside."></TutorialText>
     </div>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
-    <div className = "button_div">
-    <CustomButton text = "Next" onClick={Tutorial_3}></CustomButton>
+    <div className = "button_div_page02">
+    <CustomButton text = "Back" onclick={BackTo01} width="120px" bgColor="#6A8838" fontSize="14pt"></CustomButton>
+    <div className="button_spacer02"></div>
+    <CustomButton text = "Next" onclick={Tutorial_3} width="120px" fontSize="14pt"></CustomButton>
     </div>
 </div>
 }

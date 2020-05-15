@@ -1,39 +1,48 @@
 
 import './PreResultPage.css'
-import PlantTopbar from '../../Comps/David/plantpage_topbar/'
+import PreresultTopbar from '../../Comps/Kozy/PreresultTopBar'
 import PlantName from '../../Comps/David/result_selection_header'
 import ResultSelection from '../../Comps/David/result_selection'
 import BottomNav from '../../Comps/Kozy/BottomNav'
 import CustomButtom from '../../Comps/Kozy/CustomButton'
 import Link from 'next/link'
 import Router from 'next/router';
+import  {useEffect} from 'react';
+import { data } from '../../data'
 
-const selectioncard2 = require("../../Imgs/tree.svg")
+const selectioncard2 = require("../../Imgs/house_card.svg")
 const selectioncard3 = require("../../Imgs/short_weeks.svg")
 const selectioncard4 = require("../../Imgs/cold.svg")
 
 const progressbar5 = require("../../Imgs/progress_bar5.svg")
 
-function ClickResult() {
-    Router.push("/ResultPage")
-}
-const PreResultPage = () => <div className = "PreResultPage_cont">  
 
 
 
+const PreResultPage = () => {
 
-<PlantTopbar id = "test" question = "Completed!" progress = {progressbar5} display = "none"></PlantTopbar>
+    useEffect(()=>{
+        setTimeout(()=> {
+            document.querySelector(".PreResultPage_cont").style.opacity = "100%" 
+        },100)
+
+        setTimeout(()=> {
+            document.querySelector(".selections").style.opacity = "100%" 
+        },900)
+
+    },[]);
+
+return <div className = "PreResultPage_cont">  
+<PreresultTopbar id = "test" question = "Completed!" progress = {progressbar5} display = "none"></PreresultTopbar>
 <PlantName></PlantName> 
-<span onClick = {ClickResult}>
-<div className = "PreResultPage_button">
-<CustomButtom text ="View Results" width = "150px" height = "30px" fontSize = "13pt" ></CustomButtom>
-    </div>
-    </span>
+
 <div className = "selections">
-<ResultSelection></ResultSelection>
-<ResultSelection image = {selectioncard2}  ></ResultSelection>
-<ResultSelection image = {selectioncard3} ></ResultSelection>
-<ResultSelection  image = {selectioncard4}></ResultSelection>
+<ResultSelection text = {data.Question_1}></ResultSelection>
+<ResultSelection  ></ResultSelection>
+<ResultSelection ></ResultSelection>
+<div className = "last">
+<ResultSelection ></ResultSelection>
+</div>
 
 </div>
 <div className = "navbar" >
@@ -43,6 +52,6 @@ const PreResultPage = () => <div className = "PreResultPage_cont">
 
 
 </div>
-
+}
 
 export default PreResultPage; 

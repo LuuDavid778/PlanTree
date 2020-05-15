@@ -64,6 +64,7 @@ body {
     justify-content: center;
     color: #7FA53E;
     font-family: 'Assistant', sans-serif;
+    transition: background-color 0.3s;
 }
 .glossary_button_text_2{
     background-color: #556F44;
@@ -72,4 +73,5 @@ body {
     height: 70%;
     margin: 0;
     color: white;
+    transition: background-color 0.3s;
 }

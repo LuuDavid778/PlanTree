@@ -4,13 +4,14 @@
 }
 
 .find_plant_button__cont{
-    width: 281.25pt;
+    width: 100vw;
     height:50pt;
     background-color: white;
     box-shadow: 0px -5px 30px rgb(172, 175, 177);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Assistant;
 
 }
 

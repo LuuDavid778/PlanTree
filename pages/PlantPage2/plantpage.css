@@ -1,8 +1,14 @@
-html body{
+html, body{
     margin-top: 0pt;
     margin-left: 0pt;
     margin-right: 0pt;
     margin-bottom: 0pt;
+    height: 100vh;
+}
+
+.plant_page_transition-wrap {
+    opacity: 0%;
+    transition: opacity 0.6s;
 }
 
 .plant_page_card_container {
@@ -10,17 +16,23 @@ html body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 200px;
     margin-top: 60pt;
-
+    opacity: 0%;
+    transition: opacity .8s;
+  
 }
+
 
 .plant_page_card_button {
     display: flex;
+    height: 76.65px;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 50pt;
+    opacity: 0%;
+    transition: opacity 1s;
 }
 
 .plant_page_card_arrow {
@@ -30,13 +42,36 @@ html body{
     width: 16px;
     height: 12px;
 }
+.selection1 {
+    margin-right: 10pt;
+}
 
-
+.selection2 {
+    margin-left: 10pt;
+}
 #testA {
-    transition: background-Color 0.3s;
+    transition: border 0.3s;
+    border-radius: 10px;
 }
 
 
 #testB {
-    transition: background-Color 0.3s;
+    transition: border 0.3s;
+    border-radius: 10px;
 }
+
+.spacer2 {
+    width:30pt;
+    height:8pt;
+
+ 
+}
+
+.spacerB{
+    width:20pt;
+    height:8pt;
+
+ 
+}
+
+
