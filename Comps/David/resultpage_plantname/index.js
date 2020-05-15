@@ -1,6 +1,5 @@
 import React from 'react'
 import '../resultpage_plantname/plantname.css'
-import '../../../data'
 import { data } from '../../../data'
 
 const PlantName = ({PlantName, className}) => <div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import "./resulttexts.css";
-import '../../../data'
 import { data } from '../../../data'
 const ResultTexts = ({textcolor,backgroundColor}) => <div className="result_texts__cont" style={{color:textcolor, backgroundColor:backgroundColor}}>
   

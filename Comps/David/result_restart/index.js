@@ -2,7 +2,6 @@ import React from 'react';
 import "./app.css";
 import Router from 'next/router'
 const ReduIcon = require('../../../Imgs/redo.svg');
-import '../../../data'
 import { data, restartResults } from '../../../data'
 import {toggleStates, ChangeState} from '../../../togglestates'
 

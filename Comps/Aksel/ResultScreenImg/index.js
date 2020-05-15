@@ -1,6 +1,6 @@
 import React from 'react';
 import './ResultScreenImg.css';
-import '../../../data'
+import { data } from '../../data'
 const PlantImg = require("../../../Imgs/areca_palm.png");
 
 const ResultScreenImg = () => <div className="resultScreen_img_container">
