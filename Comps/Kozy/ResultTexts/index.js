@@ -1,7 +1,6 @@
 import React from 'react';
 import "./resulttexts.css";
-import '../../../pages/data'
-import { data } from '../../../pages/data';
+import { data } from '../../../data'
 const ResultTexts = ({textcolor,backgroundColor}) => <div className="result_texts__cont" style={{color:textcolor, backgroundColor:backgroundColor}}>
   
     <div className="plant_texts__discription">{data.resultdesc}</div>

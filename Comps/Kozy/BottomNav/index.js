@@ -2,9 +2,8 @@ import React from 'react';
 import "./bottomnav.css";
 import Router from 'next/router'
 const ReduIcon = require('../../../Imgs/redo.svg');
-import {toggleStates, ChangeState} from '../../../pages/togglestates'
-import '../../../pages/data'
-import { data, restartResults } from '../../../pages/data';
+import {toggleStates, ChangeState} from '../../../togglestates'
+import { data, restartResults } from '../../../data';
 function RestartQuiz() {
     toggleStates.selectedstateA1 = false
     toggleStates.selectedstateB1= false

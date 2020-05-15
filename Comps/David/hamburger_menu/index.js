@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import './app.css'
 import Router from 'next/router';
-import "../../../pages/data"
-import { restartResults } from '../../../pages/data';
 
 const HamburgerIcon = require('../../../Imgs/hamburger_menu.svg');
 const HomeIcon = require('../../../Imgs/home_icon.svg');
