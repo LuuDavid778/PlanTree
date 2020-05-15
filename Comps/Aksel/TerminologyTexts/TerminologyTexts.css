@@ -1,0 +1,14 @@
+.result_texts_cont_term {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 320pt;
+    font-family: Poppins;
+    margin-left: 20pt;
+ 
+}
+
+.plant_texts_description {
+    width: 250pt;
+
+}

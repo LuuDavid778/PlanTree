@@ -1,0 +1,13 @@
+.Terminology_Title_Container{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    top: 110pt;
+}
+
+
+.Terminology_Title{
+    font-size: 25pt;
+}

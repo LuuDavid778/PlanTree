@@ -28,13 +28,41 @@ const Img22 = require("../Imgs/zamioculcas_zamiifolia.png");
 const Img23 = require("../Imgs/zamioculcas_zamiifolia.png");
 const Img24 = require("../Imgs/zamioculcas_zamiifolia.png");
 
+export var Terminology_counter = 0;
 export var glossary_counter = 0;
+
+export var terminology_data = [
+    {
+        name:"Annuals",
+        desc:"An annual plant is a plant that completes its life cycle, from germination to the production of seeds, within one growing season, and then dies. The length of growing seasons and period in which they take place vary according to geographical location, and may not correspond to the four traditional seasonal divisions of the year. With respect to the traditional seasons annual plants are generally categorized into summer annuals and winter annuals. Summer annuals germinate during spring or early summer and mature by autumn of the same year. Winter annuals germinate during the autumn and mature during the spring or summer of the following calendar year."
+    },
+    {
+        name:"Biennials",
+        desc:"A biennial plant is a flowering plant that takes two years to complete its biological life cycle. In the first year, the plant undergoes primary growth, in which its leaves, stems, and roots (vegetative structures) develop. Usually, the stem of the plant remains short and the leaves are low to the ground, forming a rosette. After the first year, the plant enters a period of dormancy for the colder months. Many biennials require a cold treatment, or vernalization, before they will flower. During the next spring or summer, the stem of the biennial plant elongates greatly, or 'bolts'. The plant then flowers, producing fruits and seeds before it finally dies. There are far fewer biennials than either perennial plants or annual plants.A biennial plant is a flowering plant that takes two years to complete its biological life cycle. In the first year, the plant undergoes primary growth, in which its leaves, stems, and roots (vegetative structures) develop. Usually, the stem of the plant remains short and the leaves are low to the ground, forming a rosette. After the first year, the plant enters a period of dormancy for the colder months. Many biennials require a cold treatment, or vernalization, before they will flower. During the next spring or summer, the stem of the biennial plant elongates greatly, or 'bolts'. The plant then flowers, producing fruits and seeds before it finally dies. There are far fewer biennials than either perennial plants or annual plants."
+    },
+    {
+        name:"Direct Sow",
+        desc:"Direct seeding or direct sowing means that you start planting seeds in the garden, rather than buying small plants or starting seeds indoors earlier and transplanting them outside."
+    },
+    {
+        name:"Heat Tolerance",
+        desc:"Heat tolerance is the ability of a living organism to physiologically adjust to a heat stress exposure. For plants, it's how much heat they are able to withstand."
+    },
+    {
+        name:"Self Sow",
+        desc:"Self-seeding (or self-sowing) garden plants drop their pods, capsules or seeds at the end of the season. In most cases, the seeds need nothing more than the soil they fall onto, relying on natural seasonal changes to germinate and grow."
+    },
+    {
+        name:"Terrestrial Plants",
+        desc:"A terrestrial plant is a plant that grows on, in, or from land. Other types of plants are aquatic (living in water), epiphytic (living on trees) and lithophytic (living in or on rocks)."
+    }
+]
 
 export var glossary_data = [
     {
         image: <GlossaryPlantImg GlossaryImg={Img13}></GlossaryPlantImg>, 
         name: "Amaryllis",
-        water: "<p>Water once a week<p/><br/><WaterDrop/><WaterDrop/><WaterDrop/>",
+        water: "Water once a week"+<br/>+<WaterDrop/>+<WaterDrop/>+<WaterDrop/>,
         care: "Very easy to care for" + <br/> + <TrowelImg/>,
         sunlight: "Prefers lots of light" + <br/> + <SunlightImg/> + <SunlightImg/> + <SunlightImg/>,
         desc: "No matter where you live, you can grow amaryllis. It's most commonly grown as a houseplant; the bulbs bloom around the holidays, making them perfect partners for poinsettias, Norfolk Island pines, and other holiday favorites. You'll typically see amaryllis in shades of red, but look around and you may be able to find stunners in shades of pink, apricot, orange, white, and even green.",
@@ -259,6 +287,10 @@ export function ChangeData(d, n){
 
 }
 
-export function ChangeCounter(c,k){
-    glossary_counter = c;
+export function ChangeCounter(d,l){
+    glossary_counter = d;
+}
+
+export function TermChangeCounter(c,k){
+    Terminology_counter = c;
 }
