@@ -11,7 +11,7 @@ function onClick1(){
 }
 
 function onClick2(){
-    Router.push("/GlossaryPage");
+    Router.push("/Glossarypage");
 }
 
 function onClick3(){

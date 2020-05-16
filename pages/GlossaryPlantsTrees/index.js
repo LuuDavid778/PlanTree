@@ -12,6 +12,8 @@ import { glossary_data, glossary_counter } from "../glossary_data";
 import React, {useState, useEffect} from 'react'
 import WaterDrop from "../../Comps/Aksel/WaterDropImg";
 
+import HamburgerMenu from '../../Comps/David/glossary_detail_hamburger'
+
 
 // Defining it just for now so it can show something
 
@@ -23,6 +25,7 @@ const GlossaryPlantsTrees = () => {
     const [Sun, ChangeSun,] = useState("")
     const [PlantImg, ChangeImg,] = useState("")
     const [PlantFacts, ChangeFact,] = useState("")
+    const [right, setRight,] = useState("300pt")
     function changePage(){
         ChangeDesc(glossary_data[glossary_counter].desc) 
         ChangeName(glossary_data[glossary_counter].name)
@@ -41,9 +44,10 @@ const GlossaryPlantsTrees = () => {
   
   
 return <div>
+
 <GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
 <PlantsTreesImg src={PlantImg}></PlantsTreesImg>
-
+<HamburgerMenu right ={right}></HamburgerMenu>
 <PlantsTreesResultCard></PlantsTreesResultCard>
 
 <PlantsTreesPlantName PlantName={NameofPlant}></PlantsTreesPlantName>

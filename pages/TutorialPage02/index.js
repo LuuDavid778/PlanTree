@@ -17,16 +17,24 @@ function Tutorial_3(){
     Router.push("/TutorialPage03")
 }
 
+function BackTo01() {
+    Router.push("/TutorialPage01")   
+}
+
 const TutorialPage02 = () => {
 
     useEffect(()=>{
-        setTimeout(()=>{
-            document.querySelector(".tutorial_effect_2").style.opacity = 100;
-        },50)
-    }, []);
+        setTimeout(()=> {
+            document.querySelector(".tutorial02_transition_wrap").style.opacity = "100%" 
+        },100);
 
-return<div>
-    <TutorialTitle></TutorialTitle>
+        setTimeout(()=> {
+            document.querySelector(".button_div_page02").style.opacity = "100%" 
+        },800)
+
+    },[]);
+
+return <div className="tutorial02_transition_wrap">
     <TutorialTop></TutorialTop>
     <div className="tutorial_effect_2">
         <TutorialMiddle02_06></TutorialMiddle02_06>
@@ -39,5 +47,7 @@ return<div>
     <CustomButton text = "Next" onclick={Tutorial_3} width="120px" fontSize="14pt"></CustomButton>
     </div>
 </div>
+
 }
+
 export default TutorialPage02;

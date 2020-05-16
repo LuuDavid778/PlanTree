@@ -15,6 +15,10 @@ function Tutorial_4(){
     Router.push("/TutorialPage04")
 }
 
+function BackTo02(){
+    Router.push("/TutorialPage02")
+}
+
 const TutorialPage03 = () => <div>
     <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>

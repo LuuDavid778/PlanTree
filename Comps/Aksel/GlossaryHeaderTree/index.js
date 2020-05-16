@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './GlossaryHeaderTree.css';
 import Router from 'next/router';
-import HamburgerMenu from '../../David/glossary_hamburger'
+import HamburgerMenu from '../../David/glossary_detail_hamburger'
 
 const information = require('../../../Imgs/information.svg');
 const glossary = require('../../../Imgs/glossary.svg');
@@ -15,7 +15,7 @@ function onClick1(){
 }
 
 function onClick2(){
-    Router.push("/GlossaryPage");
+    Router.push("/Glossarypage");
 }
 
 function onClick3(){
