@@ -2,8 +2,3 @@
     width: 100vw;
     height: 200pt;
 }
-
-.glossary_effect_term{
-    opacity: 0;
-    transition: 1s;
-}
