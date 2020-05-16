@@ -34,6 +34,7 @@ const TutorialPage05 = () => {
     },[]);
 
 return <div className="tutorial05_transition_wrap">
+      <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg05}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles5}></ProgressCircles>

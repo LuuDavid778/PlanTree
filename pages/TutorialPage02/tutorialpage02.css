@@ -7,7 +7,10 @@
     opacity: 0%;
     transition: opacity 0.6s;
 }
-
+.tutorial_effect_2{
+    opacity: 0;
+    transition: 1s;
+}
 .button_spacer02 {
     width: 30pt;
     height: 30pt;
@@ -38,3 +41,4 @@
     opacity: 0%;
     transition: opacity 0.6s;
 }
+

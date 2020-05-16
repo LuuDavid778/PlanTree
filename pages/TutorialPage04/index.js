@@ -33,6 +33,7 @@ const TutorialPage04 = () => {
     },[]);
 
 return <div className="tutorial04_transition_wrap">
+      <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg04}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles4}></ProgressCircles>

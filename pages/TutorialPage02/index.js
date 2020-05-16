@@ -7,6 +7,9 @@ import Router from 'next/router';
 import './tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
 import  React, {useEffect} from 'react';
+import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
+
+
 
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
@@ -32,6 +35,7 @@ const TutorialPage02 = () => {
     },[]);
 
 return <div className="tutorial02_transition_wrap">
+     <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
