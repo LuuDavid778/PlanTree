@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './GlossaryHeaderTree.css';
 import Router from 'next/router';
-import HamburgerMenu from '../../David/hamburger_menu'
+import HamburgerMenu from '../../David/glossary_hamburger'
 
 const information = require('../../../Imgs/information.svg');
 const glossary = require('../../../Imgs/glossary.svg');
@@ -23,7 +23,7 @@ function onClick3(){
 }
 
 const GlossaryHeaderTree = () => {
-    const [right, setRight,] = useState("300pt")
+    const [right, setRight,] = useState("-900pt")
 
 return <div className="glossaryHeader_container">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poppins&display=swap" rel="stylesheet"></link>
@@ -35,11 +35,11 @@ return <div className="glossaryHeader_container">
         </div>
     </div>
     <div className="glossaryHeader_top">
+        <HamburgerMenu right = {right}></HamburgerMenu>
         <div className="glossary_icon_container">
             <img className="glossary_icon" src={glossary}></img>
             Glossary
         </div>
-        <HamburgerMenu right = {right}></HamburgerMenu>
     </div>
 </div>
 }
