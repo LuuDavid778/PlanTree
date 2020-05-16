@@ -30,15 +30,15 @@ return <div className="glossaryHeader_container">
     <div className="glossaryHeader_bot">
         <div className="glossary_button_container">
             <p className="terminology_glossary_button_text terminology_glossary_button_text_1" onClick={onClick1}>Trees</p>
-            <p  className="terminology_glossary_button_text terminology_glossary_button_text_2" >Flowering Plant</p>
+            <p  className="terminology_glossary_button_text terminology_glossary_button_text_2" onClick={onClick2} >Flowering Plant</p>
             <p className="terminology_glossary_button_text terminology_glossary_button_text_3" onClick={onClick3}>Terminology</p>
         </div>
     </div>
     <div className="glossaryHeader_top">
+    <HamburgerMenu right = {right}></HamburgerMenu>
         <div className="glossary_icon_container">
             <img className="glossary_icon" src={glossary}></img>
             Glossary
-            <HamburgerMenu right = {right}></HamburgerMenu>
         </div>
     </div>
 </div>

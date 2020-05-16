@@ -2,10 +2,14 @@ import React from 'react';
 import "./PlantsTreesResultTexts.css";
 import { glossary_data, glossary_counter } from "../../../pages/glossary_data";
 
-const PlantsTreesResultTexts = ({textcolor,backgroundColor,innerText}) => {
+const PlantsTreesResultTexts = ({textcolor,backgroundColor,innerText, Facts}) => {
 
 return <div className="result_texts_cont" style={{color:textcolor, backgroundColor:backgroundColor}}>
     <div className="plant_texts_description">{innerText}
+    <br/>
+    <br/>
+    <b>Facts</b>
+    {Facts}
 </div>
 </div>
 }

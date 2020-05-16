@@ -35,11 +35,11 @@ return <div className="glossaryHeader_container">
         </div>
     </div>
     <div className="glossaryHeader_top">
+        <HamburgerMenu right = {right}></HamburgerMenu>
         <div className="glossary_icon_container">
             <img className="glossary_icon" src={glossary}></img>
             Glossary
         </div>
-        <HamburgerMenu right = {right}></HamburgerMenu>
     </div>
 </div>
 }
