@@ -72,8 +72,6 @@ export var data = {
 //     ]
 // }
 
-
-
 export function checkResults(){
     // Apartment starts here
     // Apartment FLOWERING PLANT SHORT WEEKS STARTS HERE 
