@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './terminologytopbar.css'
 import Router from 'next/router';
 import HamburgerMenu from '../../David/glossary_hamburger'
-import { glossary_data, glossary_counter } from "../../../pages/glossary_data";
+import { glossary_data, glossary_counter } from '../../../glossary_data'
 
 const BackArrow = require('../../../Imgs/back_arrow.svg');
 

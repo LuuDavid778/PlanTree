@@ -1,6 +1,7 @@
 import React from 'react';
 import "./TerminologyTexts.css";
-import { glossary_data, glossary_counter } from "../../../pages/glossary_data";
+import { glossary_data, glossary_counter } from '../../../glossary_data'
+
 
 const TerminologyTexts = ({innerText}) => {
 

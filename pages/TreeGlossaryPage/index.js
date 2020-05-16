@@ -5,7 +5,7 @@ import './treeglossarypage.css';
 import Router from 'next/router'
 import { route } from 'next/dist/next-server/server/router';
 import React, {useState, useEffect} from "react";
-import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../glossary_data';
+import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../../glossary_data'
 
 const tree13 = require("../../Imgs/areca_palm.png");
 const tree14 = require("../../Imgs/aspidistra_elatior.png");

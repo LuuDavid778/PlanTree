@@ -1,7 +1,6 @@
 import React from 'react';
-import "./PlantsTreesResultTexts.css";
-import { glossary_data, glossary_counter } from "../../../pages/glossary_data";
-
+import "plantstreesresulttexts.css"
+import { glossary_data, glossary_counter } from '../../../glossary_data'
 const PlantsTreesResultTexts = ({textcolor,backgroundColor,innerText, Facts}) => {
 
 return <div className="result_texts_cont" style={{color:textcolor, backgroundColor:backgroundColor}}>

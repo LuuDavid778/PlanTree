@@ -6,7 +6,8 @@ import React, {useState, useEffect} from "react";
 import Router from 'next/router';
 import "../glossary_data.js";
 import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
-import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../glossary_data';
+import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../../glossary_data';
+
 
 const plant01 = require("../../Imgs/amaryllis.png");
 const plant02 = require("../../Imgs/lucky_bamboo.png");

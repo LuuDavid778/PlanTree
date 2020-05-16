@@ -8,12 +8,11 @@ import ResultScreenQuickFacts2 from '../../Comps/Aksel/ResultScreenQuickFacts2'
 import ResultScreenQuickFacts3 from '../../Comps/Aksel/ResultScreenQuickFacts3'
 import HamburgerMenu from '../../Comps/David/glossary_detail_hamburger'
 
-import "../../pages/glossary_data"
+import '../../glossary_data'
 import "./GlossaryPlantsTrees.css"
-import { glossary_data, glossary_counter } from "../glossary_data";
+import { glossary_data, glossary_counter } from "../../glossary_data";
 import React, {useState, useEffect} from 'react'
 import WaterDrop from "../../Comps/Aksel/WaterDropImg";
-
 
 // Defining it just for now so it can show something
 

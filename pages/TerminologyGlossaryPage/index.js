@@ -4,7 +4,7 @@ import GlossaryTerm from '../../Comps/David/glossary_term';
 import './terminologyglossarypage.css';
 import Router from 'next/router';
 import React, {useState, useEffect} from "react";
-import {glossary_data, ChangeData, glossary_counter, ChangeCounter, TermChangeCounter} from '../glossary_data';
+import {glossary_data, ChangeData, glossary_counter, ChangeCounter, TermChangeCounter} from '../../glossary_data'
 
 function Term1() {
     TermChangeCounter(0)
