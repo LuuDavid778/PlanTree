@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './GlossaryPlantsTreesTopBar.css'
 import Router from 'next/router';
-import { glossary_data, glossary_counter } from "../../../pages/glossary_data";
+import { glossary_data , glossary_counter } from "../../../pages/glossary_data";
 
 const BackArrow = require('../../../Imgs/back_arrow.svg');
 
