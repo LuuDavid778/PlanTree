@@ -13,14 +13,18 @@ function Tutorial_2(){
 }
 
 const TutorialPage01 = () => {
+        useEffect(()=>{
+            setTimeout(()=> {
+                document.querySelector(".tutorial01_transition_wrap").style.opacity = "100%" 
+            },100);
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            document.querySelector(".tutorial_effect_1").style.opacity = 100;
-        },50)
-    }, []);
+            setTimeout(()=> {
+                document.querySelector(".button_div").style.opacity = "100%" 
+            },800)
+    
+        },[]);
 
-return<div className="tutorial_effect_1">
+return <div className="tutorial01_transition_wrap">
     <TutorialTop></TutorialTop>
     <TutorialMiddle01></TutorialMiddle01>
     <ProgressCircles></ProgressCircles>
@@ -28,5 +32,7 @@ return<div className="tutorial_effect_1">
     <CustomButton text = "Next" onclick={Tutorial_2} fontSize="16pt"></CustomButton>
     </div>
 </div>
+
 }
+
 export default TutorialPage01;

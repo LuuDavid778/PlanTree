@@ -7,7 +7,7 @@ import Router from 'next/router';
 import './tutorialpage02.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
 import  React, {useEffect} from 'react';
-import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
+import TutorialTitle from '../../Comps/Aksel/TutorialTitle'
 
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
@@ -15,23 +15,25 @@ function Tutorial_3(){
     Router.push("/TutorialPage03")
 }
 
+function BackTo01() {
+    Router.push("/TutorialPage01")   
+}
+
 const TutorialPage02 = () => {
 
     useEffect(()=>{
-        setTimeout(()=>{
-            document.querySelector(".tutorial_effect_2").style.opacity = 100;
-        },50)
-    }, []);
+        setTimeout(()=> {
+            document.querySelector(".tutorial02_transition_wrap").style.opacity = "100%" 
+        },100);
 
-<<<<<<< HEAD
+        setTimeout(()=> {
+            document.querySelector(".button_div_page02").style.opacity = "100%" 
+        },800)
+
     },[]);
 
 return <div className="tutorial02_transition_wrap">
-     <TutorialTitle></TutorialTitle>
-=======
-return<div>
-    <TutorialTitle></TutorialTitle>
->>>>>>> b8289ab306843ce9e6d2efe3fc80f9002df75ceb
+  <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles2}></ProgressCircles>
@@ -42,5 +44,7 @@ return<div>
     </div>
     <TutorialText Headertext="What type of house do you live in?" Desctext="Depending on what type of house you live in, a plant will have different growing conditions."></TutorialText>
 </div>
+
 }
+
 export default TutorialPage02;

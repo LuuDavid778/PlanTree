@@ -8,7 +8,7 @@ const PlantsTreesPlantName = ({PlantName, className}) => <div>
 
 PlantsTreesPlantName.defaultProps = {
     PlantName: "insert plant name",
-    className: "rs_plantname"
+    className: "rs_plantnamegloss"
 }
 
 export default PlantsTreesPlantName;

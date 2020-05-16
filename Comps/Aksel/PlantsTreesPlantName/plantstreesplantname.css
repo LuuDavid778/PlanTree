@@ -1,9 +1,9 @@
-.rs_plantname {
+.rs_plantnamegloss {
     font-weight: 900;
     font-family: Assistant;
     font-size: 15pt;
     position: absolute;
     top: 315pt;
-    color: #2C2A2A;
+    color: black;
     left: 25pt;
 }

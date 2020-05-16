@@ -6,6 +6,8 @@ import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
 import ResultScreenQuickFacts1 from '../../Comps/Aksel/ResultScreenQuickFacts'
 import ResultScreenQuickFacts2 from '../../Comps/Aksel/ResultScreenQuickFacts2'
 import ResultScreenQuickFacts3 from '../../Comps/Aksel/ResultScreenQuickFacts3'
+import HamburgerMenu from '../../Comps/David/glossary_detail_hamburger'
+
 import "../../pages/glossary_data"
 import "./GlossaryPlantsTrees.css"
 import { glossary_data, glossary_counter } from "../glossary_data";
@@ -23,6 +25,8 @@ const GlossaryPlantsTrees = () => {
     const [Sun, ChangeSun,] = useState("")
     const [PlantImg, ChangeImg,] = useState("")
     const [PlantFacts, ChangeFact,] = useState("")
+    const [right, setRight,] = useState("300pt")
+    
     function changePage(){
         ChangeDesc(glossary_data[glossary_counter].desc) 
         ChangeName(glossary_data[glossary_counter].name)
@@ -41,6 +45,7 @@ const GlossaryPlantsTrees = () => {
   
   
 return <div>
+<HamburgerMenu right ={right}></HamburgerMenu>
 <GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
 <PlantsTreesImg src={PlantImg}></PlantsTreesImg>
 
