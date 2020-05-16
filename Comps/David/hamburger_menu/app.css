@@ -7,8 +7,9 @@ html, body {
 
 .hamburger_menu_cont {
     position: absolute;
-    z-index: 1;
-    top: 0;
+    z-index: 3;
+    transition: right 0.3s;
+  
 }
 
 .hamburger_menu_wrapper {
@@ -16,7 +17,7 @@ html, body {
 
 }
 .hamburger_menu_div {
-    height: 100vh;
+    height: 100%;
     width: 237px;
     background-color: #92BC4A;
     padding-left: 25pt;

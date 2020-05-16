@@ -9,7 +9,7 @@ html, body {
     position: absolute;
     z-index: 1;
     transition: right 0.3s;
-    top: -6.5vh;
+  top: -6vh;
 }
 
 .hamburger_menu_wrapper {
