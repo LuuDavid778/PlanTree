@@ -4,7 +4,7 @@ import GlossaryTerm from '../../Comps/David/glossary_term';
 import './glossarypage.css';
 import React, {useState, useEffect} from "react";
 import Router from 'next/router';
-import "../glossary_data.js";
+import '../../glossary_data'
 import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
 import {glossary_data, ChangeData, glossary_counter, ChangeCounter } from '../../glossary_data';
 
