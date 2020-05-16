@@ -9,3 +9,8 @@ body {
     position: absolute;
     top: 120pt;
 }
+
+.resultScreen_img {
+    width:230px;
+    height:230px
+}

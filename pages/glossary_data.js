@@ -73,7 +73,7 @@ export var terminology_data = [
 
 export var glossary_data = [
     {
-        image: Img01,
+        image: Img01, 
         name: "Amaryllis",
         water: WaterHard,
         care: GrowEasy,
