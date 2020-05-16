@@ -9,6 +9,8 @@ import TutorialText from '../../Comps/Aksel/TutorialText';
 import  React, {useEffect} from 'react';
 import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
+
+
 const progress_circles2 = require("../../Imgs/progress_circles2.svg");
 
 function Tutorial_3(){
