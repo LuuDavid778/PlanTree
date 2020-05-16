@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="48" viewBox="0 0 279 48">
+  <g id="sundirect" transform="translate(-9956 -1359)">
+    <rect id="Rectangle_1951" data-name="Rectangle 1951" width="279" height="48" rx="12" transform="translate(9956 1359)" fill="#fff"/>
+    <text id="Keep_plant_in_direct_sunlight" data-name="Keep plant in direct sunlight" transform="translate(10096 1397)" fill="#5e5e5e" font-size="12" font-family="Poppins-Light, Poppins" font-weight="300" letter-spacing="-0.01em"><tspan x="-80.928" y="0">Keep plant in direct sunlight</tspan></text>
+    <g id="sun" transform="translate(10081.74 1359.74)">
+      <circle id="Ellipse_518" data-name="Ellipse 518" cx="5.521" cy="5.521" r="5.521" transform="translate(7.989 7.989)" fill="#ffd00d"/>
+      <rect id="Rectangle_2013" data-name="Rectangle 2013" width="0.935" height="5.101" transform="translate(13.04 2.26)" fill="#ffd00d"/>
+      <rect id="Rectangle_2014" data-name="Rectangle 2014" width="0.935" height="5.101" transform="translate(7.477 4.002) rotate(-30)" fill="#ffd00d"/>
+      <rect id="Rectangle_2015" data-name="Rectangle 2015" width="0.938" height="5.118" transform="translate(3.555 8.272) rotate(-60.113)" fill="#ffd00d"/>
+      <rect id="Rectangle_2016" data-name="Rectangle 2016" width="0.935" height="5.101" transform="translate(2.26 13.98) rotate(-90)" fill="#ffd00d"/>
+      <rect id="Rectangle_2017" data-name="Rectangle 2017" width="0.935" height="5.101" transform="translate(4.005 19.537) rotate(-120)" fill="#ffd00d"/>
+      <rect id="Rectangle_2018" data-name="Rectangle 2018" width="0.935" height="5.101" transform="translate(8.29 23.488) rotate(-150)" fill="#ffd00d"/>
+      <rect id="Rectangle_2019" data-name="Rectangle 2019" width="0.935" height="5.101" transform="translate(13.98 24.755) rotate(180)" fill="#ffd00d"/>
+      <rect id="Rectangle_2020" data-name="Rectangle 2020" width="0.935" height="5.101" transform="translate(19.543 23.018) rotate(150)" fill="#ffd00d"/>
+      <rect id="Rectangle_2021" data-name="Rectangle 2021" width="0.938" height="5.118" transform="translate(23.426 18.805) rotate(119.887)" fill="#ffd00d"/>
+      <rect id="Rectangle_2022" data-name="Rectangle 2022" width="0.935" height="5.101" transform="translate(24.76 13.04) rotate(90)" fill="#ffd00d"/>
+      <rect id="Rectangle_2023" data-name="Rectangle 2023" width="0.935" height="5.101" transform="translate(23.019 7.481) rotate(60)" fill="#ffd00d"/>
+      <rect id="Rectangle_2024" data-name="Rectangle 2024" width="0.938" height="5.118" transform="translate(18.789 3.541) rotate(29.887)" fill="#ffd00d"/>
+    </g>
+  </g>
+</svg>

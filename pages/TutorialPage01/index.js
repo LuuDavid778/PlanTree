@@ -6,25 +6,21 @@ import Link from 'next/link'
 import Router from 'next/router';
 import './tutorialpage.css'
 import { route } from 'next/dist/next-server/server/router';
-import  React, {useEffect} from 'react';
+import React, {useState, useEffect} from "react";
 
 function Tutorial_2(){
     Router.push("/TutorialPage02")
 }
 
 const TutorialPage01 = () => {
-        useEffect(()=>{
-            setTimeout(()=> {
-                document.querySelector(".tutorial01_transition_wrap").style.opacity = "100%" 
-            },100);
 
-            setTimeout(()=> {
-                document.querySelector(".button_div").style.opacity = "100%" 
-            },800)
-    
-        },[]);
+    useEffect(()=>{
+        setTimeout(()=>{
+            document.querySelector(".tutorial_effect_1").style.opacity = 100;
+        },50)
+    }, []);
 
-return <div className="tutorial01_transition_wrap">
+return<div className="tutorial_effect_1">
     <TutorialTop></TutorialTop>
     <TutorialMiddle01></TutorialMiddle01>
     <ProgressCircles></ProgressCircles>
@@ -32,7 +28,5 @@ return <div className="tutorial01_transition_wrap">
     <CustomButton text = "Next" onclick={Tutorial_2} fontSize="16pt"></CustomButton>
     </div>
 </div>
-
 }
-
 export default TutorialPage01;

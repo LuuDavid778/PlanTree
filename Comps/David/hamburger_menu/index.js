@@ -64,7 +64,7 @@ Router.push("/PlantPage")
 </div>
 
 <div className = "hamburger_menu_main_div" onClick = {()=>{
-Router.push("/GlossaryPage")
+Router.push("/Glossarypage")
 }}>
     <img src = {GlossaryIcon}></img>
     <h2>Glossary</h2>

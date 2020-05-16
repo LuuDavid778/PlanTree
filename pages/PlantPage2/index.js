@@ -186,7 +186,7 @@ return <div className="plant_page02_transition-wrap">
         </div>
         <div className="spacer2"></div>
         <div>
-        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {toggleCardB}text={"Tree"}></PlantPageQuizCard>
+        <PlantPageQuizCard border = {borderB} id = {idB} onclick = {toggleCardB}text={"Tree"} icon={TreeCard}></PlantPageQuizCard>
         </div>
     </div>
 

@@ -1,0 +1,12 @@
+.PlantsTreesImg{
+
+        top: 80pt;
+        position: absolute;
+        max-height: 150pt;
+        max-height: 150pt;
+}
+
+.PlantsTreesImg_container{
+        display: flex;
+        justify-content: center;
+}
