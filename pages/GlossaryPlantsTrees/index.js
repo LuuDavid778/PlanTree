@@ -3,7 +3,9 @@ import GlossaryPlantsTreesTopBar from "../../Comps/Aksel/GlossaryPlantsTreesTopB
 import PlantsTreesResultCard from '../../Comps/Aksel/PlantsTreesResultCard'
 import PlantsTreesPlantName from '../../Comps/Aksel/PlantsTreesPlantName'
 import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
-import ResultScreenQuickFacts from '../../Comps/Aksel/ResultScreenQuickFacts'
+import ResultScreenQuickFacts1 from '../../Comps/Aksel/ResultScreenQuickFacts'
+import ResultScreenQuickFacts2 from '../../Comps/Aksel/ResultScreenQuickFacts2'
+import ResultScreenQuickFacts3 from '../../Comps/Aksel/ResultScreenQuickFacts3'
 import "../../pages/glossary_data"
 import "./GlossaryPlantsTrees.css"
 import { glossary_data, glossary_counter } from "../glossary_data";
@@ -12,12 +14,13 @@ import WaterDrop from "../../Comps/Aksel/WaterDropImg";
 
 
 // Defining it just for now so it can show something
-const GlossaryPlantsTreesImg = require("../../Imgs/desert_gems_cacti.png")
 
 const GlossaryPlantsTrees = () => {
     const [description, ChangeDesc,] = useState("")
     const [NameofPlant, ChangeName,] = useState("")
     const [Water, ChangeWater,] = useState("")
+    const [Difficulty, ChangeDifficulty,] = useState("")
+    const [Sun, ChangeSun,] = useState("")
     const [PlantImg, ChangeImg,] = useState("")
     const [PlantFacts, ChangeFact,] = useState("")
     function changePage(){
@@ -25,6 +28,8 @@ const GlossaryPlantsTrees = () => {
         ChangeName(glossary_data[glossary_counter].name)
         ChangeImg(glossary_data[glossary_counter].image)
         ChangeWater(glossary_data[glossary_counter].water)
+        ChangeSun(glossary_data[glossary_counter].sunlight)
+        ChangeDifficulty(glossary_data[glossary_counter].care)
         ChangeFact(glossary_data[glossary_counter].facts)
     }
     useEffect(()=>{
@@ -43,11 +48,11 @@ return <div>
 
 <PlantsTreesPlantName PlantName={NameofPlant}></PlantsTreesPlantName>
 <div className="Quick_Facts_Container">
-<ResultScreenQuickFacts quickFact={Water}></ResultScreenQuickFacts>
+<ResultScreenQuickFacts1 quickFact1={Water}></ResultScreenQuickFacts1>
 <br></br>
-<ResultScreenQuickFacts></ResultScreenQuickFacts>
+<ResultScreenQuickFacts2 quickFact2={Difficulty}></ResultScreenQuickFacts2>
 <br></br>
-<ResultScreenQuickFacts></ResultScreenQuickFacts>
+<ResultScreenQuickFacts3 quickFact3={Sun}></ResultScreenQuickFacts3>
 </div>
 
 <PlantsTreesResultTexts innerText={description} Facts={PlantFacts}></PlantsTreesResultTexts>

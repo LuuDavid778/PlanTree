@@ -1,7 +1,9 @@
 .PlantsTreesImg{
-        width: 50vw;
+
         top: 80pt;
         position: absolute;
+        max-height: 150pt;
+        max-height: 150pt;
 }
 
 .PlantsTreesImg_container{

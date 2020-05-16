@@ -1,17 +1,17 @@
 import React from 'react';
 import './ResultScreenQuickFacts.css';
 
-const ResultScreenQuickFacts1 = ({quickFact1}) => <div className="quickFact_box_container">
+const ResultScreenQuickFacts3 = ({quickFact3}) => <div className="quickFact_box_container">
     <div className="quickFact_box">
-        <img src={quickFact1}></img>
+        <img src={quickFact3}></img>
 </div>
 </div>
 
 
-ResultScreenQuickFacts1.defaultProps = {
+ResultScreenQuickFacts3.defaultProps = {
     text: "Keep out of direct sunlight",
     displaya: "none",
     displayb: "block",
     displayc: "none"
 }
-export default ResultScreenQuickFacts1;
+export default ResultScreenQuickFacts3;
