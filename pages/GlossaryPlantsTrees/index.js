@@ -3,100 +3,37 @@ import GlossaryPlantsTreesTopBar from "../../Comps/Aksel/GlossaryPlantsTreesTopB
 import PlantsTreesResultCard from '../../Comps/Aksel/PlantsTreesResultCard'
 import PlantsTreesPlantName from '../../Comps/Aksel/PlantsTreesPlantName'
 import PlantsTreesResultTexts from '../../Comps/Aksel/PlantsTreesResultTexts'
-import ResultScreenQuickFacts from '../../Comps/Aksel/ResultScreenQuickFacts'
+import ResultScreenQuickFacts1 from '../../Comps/Aksel/ResultScreenQuickFacts'
+import ResultScreenQuickFacts2 from '../../Comps/Aksel/ResultScreenQuickFacts2'
+import ResultScreenQuickFacts3 from '../../Comps/Aksel/ResultScreenQuickFacts3'
 import "../../pages/glossary_data"
 import "./GlossaryPlantsTrees.css"
 import { glossary_data, glossary_counter } from "../glossary_data";
 import React, {useState, useEffect} from 'react'
+import WaterDrop from "../../Comps/Aksel/WaterDropImg";
+
+import HamburgerMenu from '../../Comps/David/glossary_detail_hamburger'
 
 
 // Defining it just for now so it can show something
-const GlossaryPlantsTreesImg = require("../../Imgs/desert_gems_cacti.png")
 
 const GlossaryPlantsTrees = () => {
-    const [description, changeDesc,] = useState("")
-    const [NameofPlant, changeName,] = useState("")
-    const [PlantFact1, changeFact,] = useState("")
-    function changePage() {
-        if (glossary_counter === 0){
-            changeDesc(glossary_data[glossary_counter].desc) 
-            changeName(glossary_data[glossary_counter].name)
-            changeFact(glossary_data[glossary_counter].water)
-        } else if (glossary_counter === 1 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 2 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 3 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 4 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 5 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 6 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 7 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 8 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 9 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 10 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 11 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 12 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 13 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 14 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 15 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 16 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 17 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 18 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 19 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 20 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 21 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 22 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 23 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        } else if (glossary_counter === 24 ){
-            changeDesc(glossary_data[glossary_counter].desc)
-            changeName(glossary_data[glossary_counter].name)
-        }
-
-      
+    const [description, ChangeDesc,] = useState("")
+    const [NameofPlant, ChangeName,] = useState("")
+    const [Water, ChangeWater,] = useState("")
+    const [Difficulty, ChangeDifficulty,] = useState("")
+    const [Sun, ChangeSun,] = useState("")
+    const [PlantImg, ChangeImg,] = useState("")
+    const [PlantFacts, ChangeFact,] = useState("")
+    const [right, setRight,] = useState("300pt")
+    function changePage(){
+        ChangeDesc(glossary_data[glossary_counter].desc) 
+        ChangeName(glossary_data[glossary_counter].name)
+        ChangeImg(glossary_data[glossary_counter].image)
+        ChangeWater(glossary_data[glossary_counter].water)
+        ChangeSun(glossary_data[glossary_counter].sunlight)
+        ChangeDifficulty(glossary_data[glossary_counter].care)
+        ChangeFact(glossary_data[glossary_counter].facts)
     }
     useEffect(()=>{
         setTimeout(()=>{
@@ -107,21 +44,22 @@ const GlossaryPlantsTrees = () => {
   
   
 return <div>
-<GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
-<PlantsTreesImg src={GlossaryPlantsTreesImg}></PlantsTreesImg>
 
+<GlossaryPlantsTreesTopBar></GlossaryPlantsTreesTopBar>
+<PlantsTreesImg src={PlantImg}></PlantsTreesImg>
+<HamburgerMenu right ={right}></HamburgerMenu>
 <PlantsTreesResultCard></PlantsTreesResultCard>
 
 <PlantsTreesPlantName PlantName={NameofPlant}></PlantsTreesPlantName>
 <div className="Quick_Facts_Container">
-<ResultScreenQuickFacts quickFact={PlantFact1}></ResultScreenQuickFacts>
+<ResultScreenQuickFacts1 quickFact1={Water}></ResultScreenQuickFacts1>
 <br></br>
-<ResultScreenQuickFacts></ResultScreenQuickFacts>
+<ResultScreenQuickFacts2 quickFact2={Difficulty}></ResultScreenQuickFacts2>
 <br></br>
-<ResultScreenQuickFacts></ResultScreenQuickFacts>
+<ResultScreenQuickFacts3 quickFact3={Sun}></ResultScreenQuickFacts3>
 </div>
 
-<PlantsTreesResultTexts innerText={description}></PlantsTreesResultTexts>
+<PlantsTreesResultTexts innerText={description} Facts={PlantFacts}></PlantsTreesResultTexts>
 </div>
 }
 export default GlossaryPlantsTrees;

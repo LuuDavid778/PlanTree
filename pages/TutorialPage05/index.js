@@ -6,7 +6,6 @@ import Link from 'next/link'
 import Router from 'next/router';
 import '../TutorialPage01/tutorialpage.css';
 import TutorialText from '../../Comps/Aksel/TutorialText';
-import  React, {useEffect} from 'react';
 import TutorialTitle from "../../Comps/Aksel/TutorialTitle";
 
 const progress_circles5 = require("../../Imgs/progress_circles5.svg");
@@ -16,25 +15,8 @@ function Tutorial_6(){
     Router.push("/TutorialPage06")
 }
 
-function BackTo04() {
-    Router.push("/TutorialPage04")   
-}
-
-
-const TutorialPage05 = () => {
-
-    useEffect(()=>{
-        setTimeout(()=> {
-            document.querySelector(".tutorial05_transition_wrap").style.opacity = "100%" 
-        },100);
-
-        setTimeout(()=> {
-            document.querySelector(".button_div_page02").style.opacity = "100%" 
-        },800)
-
-    },[]);
-
-return <div className="tutorial05_transition_wrap">
+const TutorialPage05 = () => <div>
+    <TutorialTitle></TutorialTitle>
     <TutorialTop></TutorialTop>
     <TutorialMiddle02_06 tutimg={tutimg05}></TutorialMiddle02_06>
     <ProgressCircles img={progress_circles5}></ProgressCircles>
@@ -45,5 +27,5 @@ return <div className="tutorial05_transition_wrap">
     </div>
     <TutorialText Headertext="What's the temperature like in your area?" Desctext="Temperature is a key factor in plant growth and development, so it's crucial that plants are grown in the right temperature."></TutorialText>
 </div>
-}
+
 export default TutorialPage05;

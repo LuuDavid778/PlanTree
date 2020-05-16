@@ -4,10 +4,6 @@ import Router from 'next/router'
 import HamburgerMenu from '../../David/glossary_hamburger'
 const glossary = require('../../../Imgs/glossary.svg');
 
-function ClickHeadTutorial(){
-    Router.push("/TutorialPage01")
-}
-
 function onClick1(){
     Router.push("/TreeGlossaryPage");
 }
