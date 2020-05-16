@@ -6,7 +6,7 @@ const TerminologyTexts = ({innerText}) => {
 
 return <div className="result_texts_cont_term">
     <div className="plant_texts_description">{innerText}
-</div>
+    </div>
 </div>
 }
 
